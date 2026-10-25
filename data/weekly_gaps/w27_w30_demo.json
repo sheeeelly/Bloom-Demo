@@ -1,0 +1,537 @@
+{
+  "weeks": [
+    "2026-W27",
+    "2026-W30"
+  ],
+  "default_week": "2026-W30",
+  "notes": [
+    "Demo 种子：从竞品周报执行摘要人工结构化，非实时爬虫",
+    "爆点维度对齐：silhouette / neckline / waistline / fabric / dressLength / colorFamily / features / sleeve",
+    "AZ 热卖列表：本地索引模拟 Algolia/pangu 品类热销榜；有 Copilot 时可替换"
+  ],
+  "crawler_contract_future": {
+    "major_category": "new_arrival AND in_popular_list",
+    "new_category": "most_popular_list_only_no_new_filter",
+    "demo_implements_crawler": false
+  },
+  "sites": [
+    "Oh Polly",
+    "House of CB",
+    "Club L London",
+    "Babyboo"
+  ],
+  "trend_hotspots": [
+    {
+      "dim": "fabric",
+      "value": "Jersey",
+      "label": "Jersey 针织",
+      "count": 4,
+      "default_checked": true
+    },
+    {
+      "dim": "features",
+      "value": "Draped",
+      "label": "Draped 褶皱垂坠",
+      "count": 4,
+      "default_checked": true
+    },
+    {
+      "dim": "neckline",
+      "value": "Plunge Neckline",
+      "label": "Plunge 深V",
+      "count": 3,
+      "default_checked": true
+    },
+    {
+      "dim": "fabric",
+      "value": "Crepe",
+      "label": "Crepe 绉缎",
+      "count": 2,
+      "default_checked": true
+    },
+    {
+      "dim": "dressLength",
+      "value": "Midi",
+      "label": "Midi 及小腿",
+      "count": 2,
+      "default_checked": false
+    },
+    {
+      "dim": "features",
+      "value": "Ruched",
+      "label": "Ruched 抽褶",
+      "count": 2,
+      "default_checked": false
+    },
+    {
+      "dim": "fabric",
+      "value": "Stretch Satin",
+      "label": "Stretch Satin 弹力缎",
+      "count": 1,
+      "default_checked": false
+    },
+    {
+      "dim": "neckline",
+      "value": "High Neck",
+      "label": "High Neck 高领",
+      "count": 1,
+      "default_checked": false
+    },
+    {
+      "dim": "features",
+      "value": "Thigh High Split",
+      "label": "高开叉",
+      "count": 2,
+      "default_checked": false
+    },
+    {
+      "dim": "silhouette",
+      "value": "Sheath",
+      "label": "Sheath 修身",
+      "count": 2,
+      "default_checked": false
+    }
+  ],
+  "common_gap_attributes": [
+    {
+      "key": "Jersey",
+      "label": "Jersey 针织",
+      "dim": "fabric",
+      "count": 4,
+      "default_checked": true
+    },
+    {
+      "key": "Draped",
+      "label": "Draped 褶皱垂坠",
+      "dim": "features",
+      "count": 4,
+      "default_checked": true
+    },
+    {
+      "key": "Plunge Neckline",
+      "label": "Plunge 深V",
+      "dim": "neckline",
+      "count": 3,
+      "default_checked": true
+    },
+    {
+      "key": "Crepe",
+      "label": "Crepe 绉缎",
+      "dim": "fabric",
+      "count": 2,
+      "default_checked": true
+    },
+    {
+      "key": "Midi",
+      "label": "Midi 及小腿",
+      "dim": "dressLength",
+      "count": 2,
+      "default_checked": false
+    },
+    {
+      "key": "Ruched",
+      "label": "Ruched 抽褶",
+      "dim": "features",
+      "count": 2,
+      "default_checked": false
+    },
+    {
+      "key": "Stretch Satin",
+      "label": "Stretch Satin 弹力缎",
+      "dim": "fabric",
+      "count": 1,
+      "default_checked": false
+    },
+    {
+      "key": "High Neck",
+      "label": "High Neck 高领",
+      "dim": "neckline",
+      "count": 1,
+      "default_checked": false
+    }
+  ],
+  "competitor_products": [
+    {
+      "id": "hocb-w30-01",
+      "week": "2026-W30",
+      "site": "House of CB",
+      "category_line": "AT",
+      "title": "Off-shoulder Mermaid",
+      "image_url": "https://cdn-1.azazie.com/upimg/s600/17/37/245fb0f7bb0eed98e229b79854631737.jpg",
+      "status": "rising",
+      "discount_label": "20% OFF",
+      "price": 149,
+      "compare_at": 199,
+      "rank": 7,
+      "rank_delta": 15,
+      "reviews": 96,
+      "ships_now": false,
+      "attrs_display": [
+        "Emerald",
+        "Mermaid",
+        "Off-shoulder",
+        "Crepe"
+      ],
+      "gap_tag_keys": [
+        "Crepe",
+        "Draped"
+      ],
+      "hotspot_points": [
+        {
+          "dim": "neckline",
+          "value": "Off the Shoulder",
+          "label": "Off-Shoulder 露肩",
+          "default_checked": true
+        },
+        {
+          "dim": "silhouette",
+          "value": "Mermaid",
+          "label": "Mermaid 鱼尾",
+          "default_checked": true
+        },
+        {
+          "dim": "fabric",
+          "value": "Crepe",
+          "label": "Crepe 绉缎",
+          "default_checked": true
+        },
+        {
+          "dim": "colorFamily",
+          "value": "Solid Color",
+          "label": "纯色",
+          "default_checked": false
+        }
+      ],
+      "source_url": "https://www.houseofcb.com/"
+    },
+    {
+      "id": "clubl-w30-02",
+      "week": "2026-W30",
+      "site": "Club L London",
+      "category_line": "AT",
+      "title": "Square Neck Satin Column",
+      "image_url": "https://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-xs-babyboo-fashion-1222102180_1174x1800.jpg?v=1772501109",
+      "status": "new",
+      "discount_label": "21% OFF",
+      "price": 139,
+      "compare_at": 176,
+      "rank": 12,
+      "rank_delta": null,
+      "reviews": 42,
+      "ships_now": true,
+      "attrs_display": [
+        "Powder Blue",
+        "Column",
+        "Square neck",
+        "matte satin"
+      ],
+      "gap_tag_keys": [
+        "Stretch Satin",
+        "High Neck",
+        "Midi"
+      ],
+      "hotspot_points": [
+        {
+          "dim": "fabric",
+          "value": "Stretch Satin",
+          "label": "Stretch Satin 弹力缎",
+          "default_checked": true
+        },
+        {
+          "dim": "neckline",
+          "value": "Square Neckline",
+          "label": "Square 方领",
+          "default_checked": true
+        },
+        {
+          "dim": "silhouette",
+          "value": "Column",
+          "label": "Column 直筒",
+          "default_checked": true
+        },
+        {
+          "dim": "dressLength",
+          "value": "Midi",
+          "label": "Midi 及小腿",
+          "default_checked": false
+        }
+      ],
+      "source_url": "https://www.clubllondon.com/"
+    },
+    {
+      "id": "babyboo-w30-03",
+      "week": "2026-W30",
+      "site": "Babyboo",
+      "category_line": "AT",
+      "title": "Cyra Lemon Draped Maxi",
+      "image_url": "https://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-xs-babyboo-fashion-1222102180_1174x1800.jpg?v=1772501109",
+      "status": "new",
+      "discount_label": "15% OFF",
+      "price": 129,
+      "compare_at": 152,
+      "rank": 5,
+      "rank_delta": null,
+      "reviews": 128,
+      "ships_now": false,
+      "attrs_display": [
+        "Lemon",
+        "Maxi",
+        "Draped",
+        "Jersey",
+        "Plunge"
+      ],
+      "gap_tag_keys": [
+        "Jersey",
+        "Draped",
+        "Plunge Neckline",
+        "Thigh High Split"
+      ],
+      "hotspot_points": [
+        {
+          "dim": "fabric",
+          "value": "Jersey",
+          "label": "Jersey 针织",
+          "default_checked": true
+        },
+        {
+          "dim": "features",
+          "value": "Draped",
+          "label": "Draped 褶皱垂坠",
+          "default_checked": true
+        },
+        {
+          "dim": "neckline",
+          "value": "Plunge Neckline",
+          "label": "Plunge 深V",
+          "default_checked": true
+        },
+        {
+          "dim": "features",
+          "value": "Thigh High Split",
+          "label": "高开叉",
+          "default_checked": true
+        },
+        {
+          "dim": "dressLength",
+          "value": "Maxi",
+          "label": "Maxi 及地",
+          "default_checked": false
+        },
+        {
+          "dim": "waistline",
+          "value": "Ruched Waist",
+          "label": "抽褶腰部",
+          "default_checked": false
+        },
+        {
+          "dim": "sleeve",
+          "value": "Sleeveless",
+          "label": "无袖",
+          "default_checked": false
+        }
+      ],
+      "source_url": "https://www.babyboofashion.com/"
+    },
+    {
+      "id": "ohpolly-w30-04",
+      "week": "2026-W30",
+      "site": "Oh Polly",
+      "category_line": "AT",
+      "title": "Ruched Bodycon Mini",
+      "image_url": "/static/gallery/AT/at-001_02.jpg",
+      "status": "rising",
+      "discount_label": "18% OFF",
+      "price": 78,
+      "compare_at": 95,
+      "rank": 3,
+      "rank_delta": 8,
+      "reviews": 210,
+      "ships_now": true,
+      "attrs_display": [
+        "Black",
+        "Bodycon",
+        "Ruched",
+        "Mini"
+      ],
+      "gap_tag_keys": [
+        "Ruched",
+        "Sheath"
+      ],
+      "hotspot_points": [
+        {
+          "dim": "silhouette",
+          "value": "Sheath",
+          "label": "Sheath 修身",
+          "default_checked": true
+        },
+        {
+          "dim": "features",
+          "value": "Ruched",
+          "label": "Ruched 抽褶",
+          "default_checked": true
+        },
+        {
+          "dim": "features",
+          "value": "Bodycon",
+          "label": "Bodycon 修身",
+          "default_checked": true
+        },
+        {
+          "dim": "dressLength",
+          "value": "Mini",
+          "label": "Mini 短裙",
+          "default_checked": true
+        },
+        {
+          "dim": "sleeve",
+          "value": "Sleeveless",
+          "label": "无袖",
+          "default_checked": false
+        }
+      ],
+      "source_url": "https://www.ohpolly.com/"
+    },
+    {
+      "id": "clubl-w27-05",
+      "week": "2026-W27",
+      "site": "Club L London",
+      "category_line": "AT",
+      "title": "High-neck Matte Satin Separates",
+      "image_url": "/static/gallery/AT/at-001_03.jpg",
+      "status": "rising",
+      "discount_label": "12% OFF",
+      "price": 118,
+      "compare_at": 134,
+      "rank": 9,
+      "rank_delta": 6,
+      "reviews": 67,
+      "ships_now": false,
+      "attrs_display": [
+        "Olive",
+        "High-neck",
+        "Matte satin",
+        "Separates"
+      ],
+      "gap_tag_keys": [
+        "High Neck",
+        "Stretch Satin"
+      ],
+      "hotspot_points": [
+        {
+          "dim": "neckline",
+          "value": "High Neck",
+          "label": "High Neck 高领",
+          "default_checked": true
+        },
+        {
+          "dim": "fabric",
+          "value": "Stretch Satin",
+          "label": "Stretch Satin 弹力缎",
+          "default_checked": true
+        },
+        {
+          "dim": "features",
+          "value": "Separates",
+          "label": "Separates 分体",
+          "default_checked": true
+        },
+        {
+          "dim": "sleeve",
+          "value": "Long Sleeve",
+          "label": "长袖",
+          "default_checked": false
+        }
+      ],
+      "source_url": "https://www.clubllondon.com/"
+    }
+  ],
+  "az_reference_candidates": [
+    {
+      "id": "az-aurore",
+      "title": "Aurore Green Floral Maxi Dress",
+      "image_url": "https://cdn-1.azazie.com/upimg/s600/17/37/245fb0f7bb0eed98e229b79854631737.jpg",
+      "product_url": "https://www.azazie.com/products/aurore-green-floral-maxi-dress-atelier-dress/122262784",
+      "sales_volume": 1929,
+      "rank": 1,
+      "category_line": "AT",
+      "status": "rising",
+      "price": 149,
+      "default_selected": true,
+      "attrs_display": [
+        "A-Line",
+        "Floral",
+        "Maxi",
+        "Chiffon"
+      ],
+      "hotspot_points": [
+        {
+          "dim": "silhouette",
+          "value": "A-Line",
+          "label": "A-Line 公主线",
+          "default_checked": true
+        },
+        {
+          "dim": "fabric",
+          "value": "Chiffon",
+          "label": "Chiffon 雪纺",
+          "default_checked": true
+        },
+        {
+          "dim": "dressLength",
+          "value": "Maxi",
+          "label": "Maxi 及地",
+          "default_checked": true
+        },
+        {
+          "dim": "colorFamily",
+          "value": "Floral Print",
+          "label": "碎花印花",
+          "default_checked": true
+        },
+        {
+          "dim": "sleeve",
+          "value": "Sleeveless",
+          "label": "无袖",
+          "default_checked": false
+        }
+      ]
+    },
+    {
+      "id": "az-gallery-at",
+      "title": "AT Demo Anchor · Gallery",
+      "image_url": "/static/gallery/AT/at-001_01.jpg",
+      "product_url": "https://www.azazie.com/all/atelier-formal-dresses",
+      "sales_volume": 860,
+      "rank": 2,
+      "category_line": "AT",
+      "status": "new",
+      "price": 139,
+      "default_selected": false,
+      "attrs_display": [
+        "A-Line",
+        "Formal",
+        "Chiffon"
+      ],
+      "hotspot_points": [
+        {
+          "dim": "silhouette",
+          "value": "A-Line",
+          "label": "A-Line 公主线",
+          "default_checked": true
+        },
+        {
+          "dim": "fabric",
+          "value": "Chiffon",
+          "label": "Chiffon 雪纺",
+          "default_checked": false
+        },
+        {
+          "dim": "neckline",
+          "value": "V-Neck",
+          "label": "V-Neck V领",
+          "default_checked": false
+        }
+      ]
+    }
+  ]
+}

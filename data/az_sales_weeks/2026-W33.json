@@ -1,0 +1,111 @@
+{
+  "AT": {
+    "1078663_Green Floral": {
+      "goods_id": "1078663_Green Floral",
+      "title": "Aurore Green Floral Maxi Dress Atelier Dress",
+      "color": "",
+      "category_line": "AT",
+      "sales_volume_cum": 1957,
+      "week": "2026-W33"
+    },
+    "1078040_Wine": {
+      "goods_id": "1078040_Wine",
+      "title": "Marnie Wine Maxi Dress Atelier Dresses",
+      "color": "",
+      "category_line": "AT",
+      "sales_volume_cum": 686,
+      "week": "2026-W33"
+    },
+    "1070794_Vintage Teal": {
+      "goods_id": "1070794_Vintage Teal",
+      "title": "Calantha Vintage Teal Maxi Dress Atelier Dress",
+      "color": "",
+      "category_line": "AT",
+      "sales_volume_cum": 814,
+      "week": "2026-W33"
+    },
+    "1077839_Navy Vintage": {
+      "goods_id": "1077839_Navy Vintage",
+      "title": "Florivel Navy Vintage Maxi Dress Atelier Dress",
+      "color": "",
+      "category_line": "AT",
+      "sales_volume_cum": 1014,
+      "week": "2026-W33"
+    },
+    "1071597_Deep Green": {
+      "goods_id": "1071597_Deep Green",
+      "title": "Cristal Deep Green Maxi Dress Atelier Dress",
+      "color": "",
+      "category_line": "AT",
+      "sales_volume_cum": 500,
+      "week": "2026-W33"
+    },
+    "1076288_Mauve Multi": {
+      "goods_id": "1076288_Mauve Multi",
+      "title": "Aurra Mauve Multi Midi Dress Atelier Dress",
+      "color": "",
+      "category_line": "AT",
+      "sales_volume_cum": 714,
+      "week": "2026-W33"
+    }
+  },
+  "_week": "2026-W33",
+  "BD": {
+    "1070565_Ganache": {
+      "goods_id": "1070565_Ganache",
+      "title": "Azazie Sorrel Bridesmaid Dress",
+      "color": "",
+      "category_line": "BD",
+      "sales_volume_cum": 18032,
+      "week": "2026-W33"
+    },
+    "1074099_Ganache": {
+      "goods_id": "1074099_Ganache",
+      "title": "Azazie Agustina Bridesmaid Dress",
+      "color": "",
+      "category_line": "BD",
+      "sales_volume_cum": 16543,
+      "week": "2026-W33"
+    },
+    "1077609_Ganache": {
+      "goods_id": "1077609_Ganache",
+      "title": "Azazie Azaria Bridesmaid Dress",
+      "color": "",
+      "category_line": "BD",
+      "sales_volume_cum": 17111,
+      "week": "2026-W33"
+    },
+    "1074180_Ganache": {
+      "goods_id": "1074180_Ganache",
+      "title": "Azazie Kieryn Bridesmaid Dress",
+      "color": "",
+      "category_line": "BD",
+      "sales_volume_cum": 11518,
+      "week": "2026-W33"
+    },
+    "1070667_Ganache": {
+      "goods_id": "1070667_Ganache",
+      "title": "Azazie Emerson Bridesmaid Dresses",
+      "color": "",
+      "category_line": "BD",
+      "sales_volume_cum": 11404,
+      "week": "2026-W33"
+    },
+    "1077493_Black": {
+      "goods_id": "1077493_Black",
+      "title": "Azazie Novi Chiffon Bridesmaid Dress",
+      "color": "",
+      "category_line": "BD",
+      "sales_volume_cum": 13650,
+      "week": "2026-W33"
+    },
+    "1066636_Powder Blue": {
+      "goods_id": "1066636_Powder Blue",
+      "title": "Azazie Chiffon Swatch",
+      "color": "",
+      "category_line": "BD",
+      "sales_volume_cum": 331043,
+      "week": "2026-W33"
+    }
+  }
+}

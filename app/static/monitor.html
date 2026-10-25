@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZ Bloom · 货盘监控</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="h-screen flex overflow-hidden">
+  <aside id="bloom-sidebar" class="sidebar"></aside>
+  <main class="main-shell">
+    <header class="page-header">
+      <div>
+        <h1>货盘监控</h1>
+        <p class="page-header__sub" id="mon-sub">统一货盘 · 站点筛选含 Azazie · 筛选全部多选、无互斥</p>
+      </div>
+      <div class="header-actions">
+        <button id="btn-refresh" type="button" class="btn-refresh">刷新</button>
+      </div>
+    </header>
+    <section class="page-body monitor-page">
+      <div id="mon-warn" class="data-banner hidden"></div>
+      <div id="mon-filters" class="mon-filter-card"></div>
+      <div class="mon-panel">
+        <div class="mon-panel__head">
+          <div>
+            <h2>货盘动态</h2>
+            <p>竞品与自有同一网格；勾选 Azazie 看自有款。市场按站点服务范围过滤，缺映射的站不假装覆盖。</p>
+          </div>
+          <span id="mon-meta" class="mon-panel__meta">—</span>
+        </div>
+        <div id="mon-grid" class="sku-grid"></div>
+      </div>
+    </section>
+  </main>
+  <script src="/static/monitor.js"></script>
+  <script src="/static/sidebar.js"></script>
+  <script>mountBloomSidebar('monitor', '货盘 · 站点含 Azazie · 市场在基础筛选');</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZ Bloom · 成品库</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="h-screen flex overflow-hidden">
+  <aside id="bloom-sidebar" class="sidebar"></aside>
+  <main class="main-shell">
+    <header class="page-header">
+      <div>
+        <h1>成品库</h1>
+        <p class="page-header__sub">本机生成任务 · 竞品周上新灵感集 · 时尚季节包。无审核流、不推 Adora。</p>
+      </div>
+      <button id="btn-refresh" type="button" class="btn-refresh">刷新</button>
+    </header>
+    <section class="page-body library-page">
+      <div id="lib-stats" class="stat-row stat-row--compact"></div>
+      <div class="lib-layout">
+        <aside class="insp-tree" id="insp-tree"></aside>
+        <div class="lib-main">
+          <div class="lib-tabs" id="lib-tabs">
+            <button type="button" data-tab="all" class="is-on">全部成品</button>
+            <button type="button" data-tab="generating">生成中</button>
+            <button type="button" data-tab="succeeded">已通过</button>
+            <button type="button" data-tab="failed">生成失败</button>
+          </div>
+          <h2 class="lib-heading" id="lib-heading">本机成品</h2>
+          <div id="lib-grid" class="lib-grid"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="/static/library.js"></script>
+  <script src="/static/sidebar.js"></script>
+  <script>mountBloomSidebar('library', '成品库 · 灵感集 + 生成任务');</script>
+</body>
+</html>

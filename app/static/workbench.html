@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="0;url=/gap-fusion.html" />
+  <title>AZ Bloom · 开款工作台</title>
+  <script>
+    (function () {
+      var href = '/gap-fusion.html';
+      try {
+        href = localStorage.getItem('bloom_last_workbench') === 'design' ? '/design.html' : '/gap-fusion.html';
+      } catch (err) {}
+      location.replace(href);
+    })();
+  </script>
+</head>
+<body>正在进入开款工作台…</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZ Bloom · 品类效果</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="h-screen flex overflow-hidden">
+  <aside id="bloom-sidebar" class="sidebar"></aside>
+
+  <main class="main-shell">
+    <header class="page-header">
+      <div>
+        <h1>品类效果</h1>
+        <p class="page-header__sub">裙装 5～6 类预渲染对照 · 好坏如实展示，请老板判断是否接入</p>
+      </div>
+      <span id="gallery-updated" class="page-header__meta"></span>
+    </header>
+
+    <section class="page-body">
+      <div class="panel panel--compact gallery-banner">
+        <p id="gallery-disclaimer" class="gallery-disclaimer"></p>
+        <p class="panel__hint">本页不依赖现场合成。现场真合成请走「爆款合成」或「AI造款」。预跑：填 <code>data/gallery/inputs.json</code> 后执行 <code>python scripts/prerun_gallery.py</code>（需真 Comfy）。</p>
+      </div>
+
+      <div id="gallery-tabs" class="gallery-tabs" role="tablist"></div>
+      <div id="gallery-empty" class="empty-state hidden">该品类暂无预渲染结果</div>
+      <div id="gallery-grid" class="gallery-grid"></div>
+    </section>
+  </main>
+
+  <script src="/static/sidebar.js"></script>
+  <script>
+    mountBloomSidebar('gallery', '品类效果 · 预渲染 · 仅裙装');
+  </script>
+  <script src="/static/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "updated_at": "2026-08-06T17:37:48.319358+08:00",
+  "submissions": [
+    {
+      "id": "20260806093748",
+      "category_name": "TestCat",
+      "competitor_site_url": "https://example.com",
+      "most_popular_hint": "Most Popular / Best Sellers",
+      "notes": "",
+      "created_at": "2026-08-06T17:37:48.319150+08:00",
+      "status": "shell_recorded",
+      "message": "已记录开类目假设（Demo 壳，未启动爬虫/生成）"
+    }
+  ]
+}

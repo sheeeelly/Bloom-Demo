@@ -1,0 +1,150 @@
+{
+  "season_id": "Vogue_NYBFW_Spring_2026",
+  "season_label": "Bridal Spring 2026",
+  "pack_kind": "wedding",
+  "categories": ["Wedding"],
+  "sources": [
+    {
+      "name": "Vogue_Bridal",
+      "url": "https://www.vogue.com/article/wedding-dress-trends-new-york-bridal-fashion-week-spring-2026",
+      "title": "The Top Wedding Dress Trends From New York Bridal Fashion Week Spring 2026",
+      "note": "婚纱独立品类主源；与成衣 SS26 报告分离，人工摘录"
+    },
+    {
+      "name": "Vogue_Lace_2026",
+      "url": "https://www.vogue.com/article/lace-wedding-dress-trend-2026",
+      "title": "The Lace Wedding Dress Will Be the Biggest Bridal Trend of 2026",
+      "note": "蕾丝主题加深（可选旁证）"
+    }
+  ],
+  "trend_clusters": [
+    {
+      "cluster_id": "bubble_skirt",
+      "label": "bubble skirts",
+      "label_zh": "泡泡裙摆 / 回卷下摆",
+      "structure_tags": ["bubble_hem", "volume_skirt", "mini_or_gown"],
+      "fabric_tags": ["mikado", "taffeta", "organza"],
+      "motif_tags": ["bubble", "youthful_volume"],
+      "designer_examples": ["Markarian", "Dana Harel", "Marmar Halim"],
+      "az_fit": {
+        "Wedding": "go",
+        "AT": "no",
+        "BD": "no",
+        "MOB": "no",
+        "Prom": "no"
+      }
+    },
+    {
+      "cluster_id": "draped_basque",
+      "label": "draped basque waists",
+      "label_zh": "垂坠 Basque / 低腰软褶",
+      "structure_tags": ["basque_waist", "drop_waist", "draped_gather"],
+      "fabric_tags": ["crepe", "satin", "silk"],
+      "motif_tags": ["soft_swoop", "defined_hip"],
+      "designer_examples": ["Elizabeth Fillmore", "Enaura", "Andrew Kwon"],
+      "az_fit": {
+        "Wedding": "go",
+        "AT": "no",
+        "BD": "no",
+        "MOB": "no",
+        "Prom": "no"
+      }
+    },
+    {
+      "cluster_id": "unique_lace",
+      "label": "unique lace",
+      "label_zh": "层次/定位蕾丝（非普通全蕾丝复刻）",
+      "structure_tags": ["lace_overlay", "strategic_lace"],
+      "fabric_tags": ["lace", "chantilly", "tulle"],
+      "motif_tags": ["lace", "layered_lace"],
+      "designer_examples": ["House of Gilles", "Francesca Miranda", "Monique Lhuillier"],
+      "az_fit": {
+        "Wedding": "go",
+        "AT": "no",
+        "BD": "no",
+        "MOB": "no",
+        "Prom": "no"
+      }
+    },
+    {
+      "cluster_id": "bridal_bows",
+      "label": "bows",
+      "label_zh": "蝴蝶结（精致到夸张）",
+      "structure_tags": ["bow_front", "bow_back", "pussy_bow"],
+      "fabric_tags": ["mikado", "satin", "organza"],
+      "motif_tags": ["bow", "ribbon"],
+      "designer_examples": ["Lihi Hod", "Tanner Fletcher", "Mark Ingram Bride"],
+      "az_fit": {
+        "Wedding": "go",
+        "AT": "no",
+        "BD": "no",
+        "MOB": "no",
+        "Prom": "no"
+      }
+    },
+    {
+      "cluster_id": "bridal_separates",
+      "label": "separates",
+      "label_zh": "分体套装 / 胸衣+裙 / toppers",
+      "structure_tags": ["separates", "corset_top", "topper"],
+      "fabric_tags": ["crepe", "lace", "mikado"],
+      "motif_tags": ["two_piece", "suiting_bridal"],
+      "designer_examples": ["Kyha", "Alexandra Grecco", "Amsale"],
+      "az_fit": {
+        "Wedding": "go",
+        "AT": "no",
+        "BD": "no",
+        "MOB": "no",
+        "Prom": "no"
+      }
+    },
+    {
+      "cluster_id": "soft_non_white",
+      "label": "not-so-white (soft pastel)",
+      "label_zh": "非纯白 / 柔彩新娘色（一期不作潘通驱动）",
+      "structure_tags": ["column_or_gown"],
+      "fabric_tags": ["satin", "crepe", "lace"],
+      "motif_tags": ["blush", "pastel_blue", "editorial_tint"],
+      "designer_examples": ["Cinq", "Honor", "Jaclyn Whyte"],
+      "az_fit": {
+        "Wedding": "cautious",
+        "AT": "no",
+        "BD": "no",
+        "MOB": "no",
+        "Prom": "no"
+      }
+    }
+  ],
+  "image_hints": [
+    "只用婚纱专题配图 / NYBFW slideshow；勿与成衣 SS26 混源",
+    "按 motif 搜：bubble skirt bridal、basque waist drape、layered lace gown、bridal bow、bridal separates",
+    "一期不使用潘通色向驱动；soft non-white 仅作结构/色感提示"
+  ],
+  "inspiration_images": [
+    {
+      "id": "insp_wd_01",
+      "label": "灵感 01 · Basque / 腰线",
+      "url": "/static/gallery/Wedding/wd-001_01.jpg",
+      "motif_hint": "draped basque",
+      "note": "Demo 占位；正式用 Vogue Bridal 配图"
+    },
+    {
+      "id": "insp_wd_02",
+      "label": "灵感 02 · 蕾丝层次",
+      "url": "/static/gallery/Wedding/wd-001_02.jpg",
+      "motif_hint": "unique lace",
+      "note": "Demo 占位"
+    },
+    {
+      "id": "insp_wd_03",
+      "label": "灵感 03 · 结饰 / 分体",
+      "url": "/static/gallery/Wedding/wd-001_03.jpg",
+      "motif_hint": "bows / separates",
+      "note": "Demo 占位"
+    }
+  ],
+  "crawl_policy": {
+    "phase1": "manual_feed_json_or_paste",
+    "phase2": "seasonal_or_monthly_auto_fetch_not_in_demo"
+  }
+}

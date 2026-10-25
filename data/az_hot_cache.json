@@ -1,0 +1,1030 @@
+{
+  "AT": {
+    "products": [
+      {
+        "id": "1078663_Green Floral",
+        "title": "Aurore Green Floral Maxi Dress Atelier Dress",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/17/37/245fb0f7bb0eed98e229b79854631737.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/17/37/245fb0f7bb0eed98e229b79854631737.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/aurore-green-floral-maxi-dress-atelier-dress/122262784",
+        "url": "https://www.azazie.com/products/aurore-green-floral-maxi-dress-atelier-dress/122262784",
+        "sales_volume": 1957,
+        "rank": 1,
+        "category_line": "AT",
+        "status": "rising",
+        "price": 139,
+        "attrs_display": [
+          "A-Line",
+          "Cowl",
+          "Chiffon",
+          "Maxi"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "A-Line",
+            "label": "A-Line 公主线",
+            "default_checked": true
+          },
+          {
+            "dim": "neckline",
+            "value": "Cowl Neckline",
+            "label": "Cowl 垂褶领",
+            "default_checked": true
+          },
+          {
+            "dim": "fabric",
+            "value": "Chiffon",
+            "label": "Chiffon 雪纺",
+            "default_checked": true
+          },
+          {
+            "dim": "dressLength",
+            "value": "Maxi",
+            "label": "Maxi 及地",
+            "default_checked": true
+          },
+          {
+            "dim": "features",
+            "value": "Corset Bodice",
+            "label": "胸衣 / 鱼骨收腰",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": true
+      },
+      {
+        "id": "1078040_Wine",
+        "title": "Marnie Wine Maxi Dress Atelier Dresses",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/69/42/7bfb6ea2cb0c25fda28f5bb4cd986942.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/69/42/7bfb6ea2cb0c25fda28f5bb4cd986942.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/marnie-wine-maxi-dress-atelier-dresses/111983738",
+        "url": "https://www.azazie.com/products/marnie-wine-maxi-dress-atelier-dresses/111983738",
+        "sales_volume": 686,
+        "rank": 2,
+        "category_line": "AT",
+        "status": "rising",
+        "price": 229,
+        "attrs_display": [
+          "Ball Gowns",
+          "Strapless",
+          "Crepe",
+          "Maxi"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "Ball Gown",
+            "label": "Ball Gown 蓬蓬裙",
+            "default_checked": true
+          },
+          {
+            "dim": "neckline",
+            "value": "Strapless",
+            "label": "Strapless 抹胸",
+            "default_checked": true
+          },
+          {
+            "dim": "fabric",
+            "value": "Crepe",
+            "label": "Crepe 绉缎",
+            "default_checked": true
+          },
+          {
+            "dim": "dressLength",
+            "value": "Maxi",
+            "label": "Maxi 及地",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": false
+      },
+      {
+        "id": "1070794_Vintage Teal",
+        "title": "Calantha Vintage Teal Maxi Dress Atelier Dress",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/8e/9a/e5d3eeb85232e3f5cef0ae0260548e9a.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/8e/9a/e5d3eeb85232e3f5cef0ae0260548e9a.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/calantha-vintage-teal-maxi-dress-atelier-dress/48377912",
+        "url": "https://www.azazie.com/products/calantha-vintage-teal-maxi-dress-atelier-dress/48377912",
+        "sales_volume": 814,
+        "rank": 3,
+        "category_line": "AT",
+        "status": "rising",
+        "price": 129,
+        "attrs_display": [
+          "Mermaid",
+          "Straight",
+          "Brocade",
+          "Floor-Length"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "Mermaid",
+            "label": "Mermaid 鱼尾",
+            "default_checked": true
+          },
+          {
+            "dim": "dressLength",
+            "value": "Maxi",
+            "label": "Maxi 及地",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": false
+      },
+      {
+        "id": "1077839_Navy Vintage",
+        "title": "Florivel Navy Vintage Maxi Dress Atelier Dress",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/91/83/30a4e452c368bbe6b2359257c5329183.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/91/83/30a4e452c368bbe6b2359257c5329183.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/florivel-navy-vintage-maxi-dress-atelier-dress/108898449",
+        "url": "https://www.azazie.com/products/florivel-navy-vintage-maxi-dress-atelier-dress/108898449",
+        "sales_volume": 1014,
+        "rank": 4,
+        "category_line": "AT",
+        "status": "new",
+        "price": 129,
+        "attrs_display": [
+          "Mermaid",
+          "Cowl",
+          "Stretch Satin",
+          "Maxi"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "Mermaid",
+            "label": "Mermaid 鱼尾",
+            "default_checked": true
+          },
+          {
+            "dim": "neckline",
+            "value": "Cowl Neckline",
+            "label": "Cowl 垂褶领",
+            "default_checked": true
+          },
+          {
+            "dim": "fabric",
+            "value": "Satin",
+            "label": "Satin 缎面",
+            "default_checked": true
+          },
+          {
+            "dim": "dressLength",
+            "value": "Maxi",
+            "label": "Maxi 及地",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": false
+      },
+      {
+        "id": "1071597_Deep Green",
+        "title": "Cristal Deep Green Maxi Dress Atelier Dress",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/cc/6f/46fbfa609f0d9a66b23f59ee89d8cc6f.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/cc/6f/46fbfa609f0d9a66b23f59ee89d8cc6f.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/cristal-deep-green-maxi-dress-atelier-dress/80263725",
+        "url": "https://www.azazie.com/products/cristal-deep-green-maxi-dress-atelier-dress/80263725",
+        "sales_volume": 500,
+        "rank": 5,
+        "category_line": "AT",
+        "status": "new",
+        "price": 249,
+        "attrs_display": [
+          "Ball Gowns",
+          "Sweetheart",
+          "Brocade",
+          "Floor-Length"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "Ball Gown",
+            "label": "Ball Gown 蓬蓬裙",
+            "default_checked": true
+          },
+          {
+            "dim": "neckline",
+            "value": "Sweetheart",
+            "label": "Sweetheart 心形领",
+            "default_checked": true
+          },
+          {
+            "dim": "dressLength",
+            "value": "Maxi",
+            "label": "Maxi 及地",
+            "default_checked": true
+          },
+          {
+            "dim": "colorFamily",
+            "value": "Floral Print",
+            "label": "碎花印花",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": false
+      },
+      {
+        "id": "1076288_Mauve Multi",
+        "title": "Aurra Mauve Multi Midi Dress Atelier Dress",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/d4/e6/96fe1cbec6b8b15d523e1718d5efd4e6.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/d4/e6/96fe1cbec6b8b15d523e1718d5efd4e6.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/aurra-mauve-multi-midi-dress-atelier-dress/103328470",
+        "url": "https://www.azazie.com/products/aurra-mauve-multi-midi-dress-atelier-dress/103328470",
+        "sales_volume": 714,
+        "rank": 6,
+        "category_line": "AT",
+        "status": "new",
+        "price": 169,
+        "attrs_display": [
+          "A-Line",
+          "Cowl",
+          "Chiffon",
+          "Midi"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "A-Line",
+            "label": "A-Line 公主线",
+            "default_checked": true
+          },
+          {
+            "dim": "neckline",
+            "value": "Cowl Neckline",
+            "label": "Cowl 垂褶领",
+            "default_checked": true
+          },
+          {
+            "dim": "fabric",
+            "value": "Chiffon",
+            "label": "Chiffon 雪纺",
+            "default_checked": true
+          },
+          {
+            "dim": "dressLength",
+            "value": "Midi",
+            "label": "Midi 及小腿",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": false
+      }
+    ],
+    "fetched_at": 1786701415.2456908
+  },
+  "BD": {
+    "products": [
+      {
+        "id": "1070565_Ganache",
+        "title": "Azazie Sorrel Bridesmaid Dress",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/a0/90/43b6af89cc19542c173897af6b03a090.jpeg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/a0/90/43b6af89cc19542c173897af6b03a090.jpeg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/azazie-sorrel-bridesmaid-dress/86762148",
+        "url": "https://www.azazie.com/products/azazie-sorrel-bridesmaid-dress/86762148",
+        "sales_volume": 18032,
+        "rank": 1,
+        "category_line": "BD",
+        "status": "rising",
+        "price": 119,
+        "attrs_display": [
+          "Mermaid",
+          "Strapless",
+          "Chiffon",
+          "Floor-Length"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "Mermaid",
+            "label": "Mermaid 鱼尾",
+            "default_checked": true,
+            "source": "crawler_table"
+          },
+          {
+            "dim": "neckline",
+            "value": "Strapless",
+            "label": "Strapless 抹胸",
+            "default_checked": true,
+            "source": "crawler_table"
+          },
+          {
+            "dim": "fabric",
+            "value": "Chiffon",
+            "label": "Chiffon 雪纺",
+            "default_checked": true,
+            "source": "crawler_table"
+          },
+          {
+            "dim": "dressLength",
+            "value": "Floor-Length",
+            "label": "Floor-Length",
+            "default_checked": true,
+            "source": "crawler_table"
+          },
+          {
+            "dim": "colorFamily",
+            "value": "Brown",
+            "label": "Brown",
+            "default_checked": true,
+            "source": "crawler_table"
+          },
+          {
+            "dim": "features",
+            "value": "Convertible",
+            "label": "Convertible",
+            "default_checked": true,
+            "source": "crawler_table"
+          },
+          {
+            "dim": "features",
+            "value": "Without Leg Slit",
+            "label": "Without Leg Slit",
+            "default_checked": true,
+            "source": "crawler_table"
+          },
+          {
+            "dim": "features",
+            "value": "Sash",
+            "label": "Sash",
+            "default_checked": true,
+            "source": "crawler_table"
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": true
+      }
+    ],
+    "fetched_at": 1786704777.6065128
+  },
+  "MOB": {
+    "products": [
+      {
+        "id": "1066366_Champagne",
+        "title": "Azazie Joylin Floral Burnout Mother of the Bride Dresses",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/9a/e8/dd35edd40eadce79d51aea481cb89ae8.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/9a/e8/dd35edd40eadce79d51aea481cb89ae8.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/azazie-joylin-floral-burnout-mother-of-the-bride-dresses/86723298",
+        "url": "https://www.azazie.com/products/azazie-joylin-floral-burnout-mother-of-the-bride-dresses/86723298",
+        "sales_volume": 2846,
+        "rank": 1,
+        "category_line": "MOB",
+        "status": "rising",
+        "price": 159,
+        "attrs_display": [
+          "One-Shoulder",
+          "Floral Burnout",
+          "Floor-Length"
+        ],
+        "hotspot_points": [],
+        "source": "az_copilot_zendesk",
+        "default_selected": true
+      }
+    ]
+  },
+  "Prom": {
+    "products": [
+      {
+        "id": "1081363_Champagne",
+        "title": "Deliacor Champagne Mermaid Off the Shoulder Floral Corset Prom Dress Prom and Homecoming Dresses",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/e1/6a/1081988329cf288c628483373a1ae16a.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/e1/6a/1081988329cf288c628483373a1ae16a.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/deliacor-champagne-mermaid-off-the-shoulder-floral-corset-prom-dress-prom-and-homecoming-dresses/124391182",
+        "url": "https://www.azazie.com/products/deliacor-champagne-mermaid-off-the-shoulder-floral-corset-prom-dress-prom-and-homecoming-dresses/124391182",
+        "sales_volume": 114,
+        "rank": 1,
+        "category_line": "Prom",
+        "status": "rising",
+        "price": 159,
+        "attrs_display": [
+          "Mermaid",
+          "Off The Shoulder",
+          "Lace",
+          "Floor-Length"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "Mermaid",
+            "label": "Mermaid 鱼尾",
+            "default_checked": true
+          },
+          {
+            "dim": "neckline",
+            "value": "Off the Shoulder",
+            "label": "Off-Shoulder 露肩",
+            "default_checked": true
+          },
+          {
+            "dim": "fabric",
+            "value": "Lace",
+            "label": "Lace 蕾丝",
+            "default_checked": true
+          },
+          {
+            "dim": "fabric",
+            "value": "Satin",
+            "label": "Satin 缎面",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": true
+      },
+      {
+        "id": "1074345_Champagne",
+        "title": "Opulence Champagne Floral Corset Mermaid Dress Prom and Homecoming Dresses",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/cf/ef/628b3989083b54f45c36eb098e6ccfef.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/cf/ef/628b3989083b54f45c36eb098e6ccfef.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/opulence-champagne-floral-corset-mermaid-dress-prom-and-homecoming-dresses/78029162",
+        "url": "https://www.azazie.com/products/opulence-champagne-floral-corset-mermaid-dress-prom-and-homecoming-dresses/78029162",
+        "sales_volume": 71,
+        "rank": 2,
+        "category_line": "Prom",
+        "status": "rising",
+        "price": 159,
+        "attrs_display": [
+          "Mermaid",
+          "Off The Shoulder",
+          "Stretch Satin",
+          "Floor-Length"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "Mermaid",
+            "label": "Mermaid 鱼尾",
+            "default_checked": true
+          },
+          {
+            "dim": "neckline",
+            "value": "Off the Shoulder",
+            "label": "Off-Shoulder 露肩",
+            "default_checked": true
+          },
+          {
+            "dim": "neckline",
+            "value": "Sweetheart",
+            "label": "Sweetheart 心形领",
+            "default_checked": true
+          },
+          {
+            "dim": "fabric",
+            "value": "Satin",
+            "label": "Satin 缎面",
+            "default_checked": true
+          },
+          {
+            "dim": "features",
+            "value": "Corset Bodice",
+            "label": "胸衣 / 鱼骨收腰",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": false
+      },
+      {
+        "id": "1072048_White",
+        "title": "Gobi White Mini Dress Prom and Homecoming Dresses",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/9d/ad/983517a8b6deea87579e9950601d9dad.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/9d/ad/983517a8b6deea87579e9950601d9dad.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/gobi-white-mini-dress-prom-and-homecoming-dresses/60402687",
+        "url": "https://www.azazie.com/products/gobi-white-mini-dress-prom-and-homecoming-dresses/60402687",
+        "sales_volume": 229,
+        "rank": 3,
+        "category_line": "Prom",
+        "status": "rising",
+        "price": 99,
+        "attrs_display": [
+          "Column",
+          "Spaghetti Strap",
+          "Beading",
+          "Mini"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "Column",
+            "label": "Column 直筒",
+            "default_checked": true
+          },
+          {
+            "dim": "dressLength",
+            "value": "Mini",
+            "label": "Mini 短裙",
+            "default_checked": true
+          },
+          {
+            "dim": "features",
+            "value": "Lace-Up Back",
+            "label": "系带后背收腰",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": false
+      },
+      {
+        "id": "1076615_Burgundy",
+        "title": "Zivah Burgundy Beading Corset Lace Up Back Mermaid Prom Dress Prom and Homecoming Dresses",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/c8/08/44de3c16726c9cd8e4f7ffa7f6ecc808.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/c8/08/44de3c16726c9cd8e4f7ffa7f6ecc808.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/zivah-burgundy-beading-corset-lace-up-back-mermaid-prom-dress-prom-and-homecoming-dresses/107383842",
+        "url": "https://www.azazie.com/products/zivah-burgundy-beading-corset-lace-up-back-mermaid-prom-dress-prom-and-homecoming-dresses/107383842",
+        "sales_volume": 86,
+        "rank": 4,
+        "category_line": "Prom",
+        "status": "new",
+        "price": 199,
+        "attrs_display": [
+          "Mermaid",
+          "Sweetheart",
+          "Beading",
+          "Floor-Length"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "Mermaid",
+            "label": "Mermaid 鱼尾",
+            "default_checked": true
+          },
+          {
+            "dim": "neckline",
+            "value": "Sweetheart",
+            "label": "Sweetheart 心形领",
+            "default_checked": true
+          },
+          {
+            "dim": "features",
+            "value": "Corset Bodice",
+            "label": "胸衣 / 鱼骨收腰",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": false
+      },
+      {
+        "id": "1078248_White",
+        "title": "Mentino White 3D Flower Lace Prom Dress Prom and Homecoming Dresses",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/6d/d3/4d992005c03f754916056b8881d56dd3.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/6d/d3/4d992005c03f754916056b8881d56dd3.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/mentino-white-3d-flower-lace-prom-dress-prom-and-homecoming-dresses/111522304",
+        "url": "https://www.azazie.com/products/mentino-white-3d-flower-lace-prom-dress-prom-and-homecoming-dresses/111522304",
+        "sales_volume": 100,
+        "rank": 5,
+        "category_line": "Prom",
+        "status": "new",
+        "price": 139,
+        "attrs_display": [
+          "Mermaid",
+          "Straight",
+          "Lace",
+          "Floor-Length"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "Mermaid",
+            "label": "Mermaid 鱼尾",
+            "default_checked": true
+          },
+          {
+            "dim": "fabric",
+            "value": "Lace",
+            "label": "Lace 蕾丝",
+            "default_checked": true
+          },
+          {
+            "dim": "fabric",
+            "value": "Satin",
+            "label": "Satin 缎面",
+            "default_checked": true
+          },
+          {
+            "dim": "features",
+            "value": "Lace-Up Back",
+            "label": "系带后背收腰",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": false
+      },
+      {
+        "id": "1072003_White",
+        "title": "Incanto White Mini Dress Prom and Homecoming Dresses",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/b0/b0/05953e6f0b87be39ddb35ee68576b0b0.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/b0/b0/05953e6f0b87be39ddb35ee68576b0b0.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/incanto-white-mini-dress-prom-and-homecoming-dresses/60428233",
+        "url": "https://www.azazie.com/products/incanto-white-mini-dress-prom-and-homecoming-dresses/60428233",
+        "sales_volume": 100,
+        "rank": 6,
+        "category_line": "Prom",
+        "status": "new",
+        "price": 119,
+        "attrs_display": [
+          "A-Line",
+          "Spaghetti Strap",
+          "Lace",
+          "Mini"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "A-Line",
+            "label": "A-Line 公主线",
+            "default_checked": true
+          },
+          {
+            "dim": "silhouette",
+            "value": "Ball Gown",
+            "label": "Ball Gown 蓬蓬裙",
+            "default_checked": true
+          },
+          {
+            "dim": "fabric",
+            "value": "Lace",
+            "label": "Lace 蕾丝",
+            "default_checked": true
+          },
+          {
+            "dim": "dressLength",
+            "value": "Mini",
+            "label": "Mini 短裙",
+            "default_checked": true
+          },
+          {
+            "dim": "features",
+            "value": "Lace-Up Back",
+            "label": "系带后背收腰",
+            "default_checked": true
+          },
+          {
+            "dim": "features",
+            "value": "Corset Bodice",
+            "label": "胸衣 / 鱼骨收腰",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": false
+      }
+    ]
+  },
+  "Wedding": {
+    "products": [
+      {
+        "id": "1070515_Ganache",
+        "title": "Azazie Elle Stretch Satin Bridesmaid Dress",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/bc/d7/dd406f2b4769e312bd4194164857bcd7.jpeg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/bc/d7/dd406f2b4769e312bd4194164857bcd7.jpeg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/azazie-elle-stretch-satin-bridesmaid-dress/81385098",
+        "url": "https://www.azazie.com/products/azazie-elle-stretch-satin-bridesmaid-dress/81385098",
+        "sales_volume": 3846,
+        "rank": 1,
+        "category_line": "Wedding",
+        "status": "rising",
+        "price": 109,
+        "attrs_display": [
+          "A-Line",
+          "Cowl Neck",
+          "Stretch Satin",
+          "Floor-Length"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "A-Line",
+            "label": "A-Line 公主线",
+            "default_checked": true
+          },
+          {
+            "dim": "silhouette",
+            "value": "Flowy Silhouette",
+            "label": "Flowy 飘逸廓形",
+            "default_checked": true
+          },
+          {
+            "dim": "neckline",
+            "value": "Cowl Neckline",
+            "label": "Cowl 垂褶领",
+            "default_checked": true
+          },
+          {
+            "dim": "fabric",
+            "value": "Satin",
+            "label": "Satin 缎面",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": true
+      },
+      {
+        "id": "1074079_Cabernet",
+        "title": "Azazie Kimber Floral Burnout Bridesmaid Dress",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/a0/34/ad1b7ee14eae6230a71727ddc42aa034.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/a0/34/ad1b7ee14eae6230a71727ddc42aa034.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/azazie-kimber-floral-burnout-bridesmaid-dress/85891993",
+        "url": "https://www.azazie.com/products/azazie-kimber-floral-burnout-bridesmaid-dress/85891993",
+        "sales_volume": 1996,
+        "rank": 2,
+        "category_line": "Wedding",
+        "status": "rising",
+        "price": 109,
+        "attrs_display": [
+          "A-Line",
+          "V-Neck",
+          "Floral Burnout",
+          "Floor-Length"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "A-Line",
+            "label": "A-Line 公主线",
+            "default_checked": true
+          },
+          {
+            "dim": "silhouette",
+            "value": "Flowy Silhouette",
+            "label": "Flowy 飘逸廓形",
+            "default_checked": true
+          },
+          {
+            "dim": "neckline",
+            "value": "V-Neck",
+            "label": "V-Neck V领",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": false
+      },
+      {
+        "id": "1073902_Navy",
+        "title": "Dana Navy Midi Dress Atelier Dress",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/bd/bf/5cf4b561050ca4cf1ca83a644eedbdbf.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/bd/bf/5cf4b561050ca4cf1ca83a644eedbdbf.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/dana-navy-midi-dress-atelier-dress/81226955",
+        "url": "https://www.azazie.com/products/dana-navy-midi-dress-atelier-dress/81226955",
+        "sales_volume": 714,
+        "rank": 3,
+        "category_line": "Wedding",
+        "status": "rising",
+        "price": 89,
+        "attrs_display": [
+          "A-Line",
+          "Square",
+          "Floral Burnout",
+          "Midi"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "A-Line",
+            "label": "A-Line 公主线",
+            "default_checked": true
+          },
+          {
+            "dim": "neckline",
+            "value": "Square Neckline",
+            "label": "Square 方领",
+            "default_checked": true
+          },
+          {
+            "dim": "dressLength",
+            "value": "Midi",
+            "label": "Midi 及小腿",
+            "default_checked": true
+          },
+          {
+            "dim": "features",
+            "value": "Corset Bodice",
+            "label": "胸衣 / 鱼骨收腰",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": false
+      },
+      {
+        "id": "1066366_Champagne",
+        "title": "Azazie Joylin Floral Burnout Mother of the Bride Dresses",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/9a/e8/dd35edd40eadce79d51aea481cb89ae8.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/9a/e8/dd35edd40eadce79d51aea481cb89ae8.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/azazie-joylin-floral-burnout-mother-of-the-bride-dresses/86723298",
+        "url": "https://www.azazie.com/products/azazie-joylin-floral-burnout-mother-of-the-bride-dresses/86723298",
+        "sales_volume": 2846,
+        "rank": 4,
+        "category_line": "Wedding",
+        "status": "new",
+        "price": 159,
+        "attrs_display": [
+          "One-Shoulder",
+          "Floral Burnout",
+          "Floor-Length"
+        ],
+        "hotspot_points": [],
+        "source": "az_copilot_zendesk",
+        "default_selected": false
+      },
+      {
+        "id": "1077862_Moss Navy",
+        "title": "Isonelle Moss Navy Maxi Dress Atelier Dress",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/40/b5/e1353df917713d5a04054452eed540b5.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/40/b5/e1353df917713d5a04054452eed540b5.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/isonelle-moss-navy-maxi-dress-atelier-dress/108699877",
+        "url": "https://www.azazie.com/products/isonelle-moss-navy-maxi-dress-atelier-dress/108699877",
+        "sales_volume": 1600,
+        "rank": 5,
+        "category_line": "Wedding",
+        "status": "new",
+        "price": 129,
+        "attrs_display": [
+          "A-Line",
+          "Sweetheart",
+          "Jacquard",
+          "Maxi"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "A-Line",
+            "label": "A-Line 公主线",
+            "default_checked": true
+          },
+          {
+            "dim": "neckline",
+            "value": "Sweetheart",
+            "label": "Sweetheart 心形领",
+            "default_checked": true
+          },
+          {
+            "dim": "dressLength",
+            "value": "Maxi",
+            "label": "Maxi 及地",
+            "default_checked": true
+          },
+          {
+            "dim": "colorFamily",
+            "value": "Floral Print",
+            "label": "碎花印花",
+            "default_checked": true
+          },
+          {
+            "dim": "features",
+            "value": "Corset Bodice",
+            "label": "胸衣 / 鱼骨收腰",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": false
+      },
+      {
+        "id": "1060074_Abstract Bouquet Floral",
+        "title": "Azazie Mai Bridesmaid Dress",
+        "image_url": "https://cdn-1.azazie.com/upimg/s600/c6/c1/21e989be441eed48deea2867c2f8c6c1.jpg",
+        "detail_images": [
+          "https://cdn-1.azazie.com/upimg/s600/c6/c1/21e989be441eed48deea2867c2f8c6c1.jpg"
+        ],
+        "image_count": 1,
+        "image_policy": "copilot_main_image_only_need_manual_gallery",
+        "product_url": "https://www.azazie.com/products/azazie-mai-bridesmaid-dress/8427547",
+        "url": "https://www.azazie.com/products/azazie-mai-bridesmaid-dress/8427547",
+        "sales_volume": 1036,
+        "rank": 6,
+        "category_line": "Wedding",
+        "status": "new",
+        "price": 109,
+        "attrs_display": [
+          "Sheath",
+          "Cowl Neck",
+          "Chiffon",
+          "Floor-Length"
+        ],
+        "hotspot_points": [
+          {
+            "dim": "silhouette",
+            "value": "Sheath",
+            "label": "Sheath 修身",
+            "default_checked": true
+          },
+          {
+            "dim": "neckline",
+            "value": "Cowl Neckline",
+            "label": "Cowl 垂褶领",
+            "default_checked": true
+          },
+          {
+            "dim": "fabric",
+            "value": "Chiffon",
+            "label": "Chiffon 雪纺",
+            "default_checked": true
+          },
+          {
+            "dim": "colorFamily",
+            "value": "Floral Print",
+            "label": "碎花印花",
+            "default_checked": true
+          },
+          {
+            "dim": "features",
+            "value": "Corset Bodice",
+            "label": "胸衣 / 鱼骨收腰",
+            "default_checked": true
+          }
+        ],
+        "source": "az_copilot_zendesk",
+        "default_selected": false
+      }
+    ]
+  }
+}

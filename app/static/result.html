@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZ Bloom · 生成结果</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="h-screen flex overflow-hidden">
+
+    <aside id="bloom-sidebar" class="sidebar"></aside>
+<main class="main-shell">
+    <header class="page-header">
+      <div class="page-header__title-block">
+        <a id="page-back" href="/" class="page-back" title="返回" aria-label="返回">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 19l-7-7 7-7" />
+          </svg>
+        </a>
+        <div>
+          <h1 id="result-page-title">生成结果</h1>
+          <p class="page-header__sub" id="result-page-sub">8张生成图 · 分析报告</p>
+        </div>
+      </div>
+      <button id="btn-download" type="button" class="btn-download" disabled>
+        下载压缩包
+      </button>
+    </header>
+
+    <section class="page-body">
+      <div id="loading-state" class="empty-state">加载结果中...</div>
+      <div id="pending-state" class="hidden empty-state">
+        <div class="result-spinner mx-auto mb-3"></div>
+        <div id="pending-message" class="text-[0.9rem] font-medium" style="color: var(--ink-soft)">正在生成中...</div>
+        <div class="panel__hint mt-1">GPU 实例生成中，通常需要数分钟，请勿关闭本页面</div>
+      </div>
+      <div id="error-state" class="hidden empty-state" style="color: var(--accent-deep)"></div>
+
+      <div id="result-content" class="result-content hidden">
+        <div class="panel panel--compact">
+          <div class="panel__label">合成输入</div>
+          <div class="result-meta">
+            <div>
+              <span class="result-meta__label">类型：</span>
+              <span id="result-kind" class="result-meta__value"></span>
+            </div>
+            <div id="meta-az-row">
+              <span class="result-meta__label">AZ 爆款：</span>
+              <a id="result-az-url" href="#" target="_blank" rel="noopener noreferrer" class="result-meta__link"></a>
+            </div>
+            <div id="meta-competitor-row">
+              <span class="result-meta__label" id="meta-title-label">竞品爆款：</span>
+              <span id="result-competitor-title" class="result-meta__value"></span>
+            </div>
+            <div id="meta-source-row" class="hidden">
+              <span class="result-meta__label">参考图：</span>
+              <a id="result-source-url" href="#" target="_blank" rel="noopener noreferrer" class="result-meta__link">查看原图</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 对照行：爆款合成三列；设计款仅「上传参考图 + AI 缩略图」 -->
+        <div id="compare-strip" class="result-compare-strip hidden">
+          <div class="result-compare-card">
+            <div class="result-compare-card__title" id="compare-az-title">AZ 爆款商品图</div>
+            <div id="compare-az-images" class="result-compare-card__thumbs"></div>
+          </div>
+          <div id="compare-comp-card" class="result-compare-card">
+            <div class="result-compare-card__title" id="compare-comp-title">竞品爆款商品图</div>
+            <div id="compare-comp-images" class="result-compare-card__thumbs"></div>
+          </div>
+          <div class="result-compare-card result-compare-card--ai">
+            <div class="result-compare-card__title">AI 商品缩略图</div>
+            <div id="compare-ai-thumbs" class="result-compare-card__thumbs"></div>
+          </div>
+        </div>
+
+        <div id="panorama-section" class="hidden">
+          <div class="section-bar">
+            <div class="section-bar__title">全景缩略图</div>
+            <div class="section-bar__hint">拆分前的 4×2 原始整图</div>
+          </div>
+          <div id="panorama-wrap" class="result-panorama"></div>
+        </div>
+
+        <div class="section-bar">
+          <div class="section-bar__title" id="images-section-title">生成商品图（8 张）</div>
+        </div>
+        <div id="image-grid" class="result-image-grid"></div>
+
+        <!-- 生成款基本属性：紧跟八张大图，解析自合成报告 -->
+        <div id="generated-attrs-section" class="generated-attrs-section hidden">
+          <div class="section-bar">
+            <div class="section-bar__left">
+              <div class="section-bar__title">生成款基本属性</div>
+              <span class="chip">来自合成报告</span>
+            </div>
+          </div>
+          <p id="generated-attrs-hint" class="generated-attrs-hint"></p>
+          <div id="generated-attrs-grid" class="generated-attrs-grid"></div>
+        </div>
+
+        <!-- 相似款参考卡：横向滑动；标记相似款 → 历史红标 + 不进企划池 -->
+        <div id="similar-peers-section" class="similar-peers-section hidden">
+          <div class="section-bar">
+            <div class="section-bar__left">
+              <div class="section-bar__title">相似款参考卡</div>
+              <span class="chip">横向滑动 · 标记相似款 · 重叠度</span>
+              <span id="similar-task-badge" class="similar-style-badge hidden">相似款</span>
+            </div>
+            <div class="similar-peers-actions">
+              <button id="btn-similar-refresh" type="button" class="btn-secondary btn-secondary--small">
+                重新召回
+              </button>
+            </div>
+          </div>
+          <p id="similar-peers-hint" class="similar-peers-hint"></p>
+          <div id="similar-peers-loading" class="similar-peers-loading hidden">
+            <div class="result-spinner"></div>
+            <span>正在按报告属性匹配本地相似款...</span>
+          </div>
+          <div class="hot-scroll-head similar-peers-scroll-head">
+            <p class="panel__hint hot-card-hint">标记后本生成款将打「相似款」红标，且不再进入选品企划池。</p>
+            <p class="hot-scroll-tip" aria-hidden="true">右滑查看更多 →</p>
+          </div>
+          <div class="hot-scroll-rail similar-peers-rail">
+            <div id="similar-peers-grid" class="similar-peers-grid similar-peers-grid--rail"></div>
+          </div>
+          <p id="similar-peers-empty" class="similar-peers-empty hidden">暂无相似款</p>
+        </div>
+
+        <div id="attrs-section" class="hidden">
+          <div class="section-bar">
+            <div class="section-bar__title">产品属性</div>
+            <div class="section-bar__hint">结构化字段，后续对接面料分析 / 重设计 JSON</div>
+          </div>
+          <pre id="product-attributes" class="result-attrs"></pre>
+        </div>
+
+        <div class="section-bar">
+          <div class="section-bar__title" id="report-section-title">分析报告</div>
+          <div class="section-bar__hint">设计简报与详细报告；下载 zip 含 report.md / reports/</div>
+        </div>
+        <div id="report-summary" class="result-report-summary"></div>
+        <div id="report-docs-section" class="hidden result-report-docs-section">
+          <div id="report-docs" class="result-report-docs"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/result.js"></script>
+  <script src="/static/sidebar.js"></script>
+  <script>mountBloomSidebar('generate', '生成结果 · 相似排除参考');</script>
+</body>
+</html>

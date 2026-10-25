@@ -1,0 +1,26 @@
+# 密钥与本机配置。只允许提交 .env.example
+.env
+.env.*
+!.env.example
+.cloudsway_api_key
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 日志与本机生成物
+logs/
+*.log
+.bloom-uvicorn.log
+.bloom-uvicorn.pid
+data/uploads/
+data/history/**
+!data/history/.gitkeep
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/

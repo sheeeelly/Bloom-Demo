@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZ Bloom · 空白开款（壳）</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="h-screen flex overflow-hidden">
+  <aside id="bloom-sidebar" class="sidebar"></aside>
+
+  <main class="main-shell">
+    <header class="page-header">
+      <div>
+        <h1>空白开款 <span class="chip">壳 · 本期不强制真出图</span></h1>
+        <p class="page-header__sub">设计能力不足品类：锁定裙装品类 + 品类特征 checklist + 面料参考图</p>
+      </div>
+    </header>
+
+    <section class="page-body">
+      <div class="panel panel--compact">
+        <label class="panel__label" for="blank-category">裙装品类</label>
+        <select id="blank-category" class="field-input"></select>
+        <p class="panel__hint">本期仅裙装。特征清单写死，用于约束「至少符合该类重点特征」。</p>
+      </div>
+
+      <div class="panel panel--compact">
+        <div class="panel__label">品类重点特征（至少勾选核心项）</div>
+        <div id="blank-checklist" class="blank-checklist"></div>
+      </div>
+
+      <div class="panel panel--compact">
+        <label class="panel__label" for="blank-fabric">面料 / 参考图（可选上传）</label>
+        <input id="blank-fabric" type="file" accept="image/*" class="field-input" />
+        <p id="blank-fabric-name" class="panel__hint">未选择文件</p>
+      </div>
+
+      <div class="panel panel--compact">
+        <p id="blank-status" class="blank-status">填写后可进入「设计款」开款流（真生成在设计款页，需 Comfy）。</p>
+        <div class="blank-actions">
+          <button id="btn-blank-validate" type="button" class="btn-secondary">校验特征闸</button>
+          <a id="btn-blank-to-design" class="btn-az-confirm" href="/design.html">进入设计款开款流</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/sidebar.js"></script>
+  <script>
+    mountBloomSidebar('blank', '空白开款壳 · 品类特征闸');
+  </script>
+  <script src="/static/blank.js"></script>
+</body>
+</html>

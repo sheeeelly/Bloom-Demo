@@ -1,0 +1,700 @@
+{
+  "4": {
+    "inputs": {
+      "competitor_image_urls": [
+        "35",
+        0
+      ],
+      "product_image_urls": [
+        "36",
+        0
+      ]
+    },
+    "class_type": "ProductDesignV08DirectURLReferenceCollector",
+    "_meta": {
+      "title": "4. V9 竞品 + 商品纯图片直链采集｜沿用用户文件参数｜不解析商品页 / 不自动扩展图库"
+    }
+  },
+  "9": {
+    "inputs": {
+      "images": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "规划选中的商品 / 类目锚点图"
+    }
+  },
+  "10": {
+    "inputs": {
+      "images": [
+        "8",
+        1
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "规划选中的设计参考图组"
+    }
+  },
+  "18": {
+    "inputs": {
+      "source": [
+        "4",
+        3
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告1｜竞品与商品图片直链、逐行顺序、下载状态与尺寸｜无商品页解析"
+    }
+  },
+  "20": {
+    "inputs": {
+      "source": [
+        "8",
+        4
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告3｜V9 规划、选图、三案择优与用户文件原版效果参数"
+    }
+  },
+  "21": {
+    "inputs": {
+      "source": [
+        "8",
+        5
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "过程｜完整 GPT 分析 Prompt（无 Key / 无 Base64）"
+    }
+  },
+  "26": {
+    "inputs": {
+      "source": [
+        "8",
+        10
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告8｜八视图固定顺序、镜头目标与必显细节"
+    }
+  },
+  "27": {
+    "inputs": {
+      "source": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "过程｜最终 GP Image 2 生图 Prompt"
+    }
+  },
+  "28": {
+    "inputs": {
+      "source": [
+        "12",
+        1
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "过程｜GP Image 2 响应 JSON"
+    }
+  },
+  "29": {
+    "inputs": {
+      "source": [
+        "13",
+        2
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告9｜V9 八视图切图顺序、1140×1578 定尺与坐标"
+    }
+  },
+  "32": {
+    "inputs": {
+      "source": [
+        "31",
+        1
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告10｜V12 8路指定模型仅高清、构图锁定、细节注入与原比例2X"
+    }
+  },
+  "35": {
+    "inputs": {
+      "text": "https://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-xs-babyboo-fashion-1222102180_1174x1800.jpg?v=1772501109\nhttps://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1222102183_1200x.jpg?v=1772501258\nhttps://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1222102181_1200x.jpg?v=1772501170\nhttps://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1222102179_1200x.jpg?v=1772535504\nhttps://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1222102182_1200x.jpg?v=1772535504\nhttps://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1226922064_1200x.jpg?v=1773241236\nhttps://www.babyboofashion.com/cdn/shop/files/CYRA_LEMON_1600x.png?v=1785154253"
+    },
+    "class_type": "CR Text",
+    "_meta": {
+      "title": "1. 竞品图片 URL（必填｜每行 1 张图片直链｜1–8 张｜严格保序）"
+    }
+  },
+  "36": {
+    "inputs": {
+      "text": "https://cdn-1.azazie.com/upimg/h/25/b9/66e8f0115f4e95187d716695980a25b9.jpg\nhttps://cdn-1.azazie.com/upimg/h/48/52/f2d788849150abddc9f0b3705bba4852.jpg\nhttps://cdn-1.azazie.com/upimg/h/9d/6f/663d2801c3ea88adaaa0c2d8acad9d6f.jpg\nhttps://cdn-1.azazie.com/upimg/h/5d/71/c42f59e8ab28eeb917012355f8815d71.jpg\nhttps://cdn-1.azazie.com/upimg/h/29/4f/21ec146fabb612ffb88506e58c94294f.jpg\nhttps://cdn-1.azazie.com/upimg/h/be/fe/b0c86f88557e0cf232817a6588eebefe.jpg"
+    },
+    "class_type": "CR Text",
+    "_meta": {
+      "title": "2. 商品图片 URL（选填｜每行 1 张图片直链｜1-8张）"
+    }
+  },
+  "6": {
+    "inputs": {
+      "images": [
+        "4",
+        1
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "竞品多图编号总览（严格按输入行顺序）"
+    }
+  },
+  "7": {
+    "inputs": {
+      "images": [
+        "4",
+        2
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "商品图编号总览（链接留空或失败时显示占位）"
+    }
+  },
+  "46": {
+    "inputs": {
+      "images": [
+        "13",
+        1
+      ],
+      "filename_prefix": "ComfyUI"
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保留用户输出：原始4×2全景母版保存｜非8张GPT高清图"
+    }
+  },
+  "22": {
+    "inputs": {
+      "source": [
+        "8",
+        6
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告4｜竞品设计理念、结构、卖点与可抽象趋势"
+    }
+  },
+  "24": {
+    "inputs": {
+      "source": [
+        "8",
+        8
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告6｜A / B / C 三个结构不同的创意候选"
+    }
+  },
+  "25": {
+    "inputs": {
+      "source": [
+        "8",
+        9
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告7｜选中款卖点、品牌特色、爆款假设与参考转化"
+    }
+  },
+  "23": {
+    "inputs": {
+      "source": [
+        "8",
+        7
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告5｜商品设计理念、卖点与锚点分析（可为空）"
+    }
+  },
+  "19": {
+    "inputs": {
+      "source": [
+        "8",
+        3
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告2｜最终选中创意方案中文设计简报"
+    }
+  },
+  "5": {
+    "inputs": {
+      "text": "You are a senior fashion product strategist,\ntechnical designer, and e-commerce art director developing an original new\nproduct for the AZAZIE website.\n\nInfer the homogeneous product category from the current competitor and optional\nproduct evidence. Analyze only what is supplied in this run. Do not assume a\nspecific style name, neckline, drape path, waist treatment, surface technique,\nor hem construction before reviewing the evidence.\n\nCreate three genuinely different, manufacturable concepts:\n- Candidate A: commercially safe and broadly wearable.\n- Candidate B: trend-forward with balanced commercial risk.\n- Candidate C: visually bold but still suitable for repeatable production.\n\nSelect the strongest one in the same response using originality, category fit,\nAZAZIE presentation fit, size inclusivity, manufacturing clarity, and likely\ne-commerce appeal. The three proposals must differ structurally rather than\nbeing color or trim variations of one design.\n\n[CREATIVE STRENGTH]\n大胆原创\n允许更鲜明的结构语言和更强视觉记忆点，但不得牺牲人体合理性、尺码包容性与可重复生产。\n\n[USER CREATIVE DIRECTION]\n未指定额外方向；请完全根据本次竞品与可选商品证据动态判断。\n\n[V3 FIXED CREATIVE CONTRACT - CANNOT BE OVERRIDDEN]\nThe supplied competitor is evidence and inspiration only. The optional product\nsource is a category, fit, material, color, or catalog anchor only. Never copy a\nrecognizable combination of pattern pieces, construction paths, embellishment\nplacement, logos, text, watermarks, model identity, pose sequence, page layout,\nor trade dress.\n\nEvery candidate must transform four comparison dimensions:\n1. neckline and shoulder architecture;\n2. surface treatment, texture, or drape path;\n3. waist-to-hip focal construction;\n4. skirt and hem geometry.\n\nCandidates A, B, and C must be structurally distinct. Every pair must differ in\nat least three of the four dimensions above. A color change, fabric swap, trim\nchange, or accessory change does not count as a structural difference.\n\nThe selected proposal must remain manufacturable, size-inclusive, visually\nclear in e-commerce imagery, and suitable for a white or light-gray AZAZIE\nstudio. Use attached images and supplied page metadata only as evidence. Put\nall interpretation, prediction, trend judgment, design invention, and\nmarketing hypotheses under AI inference fields.\nTreat hero_product_hooks as testable merchandising hypotheses, never as a\nguarantee that a design will become a best seller.\n\nCompletion and compactness rules:\n- the complete JSON must not exceed 6500 Unicode characters;\n- close every array and the outer object before adding optional detail;\n- use compact JSON without Markdown, commentary, or pretty-print indentation;\n- competitor/product fact and inference lists: at most 3 items each;\n- every candidate selling_points and hero_product_hooks list: 1-2\n  concise items;\n- selected_reference_mapping: 1-2 items;\n- selected_manufacturing_risks: at most 2 items;\n- each list item: at most 32 Chinese characters or 90 English characters;\n- each design_analysis: at most 160 Chinese characters;\n- each commercial_positioning and design_concept: at most 80 Chinese\n  characters; each product_spec or originality_delta value: at most 40;\n- selection_reason: at most 140 Chinese characters;\n- do not return brand_characteristics, originality_delta, hero_prompt,\n  negative_prompt, selected_chinese_brief, or eight_view_plan. The V3 node\n  derives those deterministic fields locally.\n\nReturn exactly one JSON object and no Markdown or commentary:\n{\n  \"selected_competitor_indices\": [1, 2],\n  \"selected_product_indices\": [1],\n  \"category_assessment\": {\n    \"competitor_category\": \"string\",\n    \"product_category\": \"string or not_provided\",\n    \"homogeneous_status\": \"yes, no, or not_applicable\",\n    \"confidence\": 0,\n    \"reason\": \"中文判断依据\"\n  },\n  \"competitor_analysis\": {\n    \"visible_facts\": [\"图片或页面元数据直接支持的事实\"],\n    \"ai_inferences\": [\"明确标记为 AI 推导的判断\"],\n    \"design_analysis\": \"中文竞品版型、结构、材质与视觉语言分析\",\n    \"selling_points\": [\"中文竞品卖点\"],\n    \"trend_signals\": [\"抽象趋势信号\"],\n    \"copy_risks\": [\"不可复刻的识别性组合\"]\n  },\n  \"product_analysis\": {\n    \"reference_status\": \"provided or not_provided\",\n    \"visible_facts\": [\"图片、页面元数据或 URL 直接支持的事实\"],\n    \"ai_inferences\": [\"明确标记为 AI 推导的判断\"],\n    \"design_analysis\": \"中文商品设计、版型、面料与锚点分析\",\n    \"selling_points\": [\"中文商品卖点\"],\n    \"anchor_signals\": [\"可用于新品的抽象锚点\"]\n  },\n  \"design_candidates\": [\n    {\n      \"candidate_id\": \"A\",\n      \"name_cn\": \"中文原创款名\",\n      \"name_en\": \"English original name\",\n      \"commercial_positioning\": \"中文商业定位\",\n      \"design_concept\": \"中文设计理念\",\n      \"product_spec\": {\n        \"silhouette\": \"string\",\n        \"neckline_shoulder\": \"string\",\n        \"fabric\": \"string\",\n        \"target_color\": \"string\",\n        \"surface_drape\": \"string\",\n        \"waist_hip\": \"string\",\n        \"skirt_hem\": \"string\",\n        \"construction\": \"string\"\n      },\n      \"selling_points\": [\"中文新款卖点\"],\n      \"hero_product_hooks\": [\"中文爆款传播点\"]\n    },\n    {\n      \"candidate_id\": \"B\",\n      \"name_cn\": \"中文原创款名\",\n      \"name_en\": \"English original name\",\n      \"commercial_positioning\": \"中文商业定位\",\n      \"design_concept\": \"中文设计理念\",\n      \"product_spec\": {\n        \"silhouette\": \"string\",\n        \"neckline_shoulder\": \"string\",\n        \"fabric\": \"string\",\n        \"target_color\": \"string\",\n        \"surface_drape\": \"string\",\n        \"waist_hip\": \"string\",\n        \"skirt_hem\": \"string\",\n        \"construction\": \"string\"\n      },\n      \"selling_points\": [\"中文新款卖点\"],\n      \"hero_product_hooks\": [\"中文爆款传播点\"]\n    },\n    {\n      \"candidate_id\": \"C\",\n      \"name_cn\": \"中文原创款名\",\n      \"name_en\": \"English original name\",\n      \"commercial_positioning\": \"中文商业定位\",\n      \"design_concept\": \"中文设计理念\",\n      \"product_spec\": {\n        \"silhouette\": \"string\",\n        \"neckline_shoulder\": \"string\",\n        \"fabric\": \"string\",\n        \"target_color\": \"string\",\n        \"surface_drape\": \"string\",\n        \"waist_hip\": \"string\",\n        \"skirt_hem\": \"string\",\n        \"construction\": \"string\"\n      },\n      \"selling_points\": [\"中文新款卖点\"],\n      \"hero_product_hooks\": [\"中文爆款传播点\"]\n    }\n  ],\n  \"selected_candidate_id\": \"A, B, or C\",\n  \"selection_reason\": \"中文选择理由与取舍\",\n  \"selected_reference_mapping\": [\n    {\n      \"source\": \"competitor #N, product #N, or original proposal\",\n      \"abstracted_signal\": \"选中款采用的抽象参考信号\",\n      \"transformation\": \"选中款如何转化为原创差异\"\n    }\n  ],\n  \"selected_manufacturing_risks\": [\"选中款中文量产风险或注意点\"]\n}\n\nIndex and evidence rules:\n- select 1-3 competitor images;\n- when a product source exists, select 1-2 product images;\n- when the product source is absent, selected_product_indices and\n  product_analysis may be omitted because the node inserts safe local values;\n- all indices must be unique positive integers within the supplied overviews;\n- product_analysis.reference_status must match whether a product source exists;\n- when no product source exists, product_analysis must be the minimal\n  not_provided object with empty lists and no invented product facts;\n- selected_reference_mapping records only abstract signals and original\n  transformations for the selected candidate;\n- the node locally derives the fixed row-major views: 正面全身、左前3/4全身、\n  严格左侧全身、严格背面全身、严格右侧全身、右前3/4轻动态全身、\n  正面半身(头至大腿中部)、背面半身(头至大腿中部)."
+    },
+    "class_type": "CR Text",
+    "_meta": {
+      "title": "V11 入参1｜规划 GPT Developer Prompt｜默认逐字沿用V9｜可完整编辑"
+    }
+  },
+  "48": {
+    "inputs": {
+      "size": "custom",
+      "custom_width": 1140,
+      "custom_height": 1578,
+      "color": "#000000"
+    },
+    "class_type": "LayerUtility: ColorImage V2",
+    "_meta": {
+      "title": "最终裁剪尺寸参考｜1140×1578"
+    }
+  },
+  "50": {
+    "inputs": {
+      "scale_as": [
+        "48",
+        0
+      ],
+      "image": [
+        "31",
+        0
+      ],
+      "fit": "crop",
+      "method": "lanczos",
+      "background_color": "#FFFFFF"
+    },
+    "class_type": "LayerUtility: ImageMaskScaleAsV2",
+    "_meta": {
+      "title": "同宽高比等比缩小｜不裁边｜lanczos｜输出1140×1578"
+    }
+  },
+  "49": {
+    "inputs": {
+      "images": [
+        "50",
+        0
+      ],
+      "filename_prefix": "AI自动化选品/V12_最终原构图_1140x1578_01-08"
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存2｜V12 最终8张网站标准图｜1140×1578｜严格01–08"
+    }
+  },
+  "52": {
+    "inputs": {
+      "text": "Analyze only this run's numbered evidence and return the contracted JSON. Infer a homogeneous product category, create exactly three structurally distinct concepts, and select one in the same response. Separate direct visual/page facts from all AI interpretation and creative proposals.\n\nReference metadata:\n{reference_metadata}"
+    },
+    "class_type": "CR Text",
+    "_meta": {
+      "title": "V11 入参2｜规划 GPT User Prompt 模板｜保留 {reference_metadata} 以插入动态证据"
+    }
+  },
+  "53": {
+    "inputs": {
+      "text": "IMAGE 1: numbered competitor overview; evidence only."
+    },
+    "class_type": "CR Text",
+    "_meta": {
+      "title": "V11 入参3｜规划 GPT 竞品总览图 Caption"
+    }
+  },
+  "54": {
+    "inputs": {
+      "text": "IMAGE 2: numbered optional product overview; category, fit, material, color, or catalog anchor."
+    },
+    "class_type": "CR Text",
+    "_meta": {
+      "title": "V11 入参4｜规划 GPT 商品总览图 Caption（有商品图时发送）"
+    }
+  },
+  "55": {
+    "inputs": {
+      "text": "[V3 FIXED GENERATION CONTRACT - HIGHEST PRIORITY]\nThe automatic plan contains one selected original candidate. That selected\ncandidate is authoritative. Do not import structural details from either\nunselected candidate, and do not reconstruct a recognizable competitor design.\n\nIMAGE 1 is the product or category anchor. Later images are design evidence.\nCreate a new, manufacturable garment in the same inferred product category.\nPreserve coherent anatomy, realistic fit, credible seams, material behavior,\nand one consistent model identity.\n\nGenerate exactly one landscape composite as a strict 4-column x 2-row grid of\neight equal portrait panels. Fixed row-major order:\n1 front full body; 2 left-front three-quarter full body; 3 strict left profile\nfull body; 4 strict back full body; 5 strict right profile full body; 6\nright-front three-quarter lightly dynamic full body; 7 front half body framed\nfrom head through mid-thigh; 8 back half body framed from head through\nmid-thigh.\n\nAll panels must show the exact same selected garment, model, target color,\nmaterial, construction, seam map, hem length, styling, studio, lighting, and\ncolor management. Only pose and required camera angle may change.\n\nUse equal panel geometry. Do not produce missing, merged, duplicated, inset, or\noverlapping views. Render no labels, numbers, captions, borders, separators,\nlogo, brand text, watermark, printed interface, or any other text. Avoid extra\ngarments, broken anatomy, duplicated limbs, fused fabric, impossible seams,\nfloating details, and cross-view design drift.\n\n[SELECTED AUTOMATIC DESIGN PLAN]\n\n{automatic_prompt}"
+    },
+    "class_type": "CR Text",
+    "_meta": {
+      "title": "V11 入参5｜GP Image 母版完整 Prompt 模板｜默认V9｜{automatic_prompt}为选中方案"
+    }
+  },
+  "56": {
+    "inputs": {
+      "text": "High-resolution detail restoration only. The composition is\ncoordinate-locked to the uploaded image. Preserve the exact crop, framing,\ncamera position, camera angle, perspective, subject scale, subject position,\nheadroom, footroom, negative space, background horizon and every garment edge\nat the same normalized x/y coordinates.\n\nDo not crop, zoom, pan, recenter, rotate, tilt, warp, widen, narrow, extend or\nrecompose the image. Do not move the model, face, hands, feet, dress, hem,\ntrain, shadows or background. Do not change pose, anatomy, silhouette,\nneckline, straps, sleeves, draping, pleats, seams, closures, color, print,\nlighting or styling. Do not redesign, add, remove or invent any element.\n\nImprove only genuine high-frequency detail: textile micro-texture, seam and\nedge definition, natural skin and hair detail, restrained sharpness and clean\ncommercial product-photo clarity. Keep large shapes, tonal masses and spatial\nrelationships unchanged. No text, logo, watermark, frame, border, letterbox,\ncolor strip or hard transition."
+    },
+    "class_type": "CR Text",
+    "_meta": {
+      "title": "V12 入参6｜8路指定模型仅高清完整 Prompt｜严格锁定原构图｜禁止缩放/裁切/重构"
+    }
+  },
+  "11": {
+    "inputs": {
+      "automatic_prompt": [
+        "67",
+        0
+      ],
+      "generation_prompt_template": [
+        "55",
+        0
+      ]
+    },
+    "class_type": "CloudswayProductDesignV10GenerationPromptEditable",
+    "_meta": {
+      "title": "7. V11 母版生图 Prompt｜模板全文可编辑｜使用 {automatic_prompt} 插入选中方案"
+    }
+  },
+  "57": {
+    "inputs": {
+      "references": [
+        "4",
+        0
+      ],
+      "api_config": [
+        "3",
+        0
+      ],
+      "analysis_focus": "提取竞品中值得借鉴但不能直接复制的服装设计语言，重点观察版型、领肩、面料、表面细节、腰臀结构、裙摆、工艺和商业卖点。"
+    },
+    "class_type": "ProductDesignV13CompetitorAnalyzer",
+    "_meta": {
+      "title": "V13 第1步｜仅分析竞品图片｜输出独立可选设计点"
+    }
+  },
+  "58": {
+    "inputs": {
+      "references": [
+        "4",
+        0
+      ],
+      "api_config": [
+        "3",
+        0
+      ],
+      "analysis_focus": "提取本品必须保留的识别点、当前优势和可升级空间，重点判断哪些设计点适合延续，哪些需要重做以避免同质化。"
+    },
+    "class_type": "ProductDesignV13ProductAnalyzer",
+    "_meta": {
+      "title": "V13 第2步｜仅分析本品图片｜输出保留点与升级点"
+    }
+  },
+  "59": {
+    "inputs": {
+      "competitor_design_points": [
+        "57",
+        0
+      ],
+      "product_design_points": [
+        "58",
+        0
+      ],
+      "selected_point_ids": "C2,P4",
+      "selection_confirmed": true,
+      "skip_selection": false
+    },
+    "class_type": "ProductDesignV13DesignPointSelector",
+    "_meta": {
+      "title": "V13 第3步｜竞品与本品至少各选1个｜数量不限"
+    }
+  },
+  "61": {
+    "inputs": {
+      "source": [
+        "57",
+        1
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "V13 报告｜竞品设计点总结"
+    }
+  },
+  "62": {
+    "inputs": {
+      "source": [
+        "58",
+        1
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "V13 报告｜本品设计点总结"
+    }
+  },
+  "63": {
+    "inputs": {
+      "source": [
+        "59",
+        1
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "V13 报告｜当前勾选的设计点"
+    }
+  },
+  "65": {
+    "inputs": {
+      "source": [
+        "60",
+        1
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "V13 结果｜可继续连接生图节点的Prompt"
+    }
+  },
+  "66": {
+    "inputs": {
+      "source": [
+        "60",
+        4
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "V13 报告｜设计阶段状态与调用信息"
+    }
+  },
+  "67": {
+    "inputs": {
+      "selected_prompt": [
+        "60",
+        1
+      ],
+      "legacy_prompt": [
+        "8",
+        2
+      ]
+    },
+    "class_type": "ProductDesignV13MainPromptRouter",
+    "_meta": {
+      "title": "V13 第5步｜已选方案接入原生图主干｜跳过才用旧方案"
+    }
+  },
+  "3": {
+    "inputs": {
+      "gpt_model_id": "MaaS_GP_5.5_20260424",
+      "gpt_base_url": "",
+      "image_model_id": "MaaS_GP_image_2",
+      "image_base_url": "",
+      "api_key": ""
+    },
+    "class_type": "CloudswayPersonReplaceConfig",
+    "_meta": {
+      "title": "3. GPT + GP Image 2 配置（API Key 保持留空）"
+    }
+  },
+  "64": {
+    "inputs": {
+      "source": [
+        "60",
+        0
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "V13 结果｜新服装完整设计JSON"
+    }
+  },
+  "8": {
+    "inputs": {
+      "references": [
+        "4",
+        0
+      ],
+      "api_config": [
+        "3",
+        0
+      ],
+      "planner_developer_prompt": [
+        "5",
+        0
+      ],
+      "planner_user_intro_template": [
+        "52",
+        0
+      ],
+      "competitor_image_caption": [
+        "53",
+        0
+      ],
+      "product_image_caption": [
+        "54",
+        0
+      ]
+    },
+    "class_type": "CloudswayProductDesignV10PlannerEditable",
+    "_meta": {
+      "title": "6. V11 规划｜Developer/User/图片说明均可编辑｜默认请求逐字等同V9"
+    }
+  },
+  "60": {
+    "inputs": {
+      "references": [
+        "4",
+        0
+      ],
+      "api_config": [
+        "3",
+        0
+      ],
+      "selected_design_points": [
+        "59",
+        0
+      ],
+      "design_direction": "基于用户勾选的设计点，设计一款结构清晰、原创、可量产且具有电商传播力的新服装。借鉴抽象设计原则，不复制任何单件商品的完整结构。",
+      "start_design": true
+    },
+    "class_type": "ProductDesignV13SelectedPointDesigner",
+    "_meta": {
+      "title": "V13 第4步｜打开“开始设计”后生成新服装方案"
+    }
+  },
+  "15": {
+    "inputs": {
+      "images": [
+        "31",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览1｜V12 8张指定模型高清原构图2X｜2280×3156｜严格01–08"
+    }
+  },
+  "47": {
+    "inputs": {
+      "images": [
+        "31",
+        0
+      ],
+      "filename_prefix": "AI自动化选品/V12_指定模型高清_原构图2X_2280x3156_01-08"
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存1｜V12 8张指定模型高清原构图2X｜2280×3156｜严格01–08"
+    }
+  },
+  "13": {
+    "inputs": {
+      "image": [
+        "12",
+        0
+      ]
+    },
+    "class_type": "ProductDesignV08EightViewHDSplitter",
+    "_meta": {
+      "title": "9. V9 4×2 母版本地切成8张并定尺1140×1578｜完全沿用用户文件参数"
+    }
+  },
+  "31": {
+    "inputs": {
+      "images": [
+        "13",
+        0
+      ],
+      "api_config": [
+        "3",
+        0
+      ],
+      "hd_prompt": [
+        "56",
+        0
+      ],
+      "base_url": "",
+      "model": "MaaS_Ge_3_pro_image_20260528",
+      "image_size": "2K",
+      "aspect_ratio": "3:4",
+      "advanced_json": "{}",
+      "max_concurrency": 8,
+      "timeout": 900,
+      "failure_policy": "keep_original_for_failed"
+    },
+    "class_type": "ProductDesignV12EightViewGeminiHDCompositionLocked",
+    "_meta": {
+      "title": "10. V12 指定模型仅高清｜Gemini原生协议｜严格锁定原构图｜完整Prompt可编辑｜8并发｜原比例2X"
+    }
+  },
+  "12": {
+    "inputs": {
+      "original_image": [
+        "8",
+        0
+      ],
+      "reference_image": [
+        "8",
+        1
+      ],
+      "base_url": "",
+      "api_key": "",
+      "model": "MaaS_GP_image_2",
+      "api_model": "gpt-image-1",
+      "prompt": [
+        "11",
+        0
+      ],
+      "input_fidelity": "omit",
+      "size": "1536x1024",
+      "quality": "medium",
+      "background": "opaque",
+      "output_format": "png",
+      "n": 1,
+      "advanced_json": "{}",
+      "timeout": 600
+    },
+    "class_type": "CloudswayGPImageEdit",
+    "_meta": {
+      "title": "8. GP Image 2 单次生成 V3 效果 4×2 八视图母版"
+    }
+  },
+  "51": {
+    "inputs": {
+      "images": [
+        "50",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览2｜V12 最终原构图结果｜8张1140×1578"
+    }
+  },
+  "17": {
+    "inputs": {
+      "image_a": [
+        "8",
+        0
+      ],
+      "image_b": [
+        "13",
+        1
+      ]
+    },
+    "class_type": "Image Comparer (rgthree)",
+    "_meta": {
+      "title": "商品 / 类目锚点 vs V9 原创八视图母版"
+    }
+  }
+}

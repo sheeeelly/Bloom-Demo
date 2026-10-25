@@ -1,0 +1,44 @@
+{
+  "note": "用户只提供输入图链接；工程用真 Comfy 预跑写入 gallery。复制为 inputs.json 后执行: python scripts/prerun_gallery.py",
+  "categories": [
+    {
+      "id": "BD",
+      "label": "Bridesmaid / BD",
+      "items": [
+        {
+          "id": "bd-001",
+          "az_product_url": "https://www.azazie.com/products/REPLACE_ME",
+          "az_product_image_urls": [
+            "https://cdn-1.azazie.com/upimg/h/REPLACE_AZ.jpg"
+          ],
+          "competitor_product_id": "comp-bd-001",
+          "competitor_product_title": "Competitor BD sample",
+          "competitor_product_image_url": "https://cdn.example.com/competitor-bd.jpg",
+          "competitor_detail_images": [],
+          "competitor_source_url": "",
+          "competitor_source_site": ""
+        }
+      ]
+    },
+    {
+      "id": "AT",
+      "label": "Atelier / Formal",
+      "items": []
+    },
+    {
+      "id": "Prom",
+      "label": "Prom",
+      "items": []
+    },
+    {
+      "id": "MOB",
+      "label": "Mother of the Bride",
+      "items": []
+    },
+    {
+      "id": "Wedding",
+      "label": "Wedding",
+      "items": []
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloom · 视觉与创意</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="h-screen flex overflow-hidden">
+  <aside id="bloom-sidebar" class="sidebar"></aside>
+  <main class="main-shell">
+    <header class="page-header design-hero">
+      <div class="design-hero__copy">
+        <p class="design-hero__eyebrow">Visual · Creative AI</p>
+        <h1>Bloom</h1>
+        <p class="page-header__sub">两间工作室。一间把两件爆款收成新样式，一间用最新趋势改一件衣服。</p>
+      </div>
+    </header>
+
+    <section class="page-body studio-page">
+      <div class="studio-grid">
+        <a class="studio-card" href="/gap-fusion.html">
+          <p class="studio-card__index">01</p>
+          <h2>双爆款合成</h2>
+          <p class="studio-card__lead">选两件正在卖得好的衣服，留下各自的设计点，生成一件新的样式。</p>
+          <ol class="studio-card__steps">
+            <li>各选一件爆款</li>
+            <li>同一维度只留一个设计点</li>
+            <li>生成新款，进入成品库</li>
+          </ol>
+          <span class="studio-card__go">进入工作室</span>
+        </a>
+
+        <a class="studio-card studio-card--accent" href="/design.html">
+          <p class="studio-card__index">02</p>
+          <h2>趋势改造</h2>
+          <p class="studio-card__lead">拿一件衣服，叠上这一季的结构、面料和图案，改成一件新款。</p>
+          <ol class="studio-card__steps">
+            <li>定季节与品类</li>
+            <li>勾选趋势，放入参考衣服</li>
+            <li>生成新款，进入成品库</li>
+          </ol>
+          <span class="studio-card__go">进入工作室</span>
+        </a>
+      </div>
+
+      <p class="studio-note">
+        生成结果都在 <a href="/library.html">成品库</a>。样例成图也可以先看
+        <a href="/gallery.html">品类画廊</a>。
+      </p>
+    </section>
+  </main>
+  <script src="/static/sidebar.js"></script>
+  <script>mountBloomSidebar('studio', 'Bloom · 视觉与创意');</script>
+</body>
+</html>

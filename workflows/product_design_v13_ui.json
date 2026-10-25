@@ -1,0 +1,4540 @@
+{
+  "id": "01884bf9-9b7f-599d-875d-c512f5f85668",
+  "revision": 0,
+  "last_node_id": 67,
+  "last_link_id": 68,
+  "nodes": [
+    {
+      "id": 4,
+      "type": "ProductDesignV08DirectURLReferenceCollector",
+      "pos": [
+        720,
+        190
+      ],
+      "size": [
+        584.77890625,
+        260
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "competitor_image_urls",
+          "name": "competitor_image_urls",
+          "type": "STRING",
+          "link": 40
+        },
+        {
+          "label": "product_image_urls",
+          "name": "product_image_urls",
+          "type": "STRING",
+          "link": 39
+        }
+      ],
+      "outputs": [
+        {
+          "label": "V0.8商品设计参考集",
+          "name": "V0.8商品设计参考集",
+          "type": "CLOUDSWAY_PRODUCT_DESIGN_REFERENCES_V08",
+          "slot_index": 0,
+          "links": [
+            3,
+            52,
+            54,
+            58
+          ]
+        },
+        {
+          "label": "竞品编号总览",
+          "name": "竞品编号总览",
+          "type": "IMAGE",
+          "slot_index": 1,
+          "links": [
+            6
+          ]
+        },
+        {
+          "label": "商品编号总览",
+          "name": "商品编号总览",
+          "type": "IMAGE",
+          "slot_index": 2,
+          "links": [
+            7
+          ]
+        },
+        {
+          "label": "V0.8纯图片直链采集报告",
+          "name": "V0.8纯图片直链采集报告",
+          "type": "STRING",
+          "slot_index": 3,
+          "links": [
+            18
+          ]
+        }
+      ],
+      "title": "4. V9 竞品 + 商品纯图片直链采集｜沿用用户文件参数｜不解析商品页 / 不自动扩展图库",
+      "properties": {
+        "Node name for S&R": "ProductDesignV08DirectURLReferenceCollector",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [],
+      "color": "rgba(38, 73, 116, 0.7)"
+    },
+    {
+      "id": 9,
+      "type": "PreviewImage",
+      "pos": [
+        2620,
+        50
+      ],
+      "size": [
+        430,
+        460
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 8
+        }
+      ],
+      "outputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "规划选中的商品 / 类目锚点图",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 10,
+      "type": "PreviewImage",
+      "pos": [
+        2620,
+        550
+      ],
+      "size": [
+        620,
+        460
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 9
+        }
+      ],
+      "outputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "规划选中的设计参考图组",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 18,
+      "type": "PreviewAny",
+      "pos": [
+        80,
+        1300
+      ],
+      "size": [
+        780,
+        520
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 18
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "报告1｜竞品与商品图片直链、逐行顺序、下载状态与尺寸｜无商品页解析",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 20,
+      "type": "PreviewAny",
+      "pos": [
+        1740,
+        1300
+      ],
+      "size": [
+        780,
+        520
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "报告3｜V9 规划、选图、三案择优与用户文件原版效果参数",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 21,
+      "type": "PreviewAny",
+      "pos": [
+        2570,
+        1300
+      ],
+      "size": [
+        780,
+        520
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 21
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "过程｜完整 GPT 分析 Prompt（无 Key / 无 Base64）",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 26,
+      "type": "PreviewAny",
+      "pos": [
+        1740,
+        1900
+      ],
+      "size": [
+        780,
+        520
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 26
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "报告8｜八视图固定顺序、镜头目标与必显细节",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 27,
+      "type": "PreviewAny",
+      "pos": [
+        2570,
+        1900
+      ],
+      "size": [
+        780,
+        520
+      ],
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 27
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "过程｜最终 GP Image 2 生图 Prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 28,
+      "type": "PreviewAny",
+      "pos": [
+        3400,
+        1900
+      ],
+      "size": [
+        780,
+        520
+      ],
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 28
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "过程｜GP Image 2 响应 JSON",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 29,
+      "type": "PreviewAny",
+      "pos": [
+        4230,
+        1900
+      ],
+      "size": [
+        780,
+        520
+      ],
+      "flags": {},
+      "order": 44,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 29
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "报告9｜V9 八视图切图顺序、1140×1578 定尺与坐标",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 32,
+      "type": "PreviewAny",
+      "pos": [
+        5060,
+        1900
+      ],
+      "size": [
+        780,
+        520
+      ],
+      "flags": {},
+      "order": 48,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 35
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "报告10｜V12 8路指定模型仅高清、构图锁定、细节注入与原比例2X",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 35,
+      "type": "CR Text",
+      "pos": [
+        151.1673198046256,
+        -1092.564264581782
+      ],
+      "size": [
+        445.92344752222425,
+        263.3890753215434
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "*",
+          "slot_index": 0,
+          "links": [
+            40
+          ]
+        },
+        {
+          "label": "show_help",
+          "name": "show_help",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": []
+        }
+      ],
+      "title": "1. 竞品图片 URL（必填｜每行 1 张图片直链｜1–8 张｜严格保序）",
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR Text",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "text": true
+          },
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "https://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-xs-babyboo-fashion-1222102180_1174x1800.jpg?v=1772501109\nhttps://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1222102183_1200x.jpg?v=1772501258\nhttps://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1222102181_1200x.jpg?v=1772501170\nhttps://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1222102179_1200x.jpg?v=1772535504\nhttps://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1222102182_1200x.jpg?v=1772535504\nhttps://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1226922064_1200x.jpg?v=1773241236\nhttps://www.babyboofashion.com/cdn/shop/files/CYRA_LEMON_1600x.png?v=1785154253"
+      ],
+      "color": "rgba(38, 73, 116, 0.7)"
+    },
+    {
+      "id": 36,
+      "type": "CR Text",
+      "pos": [
+        648.2316119173539,
+        -1083.3000521976323
+      ],
+      "size": [
+        546.5044921875,
+        239.68041665169284
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "*",
+          "slot_index": 0,
+          "links": [
+            39
+          ]
+        },
+        {
+          "label": "show_help",
+          "name": "show_help",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": []
+        }
+      ],
+      "title": "2. 商品图片 URL（选填｜每行 1 张图片直链｜1-8张）",
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR Text",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "text": true
+          },
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "https://cdn-1.azazie.com/upimg/h/25/b9/66e8f0115f4e95187d716695980a25b9.jpg\nhttps://cdn-1.azazie.com/upimg/h/48/52/f2d788849150abddc9f0b3705bba4852.jpg\nhttps://cdn-1.azazie.com/upimg/h/9d/6f/663d2801c3ea88adaaa0c2d8acad9d6f.jpg\nhttps://cdn-1.azazie.com/upimg/h/5d/71/c42f59e8ab28eeb917012355f8815d71.jpg\nhttps://cdn-1.azazie.com/upimg/h/29/4f/21ec146fabb612ffb88506e58c94294f.jpg\nhttps://cdn-1.azazie.com/upimg/h/be/fe/b0c86f88557e0cf232817a6588eebefe.jpg"
+      ],
+      "color": "rgba(38, 73, 116, 0.7)"
+    },
+    {
+      "id": 6,
+      "type": "PreviewImage",
+      "pos": [
+        149.97504658507464,
+        -638.3081667168393
+      ],
+      "size": [
+        500,
+        480
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 6
+        }
+      ],
+      "outputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "竞品多图编号总览（严格按输入行顺序）",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 7,
+      "type": "PreviewImage",
+      "pos": [
+        874.56964054234,
+        -544.4468966215975
+      ],
+      "size": [
+        500,
+        480
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 7
+        }
+      ],
+      "outputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "商品图编号总览（链接留空或失败时显示占位）",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 46,
+      "type": "SaveImage",
+      "pos": [
+        1475.7250954260826,
+        -1074.4260137678277
+      ],
+      "size": [
+        397.8296875,
+        270
+      ],
+      "flags": {},
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 41
+        },
+        {
+          "label": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "保留用户输出：原始4×2全景母版保存｜非8张GPT高清图",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.27.1",
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 22,
+      "type": "PreviewAny",
+      "pos": [
+        2838.203268184447,
+        -1280.919085104486
+      ],
+      "size": [
+        434.99813935596376,
+        192.16647839275174
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 22
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "报告4｜竞品设计理念、结构、卖点与可抽象趋势",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 24,
+      "type": "PreviewAny",
+      "pos": [
+        2849.102354141622,
+        -978.9529784887723
+      ],
+      "size": [
+        460.6004687084519,
+        239.29695038415912
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 24
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "报告6｜A / B / C 三个结构不同的创意候选",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 25,
+      "type": "PreviewAny",
+      "pos": [
+        3354.439417925459,
+        -962.2747974847348
+      ],
+      "size": [
+        421.90398703274514,
+        202.44315831205722
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 25
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "报告7｜选中款卖点、品牌特色、爆款假设与参考转化",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 23,
+      "type": "PreviewAny",
+      "pos": [
+        3323.20140754041,
+        -1270.4675984105515
+      ],
+      "size": [
+        445.62615875968913,
+        166.82273981463527
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 23
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "报告5｜商品设计理念、卖点与锚点分析（可为空）",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 19,
+      "type": "PreviewAny",
+      "pos": [
+        2846.4891392650447,
+        -1491.2798220635086
+      ],
+      "size": [
+        360.64851748260025,
+        145.31978060029974
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 19
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "报告2｜最终选中创意方案中文设计简报",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 5,
+      "type": "CR Text",
+      "pos": [
+        80,
+        -3250
+      ],
+      "size": [
+        1050,
+        1350
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "*",
+          "slot_index": 0,
+          "links": [
+            5
+          ]
+        },
+        {
+          "label": "show_help",
+          "name": "show_help",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": []
+        }
+      ],
+      "title": "V11 入参1｜规划 GPT Developer Prompt｜默认逐字沿用V9｜可完整编辑",
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR Text",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "text": true
+          },
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "You are a senior fashion product strategist,\ntechnical designer, and e-commerce art director developing an original new\nproduct for the AZAZIE website.\n\nInfer the homogeneous product category from the current competitor and optional\nproduct evidence. Analyze only what is supplied in this run. Do not assume a\nspecific style name, neckline, drape path, waist treatment, surface technique,\nor hem construction before reviewing the evidence.\n\nCreate three genuinely different, manufacturable concepts:\n- Candidate A: commercially safe and broadly wearable.\n- Candidate B: trend-forward with balanced commercial risk.\n- Candidate C: visually bold but still suitable for repeatable production.\n\nSelect the strongest one in the same response using originality, category fit,\nAZAZIE presentation fit, size inclusivity, manufacturing clarity, and likely\ne-commerce appeal. The three proposals must differ structurally rather than\nbeing color or trim variations of one design.\n\n[CREATIVE STRENGTH]\n大胆原创\n允许更鲜明的结构语言和更强视觉记忆点，但不得牺牲人体合理性、尺码包容性与可重复生产。\n\n[USER CREATIVE DIRECTION]\n未指定额外方向；请完全根据本次竞品与可选商品证据动态判断。\n\n[V3 FIXED CREATIVE CONTRACT - CANNOT BE OVERRIDDEN]\nThe supplied competitor is evidence and inspiration only. The optional product\nsource is a category, fit, material, color, or catalog anchor only. Never copy a\nrecognizable combination of pattern pieces, construction paths, embellishment\nplacement, logos, text, watermarks, model identity, pose sequence, page layout,\nor trade dress.\n\nEvery candidate must transform four comparison dimensions:\n1. neckline and shoulder architecture;\n2. surface treatment, texture, or drape path;\n3. waist-to-hip focal construction;\n4. skirt and hem geometry.\n\nCandidates A, B, and C must be structurally distinct. Every pair must differ in\nat least three of the four dimensions above. A color change, fabric swap, trim\nchange, or accessory change does not count as a structural difference.\n\nThe selected proposal must remain manufacturable, size-inclusive, visually\nclear in e-commerce imagery, and suitable for a white or light-gray AZAZIE\nstudio. Use attached images and supplied page metadata only as evidence. Put\nall interpretation, prediction, trend judgment, design invention, and\nmarketing hypotheses under AI inference fields.\nTreat hero_product_hooks as testable merchandising hypotheses, never as a\nguarantee that a design will become a best seller.\n\nCompletion and compactness rules:\n- the complete JSON must not exceed 6500 Unicode characters;\n- close every array and the outer object before adding optional detail;\n- use compact JSON without Markdown, commentary, or pretty-print indentation;\n- competitor/product fact and inference lists: at most 3 items each;\n- every candidate selling_points and hero_product_hooks list: 1-2\n  concise items;\n- selected_reference_mapping: 1-2 items;\n- selected_manufacturing_risks: at most 2 items;\n- each list item: at most 32 Chinese characters or 90 English characters;\n- each design_analysis: at most 160 Chinese characters;\n- each commercial_positioning and design_concept: at most 80 Chinese\n  characters; each product_spec or originality_delta value: at most 40;\n- selection_reason: at most 140 Chinese characters;\n- do not return brand_characteristics, originality_delta, hero_prompt,\n  negative_prompt, selected_chinese_brief, or eight_view_plan. The V3 node\n  derives those deterministic fields locally.\n\nReturn exactly one JSON object and no Markdown or commentary:\n{\n  \"selected_competitor_indices\": [1, 2],\n  \"selected_product_indices\": [1],\n  \"category_assessment\": {\n    \"competitor_category\": \"string\",\n    \"product_category\": \"string or not_provided\",\n    \"homogeneous_status\": \"yes, no, or not_applicable\",\n    \"confidence\": 0,\n    \"reason\": \"中文判断依据\"\n  },\n  \"competitor_analysis\": {\n    \"visible_facts\": [\"图片或页面元数据直接支持的事实\"],\n    \"ai_inferences\": [\"明确标记为 AI 推导的判断\"],\n    \"design_analysis\": \"中文竞品版型、结构、材质与视觉语言分析\",\n    \"selling_points\": [\"中文竞品卖点\"],\n    \"trend_signals\": [\"抽象趋势信号\"],\n    \"copy_risks\": [\"不可复刻的识别性组合\"]\n  },\n  \"product_analysis\": {\n    \"reference_status\": \"provided or not_provided\",\n    \"visible_facts\": [\"图片、页面元数据或 URL 直接支持的事实\"],\n    \"ai_inferences\": [\"明确标记为 AI 推导的判断\"],\n    \"design_analysis\": \"中文商品设计、版型、面料与锚点分析\",\n    \"selling_points\": [\"中文商品卖点\"],\n    \"anchor_signals\": [\"可用于新品的抽象锚点\"]\n  },\n  \"design_candidates\": [\n    {\n      \"candidate_id\": \"A\",\n      \"name_cn\": \"中文原创款名\",\n      \"name_en\": \"English original name\",\n      \"commercial_positioning\": \"中文商业定位\",\n      \"design_concept\": \"中文设计理念\",\n      \"product_spec\": {\n        \"silhouette\": \"string\",\n        \"neckline_shoulder\": \"string\",\n        \"fabric\": \"string\",\n        \"target_color\": \"string\",\n        \"surface_drape\": \"string\",\n        \"waist_hip\": \"string\",\n        \"skirt_hem\": \"string\",\n        \"construction\": \"string\"\n      },\n      \"selling_points\": [\"中文新款卖点\"],\n      \"hero_product_hooks\": [\"中文爆款传播点\"]\n    },\n    {\n      \"candidate_id\": \"B\",\n      \"name_cn\": \"中文原创款名\",\n      \"name_en\": \"English original name\",\n      \"commercial_positioning\": \"中文商业定位\",\n      \"design_concept\": \"中文设计理念\",\n      \"product_spec\": {\n        \"silhouette\": \"string\",\n        \"neckline_shoulder\": \"string\",\n        \"fabric\": \"string\",\n        \"target_color\": \"string\",\n        \"surface_drape\": \"string\",\n        \"waist_hip\": \"string\",\n        \"skirt_hem\": \"string\",\n        \"construction\": \"string\"\n      },\n      \"selling_points\": [\"中文新款卖点\"],\n      \"hero_product_hooks\": [\"中文爆款传播点\"]\n    },\n    {\n      \"candidate_id\": \"C\",\n      \"name_cn\": \"中文原创款名\",\n      \"name_en\": \"English original name\",\n      \"commercial_positioning\": \"中文商业定位\",\n      \"design_concept\": \"中文设计理念\",\n      \"product_spec\": {\n        \"silhouette\": \"string\",\n        \"neckline_shoulder\": \"string\",\n        \"fabric\": \"string\",\n        \"target_color\": \"string\",\n        \"surface_drape\": \"string\",\n        \"waist_hip\": \"string\",\n        \"skirt_hem\": \"string\",\n        \"construction\": \"string\"\n      },\n      \"selling_points\": [\"中文新款卖点\"],\n      \"hero_product_hooks\": [\"中文爆款传播点\"]\n    }\n  ],\n  \"selected_candidate_id\": \"A, B, or C\",\n  \"selection_reason\": \"中文选择理由与取舍\",\n  \"selected_reference_mapping\": [\n    {\n      \"source\": \"competitor #N, product #N, or original proposal\",\n      \"abstracted_signal\": \"选中款采用的抽象参考信号\",\n      \"transformation\": \"选中款如何转化为原创差异\"\n    }\n  ],\n  \"selected_manufacturing_risks\": [\"选中款中文量产风险或注意点\"]\n}\n\nIndex and evidence rules:\n- select 1-3 competitor images;\n- when a product source exists, select 1-2 product images;\n- when the product source is absent, selected_product_indices and\n  product_analysis may be omitted because the node inserts safe local values;\n- all indices must be unique positive integers within the supplied overviews;\n- product_analysis.reference_status must match whether a product source exists;\n- when no product source exists, product_analysis must be the minimal\n  not_provided object with empty lists and no invented product facts;\n- selected_reference_mapping records only abstract signals and original\n  transformations for the selected candidate;\n- the node locally derives the fixed row-major views: 正面全身、左前3/4全身、\n  严格左侧全身、严格背面全身、严格右侧全身、右前3/4轻动态全身、\n  正面半身(头至大腿中部)、背面半身(头至大腿中部)."
+      ],
+      "color": "rgba(38, 73, 116, 0.7)"
+    },
+    {
+      "id": 48,
+      "type": "LayerUtility: ColorImage V2",
+      "pos": [
+        5802.872214492533,
+        -540.6374382938603
+      ],
+      "size": [
+        270,
+        130
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "size_as",
+          "name": "size_as",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "label": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "label": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "label": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "label": "color",
+          "name": "color",
+          "type": "STRING",
+          "widget": {
+            "name": "color"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            44
+          ]
+        }
+      ],
+      "title": "最终裁剪尺寸参考｜1140×1578",
+      "properties": {
+        "cnr_id": "comfyui_layerstyle",
+        "ver": "02acdc50affb84cd24f341d1fc2d3a9134b2ad3d",
+        "Node name for S&R": "LayerUtility: ColorImage V2",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "custom",
+        1140,
+        1578,
+        "#000000"
+      ],
+      "color": "rgba(38, 73, 116, 0.7)"
+    },
+    {
+      "id": 50,
+      "type": "LayerUtility: ImageMaskScaleAsV2",
+      "pos": [
+        6091.5504601014145,
+        -402.0240240784851
+      ],
+      "size": [
+        383.4400390625,
+        186
+      ],
+      "flags": {},
+      "order": 47,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "scale_as",
+          "name": "scale_as",
+          "type": "*",
+          "link": 44
+        },
+        {
+          "label": "image",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 45
+        },
+        {
+          "label": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "label": "fit",
+          "name": "fit",
+          "type": "COMBO",
+          "widget": {
+            "name": "fit"
+          },
+          "link": null
+        },
+        {
+          "label": "method",
+          "name": "method",
+          "type": "COMBO",
+          "widget": {
+            "name": "method"
+          },
+          "link": null
+        },
+        {
+          "label": "background_color",
+          "name": "background_color",
+          "type": "STRING",
+          "widget": {
+            "name": "background_color"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            43,
+            46
+          ]
+        },
+        {
+          "label": "mask",
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "label": "original_size",
+          "name": "original_size",
+          "type": "BOX",
+          "links": null
+        },
+        {
+          "label": "widht",
+          "name": "widht",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "label": "height",
+          "name": "height",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "title": "同宽高比等比缩小｜不裁边｜lanczos｜输出1140×1578",
+      "properties": {
+        "cnr_id": "comfyui_layerstyle",
+        "ver": "02acdc50affb84cd24f341d1fc2d3a9134b2ad3d",
+        "Node name for S&R": "LayerUtility: ImageMaskScaleAsV2",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "crop",
+        "lanczos",
+        "#FFFFFF"
+      ],
+      "color": "rgba(38, 73, 116, 0.7)"
+    },
+    {
+      "id": 49,
+      "type": "SaveImage",
+      "pos": [
+        6533.841314980903,
+        -473.0376754193747
+      ],
+      "size": [
+        402.8609375,
+        270
+      ],
+      "flags": {},
+      "order": 49,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 43
+        },
+        {
+          "label": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "保存2｜V12 最终8张网站标准图｜1140×1578｜严格01–08",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "AI自动化选品/V12_最终原构图_1140x1578_01-08"
+      ]
+    },
+    {
+      "id": 52,
+      "type": "CR Text",
+      "pos": [
+        1180,
+        -3250
+      ],
+      "size": [
+        850,
+        520
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "*",
+          "slot_index": 0,
+          "links": [
+            47
+          ]
+        },
+        {
+          "label": "show_help",
+          "name": "show_help",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": []
+        }
+      ],
+      "title": "V11 入参2｜规划 GPT User Prompt 模板｜保留 {reference_metadata} 以插入动态证据",
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR Text",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "text": true
+          },
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "Analyze only this run's numbered evidence and return the contracted JSON. Infer a homogeneous product category, create exactly three structurally distinct concepts, and select one in the same response. Separate direct visual/page facts from all AI interpretation and creative proposals.\n\nReference metadata:\n{reference_metadata}"
+      ],
+      "color": "rgba(38, 73, 116, 0.7)"
+    },
+    {
+      "id": 53,
+      "type": "CR Text",
+      "pos": [
+        2080,
+        -3250
+      ],
+      "size": [
+        650,
+        300
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "*",
+          "slot_index": 0,
+          "links": [
+            48
+          ]
+        },
+        {
+          "label": "show_help",
+          "name": "show_help",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": []
+        }
+      ],
+      "title": "V11 入参3｜规划 GPT 竞品总览图 Caption",
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR Text",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "text": true
+          },
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "IMAGE 1: numbered competitor overview; evidence only."
+      ],
+      "color": "rgba(38, 73, 116, 0.7)"
+    },
+    {
+      "id": 54,
+      "type": "CR Text",
+      "pos": [
+        2780,
+        -3250
+      ],
+      "size": [
+        650,
+        340
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "*",
+          "slot_index": 0,
+          "links": [
+            49
+          ]
+        },
+        {
+          "label": "show_help",
+          "name": "show_help",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": []
+        }
+      ],
+      "title": "V11 入参4｜规划 GPT 商品总览图 Caption（有商品图时发送）",
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR Text",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "text": true
+          },
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "IMAGE 2: numbered optional product overview; category, fit, material, color, or catalog anchor."
+      ],
+      "color": "rgba(38, 73, 116, 0.7)"
+    },
+    {
+      "id": 55,
+      "type": "CR Text",
+      "pos": [
+        3480,
+        -3250
+      ],
+      "size": [
+        900,
+        800
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "*",
+          "slot_index": 0,
+          "links": [
+            50
+          ]
+        },
+        {
+          "label": "show_help",
+          "name": "show_help",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": []
+        }
+      ],
+      "title": "V11 入参5｜GP Image 母版完整 Prompt 模板｜默认V9｜{automatic_prompt}为选中方案",
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR Text",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "text": true
+          },
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "[V3 FIXED GENERATION CONTRACT - HIGHEST PRIORITY]\nThe automatic plan contains one selected original candidate. That selected\ncandidate is authoritative. Do not import structural details from either\nunselected candidate, and do not reconstruct a recognizable competitor design.\n\nIMAGE 1 is the product or category anchor. Later images are design evidence.\nCreate a new, manufacturable garment in the same inferred product category.\nPreserve coherent anatomy, realistic fit, credible seams, material behavior,\nand one consistent model identity.\n\nGenerate exactly one landscape composite as a strict 4-column x 2-row grid of\neight equal portrait panels. Fixed row-major order:\n1 front full body; 2 left-front three-quarter full body; 3 strict left profile\nfull body; 4 strict back full body; 5 strict right profile full body; 6\nright-front three-quarter lightly dynamic full body; 7 front half body framed\nfrom head through mid-thigh; 8 back half body framed from head through\nmid-thigh.\n\nAll panels must show the exact same selected garment, model, target color,\nmaterial, construction, seam map, hem length, styling, studio, lighting, and\ncolor management. Only pose and required camera angle may change.\n\nUse equal panel geometry. Do not produce missing, merged, duplicated, inset, or\noverlapping views. Render no labels, numbers, captions, borders, separators,\nlogo, brand text, watermark, printed interface, or any other text. Avoid extra\ngarments, broken anatomy, duplicated limbs, fused fabric, impossible seams,\nfloating details, and cross-view design drift.\n\n[SELECTED AUTOMATIC DESIGN PLAN]\n\n{automatic_prompt}"
+      ],
+      "color": "rgba(38, 73, 116, 0.7)"
+    },
+    {
+      "id": 56,
+      "type": "CR Text",
+      "pos": [
+        4430,
+        -3250
+      ],
+      "size": [
+        1100,
+        750
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "*",
+          "slot_index": 0,
+          "links": [
+            51
+          ]
+        },
+        {
+          "label": "show_help",
+          "name": "show_help",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": []
+        }
+      ],
+      "title": "V12 入参6｜8路指定模型仅高清完整 Prompt｜严格锁定原构图｜禁止缩放/裁切/重构",
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR Text",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "text": true
+          },
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "High-resolution detail restoration only. The composition is\ncoordinate-locked to the uploaded image. Preserve the exact crop, framing,\ncamera position, camera angle, perspective, subject scale, subject position,\nheadroom, footroom, negative space, background horizon and every garment edge\nat the same normalized x/y coordinates.\n\nDo not crop, zoom, pan, recenter, rotate, tilt, warp, widen, narrow, extend or\nrecompose the image. Do not move the model, face, hands, feet, dress, hem,\ntrain, shadows or background. Do not change pose, anatomy, silhouette,\nneckline, straps, sleeves, draping, pleats, seams, closures, color, print,\nlighting or styling. Do not redesign, add, remove or invent any element.\n\nImprove only genuine high-frequency detail: textile micro-texture, seam and\nedge definition, natural skin and hair detail, restrained sharpness and clean\ncommercial product-photo clarity. Keep large shapes, tonal masses and spatial\nrelationships unchanged. No text, logo, watermark, frame, border, letterbox,\ncolor strip or hard transition."
+      ],
+      "color": "rgba(38, 73, 116, 0.7)"
+    },
+    {
+      "id": 11,
+      "type": "CloudswayProductDesignV10GenerationPromptEditable",
+      "pos": [
+        3175.354994612969,
+        114.43473914637077
+      ],
+      "size": [
+        563.915625,
+        220
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "automatic_prompt",
+          "name": "automatic_prompt",
+          "type": "STRING",
+          "link": 68
+        },
+        {
+          "label": "generation_prompt_template",
+          "name": "generation_prompt_template",
+          "type": "STRING",
+          "link": 50
+        }
+      ],
+      "outputs": [
+        {
+          "label": "V10最终生图Prompt",
+          "name": "V10最终生图Prompt",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            11
+          ]
+        },
+        {
+          "label": "V10完整生图Prompt",
+          "name": "V10完整生图Prompt",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": [
+            27
+          ]
+        }
+      ],
+      "title": "7. V11 母版生图 Prompt｜模板全文可编辑｜使用 {automatic_prompt} 插入选中方案",
+      "properties": {
+        "Node name for S&R": "CloudswayProductDesignV10GenerationPromptEditable",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [],
+      "color": "rgba(104, 77, 131, 0.75)"
+    },
+    {
+      "id": 57,
+      "type": "ProductDesignV13CompetitorAnalyzer",
+      "pos": [
+        80,
+        2660
+      ],
+      "size": [
+        600,
+        410
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "references",
+          "name": "references",
+          "type": "CLOUDSWAY_PRODUCT_DESIGN_REFERENCES_V08",
+          "link": 52
+        },
+        {
+          "label": "api_config",
+          "name": "api_config",
+          "type": "CLOUDSWAY_PERSON_REPLACE_CONFIG",
+          "link": 53
+        },
+        {
+          "label": "analysis_focus",
+          "name": "analysis_focus",
+          "type": "STRING",
+          "widget": {
+            "name": "analysis_focus"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "竞品设计点JSON",
+          "name": "竞品设计点JSON",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            56
+          ]
+        },
+        {
+          "label": "竞品总结",
+          "name": "竞品总结",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": [
+            61
+          ]
+        },
+        {
+          "label": "竞品分析报告",
+          "name": "竞品分析报告",
+          "type": "STRING",
+          "slot_index": 2,
+          "links": []
+        },
+        {
+          "label": "完整分析Prompt",
+          "name": "完整分析Prompt",
+          "type": "STRING",
+          "slot_index": 3,
+          "links": []
+        }
+      ],
+      "title": "V13 第1步｜仅分析竞品图片｜输出独立可选设计点",
+      "properties": {
+        "Node name for S&R": "ProductDesignV13CompetitorAnalyzer",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "analysis_focus": true
+          },
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "提取竞品中值得借鉴但不能直接复制的服装设计语言，重点观察版型、领肩、面料、表面细节、腰臀结构、裙摆、工艺和商业卖点。"
+      ],
+      "color": "rgba(58, 93, 146, 0.78)"
+    },
+    {
+      "id": 58,
+      "type": "ProductDesignV13ProductAnalyzer",
+      "pos": [
+        720,
+        2660
+      ],
+      "size": [
+        600,
+        410
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "references",
+          "name": "references",
+          "type": "CLOUDSWAY_PRODUCT_DESIGN_REFERENCES_V08",
+          "link": 54
+        },
+        {
+          "label": "api_config",
+          "name": "api_config",
+          "type": "CLOUDSWAY_PERSON_REPLACE_CONFIG",
+          "link": 55
+        },
+        {
+          "label": "analysis_focus",
+          "name": "analysis_focus",
+          "type": "STRING",
+          "widget": {
+            "name": "analysis_focus"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "本品设计点JSON",
+          "name": "本品设计点JSON",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            57
+          ]
+        },
+        {
+          "label": "本品总结",
+          "name": "本品总结",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": [
+            62
+          ]
+        },
+        {
+          "label": "本品分析报告",
+          "name": "本品分析报告",
+          "type": "STRING",
+          "slot_index": 2,
+          "links": []
+        },
+        {
+          "label": "完整分析Prompt",
+          "name": "完整分析Prompt",
+          "type": "STRING",
+          "slot_index": 3,
+          "links": []
+        }
+      ],
+      "title": "V13 第2步｜仅分析本品图片｜输出保留点与升级点",
+      "properties": {
+        "Node name for S&R": "ProductDesignV13ProductAnalyzer",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "analysis_focus": true
+          },
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "提取本品必须保留的识别点、当前优势和可升级空间，重点判断哪些设计点适合延续，哪些需要重做以避免同质化。"
+      ],
+      "color": "rgba(58, 93, 146, 0.78)"
+    },
+    {
+      "id": 59,
+      "type": "ProductDesignV13DesignPointSelector",
+      "pos": [
+        1360,
+        2580
+      ],
+      "size": [
+        620,
+        1000
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "competitor_design_points",
+          "name": "competitor_design_points",
+          "type": "STRING",
+          "link": 56
+        },
+        {
+          "label": "product_design_points",
+          "name": "product_design_points",
+          "type": "STRING",
+          "link": 57
+        },
+        {
+          "label": "selected_point_ids",
+          "name": "selected_point_ids",
+          "type": "STRING",
+          "widget": {
+            "name": "selected_point_ids"
+          },
+          "link": null
+        },
+        {
+          "label": "selection_confirmed",
+          "name": "selection_confirmed",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "selection_confirmed"
+          },
+          "link": null
+        },
+        {
+          "label": "skip_selection",
+          "name": "skip_selection",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "skip_selection"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "已选设计点JSON",
+          "name": "已选设计点JSON",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            60
+          ]
+        },
+        {
+          "label": "已选设计点摘要",
+          "name": "已选设计点摘要",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": [
+            63
+          ]
+        },
+        {
+          "label": "全部设计点JSON",
+          "name": "全部设计点JSON",
+          "type": "STRING",
+          "slot_index": 2,
+          "links": []
+        }
+      ],
+      "title": "V13 第3步｜竞品与本品至少各选1个｜数量不限",
+      "properties": {
+        "Node name for S&R": "ProductDesignV13DesignPointSelector",
+        "cloudsway_v13_design_points": {
+          "competitor_summary": "竞品为浅柠檬黄色抹胸长礼服，核心语言集中在直筒包身轮廓、横向褶裥胸衣、腰臀斜向垂褶与高开衩组合，呈现度假晚宴/派对礼服感，视觉卖点明确但结构和开衩风险较高。",
+          "product_summary": "本品为浅粉底大花印花抹胸中长连衣裙，核心识别点集中在无肩带直领、贴合上身、腰部抽褶放量及柔软垂坠的花卉裙摆。优势是度假感、浪漫感和拍照氛围明确；可升级空间在于抹胸结构、花型差异化与腰部褶量控制，避免常见碎花抹胸裙同质化。",
+          "points": [
+            {
+              "id": "C1",
+              "source": "competitor",
+              "category": "silhouette",
+              "keyword": "包身长裙",
+              "title": "包身长裙",
+              "description": "整体为贴身抹胸长裙，胸腰臀线条收窄，裙长及地，正面呈修长柱形轮廓。",
+              "evidence_image_indices": [
+                1,
+                3,
+                4,
+                6,
+                7
+              ],
+              "design_value": "可借鉴其纵向拉长比例和贴体礼服感，用于强化女性化、正式场景的产品定位。",
+              "risk_note": "贴身长裙对尺码包容度和腰臀合体要求高，易暴露身形差异。"
+            },
+            {
+              "id": "C2",
+              "source": "competitor",
+              "category": "neckline_shoulder",
+              "keyword": "平口抹胸",
+              "title": "平口抹胸",
+              "description": "上身采用无肩带平口抹胸，领口横向平直，完整露出肩颈和锁骨区域。",
+              "evidence_image_indices": [
+                1,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "design_value": "可作为晚宴、度假、派对类连衣裙的高露肤识别点，突出肩颈线条。",
+              "risk_note": "抹胸结构需防滑和支撑，生产上需要内衬、胶骨或防滑条配合，否则穿着安全感不足。"
+            },
+            {
+              "id": "C3",
+              "source": "competitor",
+              "category": "surface_detail",
+              "keyword": "横向褶裥",
+              "title": "横向褶裥",
+              "description": "胸衣部分有多道细密横向褶裥，从领口下方延伸至高腰位置，形成包裹式层次。",
+              "evidence_image_indices": [
+                4,
+                5,
+                7
+              ],
+              "design_value": "可借鉴横褶增加胸衣区域的视觉厚度与精致感，并改善浅色面料的单薄感。",
+              "risk_note": "褶裥间距和张力若处理不均，容易显廉价或造成胸部横向膨胀。"
+            },
+            {
+              "id": "C4",
+              "source": "competitor",
+              "category": "waist_hip",
+              "keyword": "斜向垂褶",
+              "title": "斜向垂褶",
+              "description": "腰臀部从一侧向另一侧形成斜向聚拢垂褶，褶量集中在胯侧并向裙身下方展开。",
+              "evidence_image_indices": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "design_value": "可借鉴斜向褶线修饰腹部和胯部，同时制造动态包裹感。",
+              "risk_note": "该褶裥结构识别度很高，直接复刻存在抄袭风险；褶量控制不当会显胯宽。"
+            },
+            {
+              "id": "C5",
+              "source": "competitor",
+              "category": "hem",
+              "keyword": "高开衩",
+              "title": "高开衩",
+              "description": "前侧偏一边设置高开衩，开衩高度接近大腿上部，走动时露出腿部。",
+              "evidence_image_indices": [
+                1,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "design_value": "可借鉴侧前开衩提升活动量和性感度，适合礼服及派对场景。",
+              "risk_note": "开衩过高会影响安全感和商业接受度，需考虑内里遮挡及不同身高穿着效果。"
+            },
+            {
+              "id": "C6",
+              "source": "competitor",
+              "category": "fabric",
+              "keyword": "柔软垂感",
+              "title": "柔软垂感",
+              "description": "面料表面平滑、轻薄，有明显顺垂效果，褶裥处能形成柔和弧线而非硬挺折痕。",
+              "evidence_image_indices": [
+                1,
+                2,
+                3,
+                5,
+                6
+              ],
+              "design_value": "可参考使用具有垂坠感的梭织或弹力面料来承接斜向褶裥和长裙垂线。",
+              "risk_note": "浅色柔软面料易透、易显内衣痕迹，对里布和克重要求较高。"
+            },
+            {
+              "id": "C7",
+              "source": "competitor",
+              "category": "color",
+              "keyword": "淡柠黄",
+              "title": "淡柠黄",
+              "description": "整件为低饱和浅黄色，颜色明亮柔和，配合露肤和长礼服轮廓呈现清爽度假感。",
+              "evidence_image_indices": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "design_value": "可借鉴浅亮色提升夏季、婚礼宾客或度假场景的视觉吸引力。",
+              "risk_note": "浅黄对肤色适配有门槛，也更容易显脏和透底。"
+            },
+            {
+              "id": "C8",
+              "source": "competitor",
+              "category": "commercial_selling_point",
+              "keyword": "拍照出片",
+              "title": "拍照出片",
+              "description": "抹胸露肩、腰臀垂褶和高开衩共同形成强正面视觉焦点，静态站姿下腿部和腰线突出。",
+              "evidence_image_indices": [
+                1,
+                3,
+                4,
+                5,
+                6
+              ],
+              "design_value": "可提炼为适合社交媒体传播的礼服卖点，强调上镜、显腿长和腰臀修饰。",
+              "risk_note": "强造型单品日常穿着场景有限，库存需谨慎评估目标客群和场合需求。"
+            },
+            {
+              "id": "P1",
+              "source": "product",
+              "category": "neckline_shoulder",
+              "keyword": "抹胸直领",
+              "title": "抹胸直领",
+              "description": "上身为无肩带抹胸结构，前胸口近水平直线，肩颈与锁骨完全外露，背部同样为无肩带露背效果。",
+              "evidence_image_indices": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "design_value": "这是本品最强识别点之一，可延续其清爽、度假、晚装感的露肩视觉，用于强化女性化和夏季场景。",
+              "risk_note": "抹胸款对胸围支撑、防滑和上身贴合要求高，量产需注意内衬、胶骨或防滑条设计；直接复刻直线抹胸易同质化。"
+            },
+            {
+              "id": "P2",
+              "source": "product",
+              "category": "silhouette",
+              "keyword": "上紧下摆",
+              "title": "上紧下摆",
+              "description": "整体呈上身贴合、腰部收住、下摆自然放开的A字廓形，裙长至脚踝上方，行走时裙摆有轻盈摆量。",
+              "evidence_image_indices": [
+                1,
+                2,
+                3
+              ],
+              "design_value": "该廓形适合延续为主线轮廓，兼具修饰上半身和遮盖下半身的商业友好度，适合度假裙、婚礼宾客裙等场景。",
+              "risk_note": "A字印花抹胸连衣裙市场常见，若廓形比例无变化，容易缺少新品辨识度。"
+            },
+            {
+              "id": "P3",
+              "source": "product",
+              "category": "fabric",
+              "keyword": "柔垂薄料",
+              "title": "柔垂薄料",
+              "description": "面料呈轻薄柔软状态，裙摆褶皱自然下垂，局部有细腻光泽感，印花在面料上显得柔和不厚重。",
+              "evidence_image_indices": [
+                1,
+                3,
+                6
+              ],
+              "design_value": "可作为保留的穿着体验方向，适合营造飘逸、浪漫、夏季轻盈感，并提升动态效果。",
+              "risk_note": "轻薄面料可能存在透底、勾丝或抗皱性不足问题，需要关注里布、克重与成衣支撑。"
+            },
+            {
+              "id": "P4",
+              "source": "product",
+              "category": "color",
+              "keyword": "粉色花卉",
+              "title": "粉色花卉",
+              "description": "底色为浅粉或裸粉调，表面分布粉、玫瑰、橘粉及浅绿色叶片的大花图案，整体色调柔和甜美。",
+              "evidence_image_indices": [
+                1,
+                3,
+                4,
+                6
+              ],
+              "design_value": "粉色花卉是本品浪漫度假感的主要来源，可延续柔和暖粉色系与花卉主题来保持客群认知。",
+              "risk_note": "粉色花卉长裙较容易与市场同类产品相似，花型、比例或配色需要重做以避免复制感。"
+            },
+            {
+              "id": "P5",
+              "source": "product",
+              "category": "waist_hip",
+              "keyword": "高腰抽褶",
+              "title": "高腰抽褶",
+              "description": "腰线位于自然腰偏高位置，从腰部向下有密集纵向抽褶和放量，前后均能看到褶量集中后形成裙摆展开。",
+              "evidence_image_indices": [
+                1,
+                2,
+                4,
+                5,
+                6
+              ],
+              "design_value": "高腰抽褶能拉长腿部比例并增加裙摆容量，是提升包容性和浪漫感的有效结构，可作为可延续卖点。",
+              "risk_note": "腰部褶量过多可能显腹部臃肿，生产中需控制抽褶分布和腰围松量。"
+            },
+            {
+              "id": "P6",
+              "source": "product",
+              "category": "hem",
+              "keyword": "及踝裙摆",
+              "title": "及踝裙摆",
+              "description": "裙摆长度接近及踝，前后均为长款落地感但不完全拖地，底摆呈柔和弧形展开。",
+              "evidence_image_indices": [
+                1,
+                2,
+                3
+              ],
+              "design_value": "及踝长度强化优雅度和度假场景，也利于承接轻薄面料的飘动效果，可作为中高客单连衣裙方向。",
+              "risk_note": "长裙对不同身高适配存在风险，可能需要考虑尺码分档或长度版本。"
+            },
+            {
+              "id": "P7",
+              "source": "product",
+              "category": "construction",
+              "keyword": "后背贴合",
+              "title": "后背贴合",
+              "description": "后背上口平直，衣身贴合背部，腰部后中区域可见收省或拼接线痕迹，帮助抹胸上身固定。",
+              "evidence_image_indices": [
+                2,
+                5
+              ],
+              "design_value": "后背贴合结构有助于保持抹胸稳定和整体利落感，可作为版型支撑重点继续优化。",
+              "risk_note": "若后背上口过紧会勒肉，过松则易下滑；不同胸背差异会带来试穿风险。"
+            },
+            {
+              "id": "P8",
+              "source": "product",
+              "category": "commercial_selling_point",
+              "keyword": "度假浪漫",
+              "title": "度假浪漫",
+              "description": "露肩抹胸、粉色花卉、轻盈长裙摆共同形成明显的海岛度假、婚礼宾客或夏日晚宴氛围。",
+              "evidence_image_indices": [
+                1,
+                3,
+                4
+              ],
+              "design_value": "可作为商品企划中的核心场景卖点，适合视觉营销、度假系列和礼服化日装定位。",
+              "risk_note": "场景感较强，日常通勤适用度有限，若目标客群偏实穿需增加可穿性设计。"
+            }
+          ],
+          "selected_point_ids": [
+            "C2",
+            "P4"
+          ],
+          "selection_confirmed": true,
+          "skip_selection": false,
+          "required_sources": [
+            "competitor",
+            "product"
+          ]
+        },
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "selected_point_ids": true,
+            "selection_confirmed": true,
+            "skip_selection": true
+          },
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "C2,P4",
+        true,
+        false,
+        ""
+      ],
+      "color": "rgba(116, 77, 151, 0.82)"
+    },
+    {
+      "id": 61,
+      "type": "PreviewAny",
+      "pos": [
+        80,
+        3140
+      ],
+      "size": [
+        520,
+        320
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 61
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "V13 报告｜竞品设计点总结",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 62,
+      "type": "PreviewAny",
+      "pos": [
+        640,
+        3140
+      ],
+      "size": [
+        520,
+        320
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 62
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "V13 报告｜本品设计点总结",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 63,
+      "type": "PreviewAny",
+      "pos": [
+        2040,
+        3180
+      ],
+      "size": [
+        520,
+        320
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 63
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "V13 报告｜当前勾选的设计点",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 65,
+      "type": "PreviewAny",
+      "pos": [
+        3160,
+        2580
+      ],
+      "size": [
+        520,
+        320
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 65
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "V13 结果｜可继续连接生图节点的Prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 66,
+      "type": "PreviewAny",
+      "pos": [
+        3720,
+        2580
+      ],
+      "size": [
+        520,
+        320
+      ],
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 66
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "V13 报告｜设计阶段状态与调用信息",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 67,
+      "type": "ProductDesignV13MainPromptRouter",
+      "pos": [
+        2720,
+        3180
+      ],
+      "size": [
+        560,
+        180
+      ],
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "selected_prompt",
+          "name": "selected_prompt",
+          "type": "STRING",
+          "link": 67
+        },
+        {
+          "label": "legacy_prompt",
+          "name": "legacy_prompt",
+          "type": "STRING",
+          "link": 10
+        }
+      ],
+      "outputs": [
+        {
+          "label": "主干生图Prompt",
+          "name": "主干生图Prompt",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            68
+          ]
+        }
+      ],
+      "title": "V13 第5步｜已选方案接入原生图主干｜跳过才用旧方案",
+      "properties": {
+        "Node name for S&R": "ProductDesignV13MainPromptRouter",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [],
+      "color": "rgba(56, 128, 91, 0.88)"
+    },
+    {
+      "id": 3,
+      "type": "CloudswayPersonReplaceConfig",
+      "pos": [
+        80,
+        570
+      ],
+      "size": [
+        580,
+        250
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "gpt_model_id",
+          "name": "gpt_model_id",
+          "type": "STRING",
+          "widget": {
+            "name": "gpt_model_id"
+          },
+          "link": null
+        },
+        {
+          "label": "gpt_base_url",
+          "name": "gpt_base_url",
+          "type": "STRING",
+          "widget": {
+            "name": "gpt_base_url"
+          },
+          "link": null
+        },
+        {
+          "label": "image_model_id",
+          "name": "image_model_id",
+          "type": "STRING",
+          "widget": {
+            "name": "image_model_id"
+          },
+          "link": null
+        },
+        {
+          "label": "image_base_url",
+          "name": "image_base_url",
+          "type": "STRING",
+          "widget": {
+            "name": "image_base_url"
+          },
+          "link": null
+        },
+        {
+          "label": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "API配置",
+          "name": "API配置",
+          "type": "CLOUDSWAY_PERSON_REPLACE_CONFIG",
+          "slot_index": 0,
+          "links": [
+            4,
+            34,
+            53,
+            55,
+            59
+          ]
+        }
+      ],
+      "title": "3. GPT + GP Image 2 配置（API Key 保持留空）",
+      "properties": {
+        "Node name for S&R": "CloudswayPersonReplaceConfig",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "gpt_model_id": true,
+            "gpt_base_url": true,
+            "image_model_id": true,
+            "image_base_url": true,
+            "api_key": true
+          },
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "MaaS_GP_5.5_20260424",
+        "",
+        "MaaS_GP_image_2",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 64,
+      "type": "PreviewAny",
+      "pos": [
+        3528.1310937744133,
+        2987.995866666667
+      ],
+      "size": [
+        520,
+        320
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "source",
+          "name": "source",
+          "type": "*",
+          "link": 64
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "V13 结果｜新服装完整设计JSON",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 8,
+      "type": "CloudswayProductDesignV10PlannerEditable",
+      "pos": [
+        1778.8320182222228,
+        140.4178802000936
+      ],
+      "size": [
+        520,
+        430
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "references",
+          "name": "references",
+          "type": "CLOUDSWAY_PRODUCT_DESIGN_REFERENCES_V08",
+          "link": 3
+        },
+        {
+          "label": "api_config",
+          "name": "api_config",
+          "type": "CLOUDSWAY_PERSON_REPLACE_CONFIG",
+          "link": 4
+        },
+        {
+          "label": "planner_developer_prompt",
+          "name": "planner_developer_prompt",
+          "type": "STRING",
+          "link": 5
+        },
+        {
+          "label": "planner_user_intro_template",
+          "name": "planner_user_intro_template",
+          "type": "STRING",
+          "link": 47
+        },
+        {
+          "label": "competitor_image_caption",
+          "name": "competitor_image_caption",
+          "type": "STRING",
+          "link": 48
+        },
+        {
+          "label": "product_image_caption",
+          "name": "product_image_caption",
+          "type": "STRING",
+          "link": 49
+        }
+      ],
+      "outputs": [
+        {
+          "label": "商品或类目锚点图",
+          "name": "商品或类目锚点图",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            8,
+            12,
+            30
+          ]
+        },
+        {
+          "label": "设计参考图组",
+          "name": "设计参考图组",
+          "type": "IMAGE",
+          "slot_index": 1,
+          "links": [
+            9,
+            13
+          ]
+        },
+        {
+          "label": "选中方案自动Prompt",
+          "name": "选中方案自动Prompt",
+          "type": "STRING",
+          "slot_index": 2,
+          "links": [
+            10
+          ]
+        },
+        {
+          "label": "选中方案中文简报",
+          "name": "选中方案中文简报",
+          "type": "STRING",
+          "slot_index": 3,
+          "links": [
+            19
+          ]
+        },
+        {
+          "label": "V10规划总报告",
+          "name": "V10规划总报告",
+          "type": "STRING",
+          "slot_index": 4,
+          "links": [
+            20
+          ]
+        },
+        {
+          "label": "完整分析Prompt",
+          "name": "完整分析Prompt",
+          "type": "STRING",
+          "slot_index": 5,
+          "links": [
+            21
+          ]
+        },
+        {
+          "label": "竞品设计与卖点分析",
+          "name": "竞品设计与卖点分析",
+          "type": "STRING",
+          "slot_index": 6,
+          "links": [
+            22
+          ]
+        },
+        {
+          "label": "商品设计与卖点分析",
+          "name": "商品设计与卖点分析",
+          "type": "STRING",
+          "slot_index": 7,
+          "links": [
+            23
+          ]
+        },
+        {
+          "label": "三个创意候选方案",
+          "name": "三个创意候选方案",
+          "type": "STRING",
+          "slot_index": 8,
+          "links": [
+            24
+          ]
+        },
+        {
+          "label": "选中方案卖点与营销",
+          "name": "选中方案卖点与营销",
+          "type": "STRING",
+          "slot_index": 9,
+          "links": [
+            25
+          ]
+        },
+        {
+          "label": "八视图拍摄计划",
+          "name": "八视图拍摄计划",
+          "type": "STRING",
+          "slot_index": 10,
+          "links": [
+            26
+          ]
+        }
+      ],
+      "title": "6. V11 规划｜Developer/User/图片说明均可编辑｜默认请求逐字等同V9",
+      "properties": {
+        "Node name for S&R": "CloudswayProductDesignV10PlannerEditable",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [],
+      "color": "rgba(104, 77, 131, 0.75)"
+    },
+    {
+      "id": 60,
+      "type": "ProductDesignV13SelectedPointDesigner",
+      "pos": [
+        2041.382286272252,
+        2611.621499049881
+      ],
+      "size": [
+        660,
+        470
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "references",
+          "name": "references",
+          "type": "CLOUDSWAY_PRODUCT_DESIGN_REFERENCES_V08",
+          "link": 58
+        },
+        {
+          "label": "api_config",
+          "name": "api_config",
+          "type": "CLOUDSWAY_PERSON_REPLACE_CONFIG",
+          "link": 59
+        },
+        {
+          "label": "selected_design_points",
+          "name": "selected_design_points",
+          "type": "STRING",
+          "link": 60
+        },
+        {
+          "label": "design_direction",
+          "name": "design_direction",
+          "type": "STRING",
+          "widget": {
+            "name": "design_direction"
+          },
+          "link": null
+        },
+        {
+          "label": "start_design",
+          "name": "start_design",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "start_design"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "新服装设计JSON",
+          "name": "新服装设计JSON",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            64
+          ]
+        },
+        {
+          "label": "新服装生图Prompt",
+          "name": "新服装生图Prompt",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": [
+            65,
+            67
+          ]
+        },
+        {
+          "label": "新服装中文简报",
+          "name": "新服装中文简报",
+          "type": "STRING",
+          "slot_index": 2,
+          "links": []
+        },
+        {
+          "label": "完整设计Prompt",
+          "name": "完整设计Prompt",
+          "type": "STRING",
+          "slot_index": 3,
+          "links": []
+        },
+        {
+          "label": "设计报告",
+          "name": "设计报告",
+          "type": "STRING",
+          "slot_index": 4,
+          "links": [
+            66
+          ]
+        }
+      ],
+      "title": "V13 第4步｜打开“开始设计”后生成新服装方案",
+      "properties": {
+        "Node name for S&R": "ProductDesignV13SelectedPointDesigner",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "design_direction": true,
+            "start_design": true
+          },
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "基于用户勾选的设计点，设计一款结构清晰、原创、可量产且具有电商传播力的新服装。借鉴抽象设计原则，不复制任何单件商品的完整结构。",
+        true
+      ],
+      "color": "rgba(124, 74, 137, 0.85)"
+    },
+    {
+      "id": 15,
+      "type": "PreviewImage",
+      "pos": [
+        4404.003594429214,
+        -594.6305546065047
+      ],
+      "size": [
+        579.542578125,
+        560
+      ],
+      "flags": {},
+      "order": 45,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "预览1｜V12 8张指定模型高清原构图2X｜2280×3156｜严格01–08",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 47,
+      "type": "SaveImage",
+      "pos": [
+        5071.5747739399785,
+        -357.73469415333653
+      ],
+      "size": [
+        477.47310945327445,
+        299.8501377748354
+      ],
+      "flags": {},
+      "order": 46,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 42
+        },
+        {
+          "label": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "保存1｜V12 8张指定模型高清原构图2X｜2280×3156｜严格01–08",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "AI自动化选品/V12_指定模型高清_原构图2X_2280x3156_01-08"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "ProductDesignV08EightViewHDSplitter",
+      "pos": [
+        4453.873061562093,
+        171.95376684650068
+      ],
+      "size": [
+        480.831640625,
+        260
+      ],
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 14
+        }
+      ],
+      "outputs": [
+        {
+          "label": "V0.8八视图定尺批次1140x1578",
+          "name": "V0.8八视图定尺批次1140x1578",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            33
+          ]
+        },
+        {
+          "label": "V0.8原始八视图套图",
+          "name": "V0.8原始八视图套图",
+          "type": "IMAGE",
+          "slot_index": 1,
+          "links": [
+            31,
+            41
+          ]
+        },
+        {
+          "label": "V0.8定尺切图报告",
+          "name": "V0.8定尺切图报告",
+          "type": "STRING",
+          "slot_index": 2,
+          "links": [
+            29
+          ]
+        }
+      ],
+      "title": "9. V9 4×2 母版本地切成8张并定尺1140×1578｜完全沿用用户文件参数",
+      "properties": {
+        "Node name for S&R": "ProductDesignV08EightViewHDSplitter",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [],
+      "color": "rgba(56, 116, 83, 0.75)"
+    },
+    {
+      "id": 31,
+      "type": "ProductDesignV12EightViewGeminiHDCompositionLocked",
+      "pos": [
+        5023.040416239176,
+        87.29744532485626
+      ],
+      "size": [
+        680,
+        610
+      ],
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 33
+        },
+        {
+          "label": "api_config",
+          "name": "api_config",
+          "type": "CLOUDSWAY_PERSON_REPLACE_CONFIG",
+          "link": 34
+        },
+        {
+          "label": "hd_prompt",
+          "name": "hd_prompt",
+          "type": "STRING",
+          "link": 51
+        },
+        {
+          "label": "base_url",
+          "name": "base_url",
+          "type": "STRING",
+          "widget": {
+            "name": "base_url"
+          },
+          "link": null
+        },
+        {
+          "label": "model",
+          "name": "model",
+          "type": "STRING",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "label": "image_size",
+          "name": "image_size",
+          "type": "COMBO",
+          "widget": {
+            "name": "image_size"
+          },
+          "link": null
+        },
+        {
+          "label": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "label": "advanced_json",
+          "name": "advanced_json",
+          "type": "STRING",
+          "widget": {
+            "name": "advanced_json"
+          },
+          "link": null
+        },
+        {
+          "label": "max_concurrency",
+          "name": "max_concurrency",
+          "type": "INT",
+          "widget": {
+            "name": "max_concurrency"
+          },
+          "link": null
+        },
+        {
+          "label": "timeout",
+          "name": "timeout",
+          "type": "INT",
+          "widget": {
+            "name": "timeout"
+          },
+          "link": null
+        },
+        {
+          "label": "failure_policy",
+          "name": "failure_policy",
+          "type": "COMBO",
+          "widget": {
+            "name": "failure_policy"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "V12指定模型高清构图锁定八视图2280x3156",
+          "name": "V12指定模型高清构图锁定八视图2280x3156",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            16,
+            42,
+            45
+          ]
+        },
+        {
+          "label": "V12构图锁定高清报告",
+          "name": "V12构图锁定高清报告",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": [
+            35
+          ]
+        }
+      ],
+      "title": "10. V12 指定模型仅高清｜Gemini原生协议｜严格锁定原构图｜完整Prompt可编辑｜8并发｜原比例2X",
+      "properties": {
+        "Node name for S&R": "ProductDesignV12EightViewGeminiHDCompositionLocked",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "base_url": true,
+            "model": true,
+            "image_size": true,
+            "aspect_ratio": true,
+            "advanced_json": true,
+            "max_concurrency": true,
+            "timeout": true,
+            "failure_policy": true
+          },
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        "MaaS_Ge_3_pro_image_20260528",
+        "2K",
+        "3:4",
+        "{}",
+        8,
+        900,
+        "keep_original_for_failed"
+      ],
+      "color": "rgba(104, 77, 131, 0.75)",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 12,
+      "type": "CloudswayGPImageEdit",
+      "pos": [
+        3850.16368359553,
+        105.44075219334258
+      ],
+      "size": [
+        540,
+        650
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "original_image",
+          "name": "original_image",
+          "type": "IMAGE",
+          "link": 12
+        },
+        {
+          "label": "reference_image",
+          "name": "reference_image",
+          "type": "IMAGE",
+          "link": 13
+        },
+        {
+          "label": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "label": "base_url",
+          "name": "base_url",
+          "type": "STRING",
+          "widget": {
+            "name": "base_url"
+          },
+          "link": null
+        },
+        {
+          "label": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "label": "model",
+          "name": "model",
+          "type": "STRING",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "label": "api_model",
+          "name": "api_model",
+          "type": "STRING",
+          "widget": {
+            "name": "api_model"
+          },
+          "link": null
+        },
+        {
+          "label": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 11
+        },
+        {
+          "label": "input_fidelity",
+          "name": "input_fidelity",
+          "type": "COMBO",
+          "widget": {
+            "name": "input_fidelity"
+          },
+          "link": null
+        },
+        {
+          "label": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "label": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "label": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "label": "output_format",
+          "name": "output_format",
+          "type": "COMBO",
+          "widget": {
+            "name": "output_format"
+          },
+          "link": null
+        },
+        {
+          "label": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "label": "advanced_json",
+          "name": "advanced_json",
+          "type": "STRING",
+          "widget": {
+            "name": "advanced_json"
+          },
+          "link": null
+        },
+        {
+          "label": "timeout",
+          "name": "timeout",
+          "type": "INT",
+          "widget": {
+            "name": "timeout"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            14
+          ]
+        },
+        {
+          "label": "response_json",
+          "name": "response_json",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": [
+            28
+          ]
+        }
+      ],
+      "title": "8. GP Image 2 单次生成 V3 效果 4×2 八视图母版",
+      "properties": {
+        "Node name for S&R": "CloudswayGPImageEdit",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "base_url": true,
+            "api_key": true,
+            "model": true,
+            "api_model": true,
+            "prompt": true,
+            "input_fidelity": true,
+            "size": true,
+            "quality": true,
+            "background": true,
+            "output_format": true,
+            "n": true,
+            "advanced_json": true,
+            "timeout": true
+          },
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        "",
+        "MaaS_GP_image_2",
+        "gpt-image-1",
+        "",
+        "high",
+        "1536x1024",
+        "medium",
+        "opaque",
+        "png",
+        1,
+        "{}",
+        600
+      ],
+      "color": "rgba(56, 116, 83, 0.75)",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 51,
+      "type": "PreviewImage",
+      "pos": [
+        6166.17105350162,
+        -11.189559094755882
+      ],
+      "size": [
+        579.542578125,
+        560
+      ],
+      "flags": {},
+      "order": 50,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 46
+        }
+      ],
+      "outputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "预览2｜V12 最终原构图结果｜8张1140×1578",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 17,
+      "type": "Image Comparer (rgthree)",
+      "pos": [
+        6213.367371312565,
+        663.452548537236
+      ],
+      "size": [
+        560,
+        560
+      ],
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "dir": 3,
+          "label": "image_a",
+          "name": "image_a",
+          "type": "IMAGE",
+          "link": 30
+        },
+        {
+          "dir": 3,
+          "label": "image_b",
+          "name": "image_b",
+          "type": "IMAGE",
+          "link": 31
+        }
+      ],
+      "outputs": [
+        {
+          "dir": 4,
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "title": "商品 / 类目锚点 vs V9 原创八视图母版",
+      "properties": {
+        "cnr_id": "rgthree-comfy",
+        "ver": "27b4f4cdcf3b127c29d5d8135ac1536ecbd4c383",
+        "comparer_mode": "Slide",
+        "Node name for S&R": "Image Comparer (rgthree)",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        [
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_eipki_00001_.png&type=temp&subfolder=&rand=0.9283881353945523"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_eipki_00002_.png&type=temp&subfolder=&rand=0.38843356350268754"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    [
+      3,
+      4,
+      0,
+      8,
+      0,
+      "CLOUDSWAY_PRODUCT_DESIGN_REFERENCES_V08"
+    ],
+    [
+      4,
+      3,
+      0,
+      8,
+      1,
+      "CLOUDSWAY_PERSON_REPLACE_CONFIG"
+    ],
+    [
+      5,
+      5,
+      0,
+      8,
+      2,
+      "STRING"
+    ],
+    [
+      6,
+      4,
+      1,
+      6,
+      0,
+      "IMAGE"
+    ],
+    [
+      7,
+      4,
+      2,
+      7,
+      0,
+      "IMAGE"
+    ],
+    [
+      8,
+      8,
+      0,
+      9,
+      0,
+      "IMAGE"
+    ],
+    [
+      9,
+      8,
+      1,
+      10,
+      0,
+      "IMAGE"
+    ],
+    [
+      10,
+      8,
+      2,
+      67,
+      1,
+      "STRING"
+    ],
+    [
+      11,
+      11,
+      0,
+      12,
+      7,
+      "STRING"
+    ],
+    [
+      12,
+      8,
+      0,
+      12,
+      0,
+      "IMAGE"
+    ],
+    [
+      13,
+      8,
+      1,
+      12,
+      1,
+      "IMAGE"
+    ],
+    [
+      14,
+      12,
+      0,
+      13,
+      0,
+      "IMAGE"
+    ],
+    [
+      16,
+      31,
+      0,
+      15,
+      0,
+      "IMAGE"
+    ],
+    [
+      18,
+      4,
+      3,
+      18,
+      0,
+      "STRING"
+    ],
+    [
+      19,
+      8,
+      3,
+      19,
+      0,
+      "STRING"
+    ],
+    [
+      20,
+      8,
+      4,
+      20,
+      0,
+      "STRING"
+    ],
+    [
+      21,
+      8,
+      5,
+      21,
+      0,
+      "STRING"
+    ],
+    [
+      22,
+      8,
+      6,
+      22,
+      0,
+      "STRING"
+    ],
+    [
+      23,
+      8,
+      7,
+      23,
+      0,
+      "STRING"
+    ],
+    [
+      24,
+      8,
+      8,
+      24,
+      0,
+      "STRING"
+    ],
+    [
+      25,
+      8,
+      9,
+      25,
+      0,
+      "STRING"
+    ],
+    [
+      26,
+      8,
+      10,
+      26,
+      0,
+      "STRING"
+    ],
+    [
+      27,
+      11,
+      1,
+      27,
+      0,
+      "STRING"
+    ],
+    [
+      28,
+      12,
+      1,
+      28,
+      0,
+      "STRING"
+    ],
+    [
+      29,
+      13,
+      2,
+      29,
+      0,
+      "STRING"
+    ],
+    [
+      30,
+      8,
+      0,
+      17,
+      0,
+      "IMAGE"
+    ],
+    [
+      31,
+      13,
+      1,
+      17,
+      1,
+      "IMAGE"
+    ],
+    [
+      33,
+      13,
+      0,
+      31,
+      0,
+      "IMAGE"
+    ],
+    [
+      34,
+      3,
+      0,
+      31,
+      1,
+      "CLOUDSWAY_PERSON_REPLACE_CONFIG"
+    ],
+    [
+      35,
+      31,
+      1,
+      32,
+      0,
+      "STRING"
+    ],
+    [
+      39,
+      36,
+      0,
+      4,
+      1,
+      "STRING"
+    ],
+    [
+      40,
+      35,
+      0,
+      4,
+      0,
+      "STRING"
+    ],
+    [
+      41,
+      13,
+      1,
+      46,
+      0,
+      "IMAGE"
+    ],
+    [
+      42,
+      31,
+      0,
+      47,
+      0,
+      "IMAGE"
+    ],
+    [
+      43,
+      50,
+      0,
+      49,
+      0,
+      "IMAGE"
+    ],
+    [
+      44,
+      48,
+      0,
+      50,
+      0,
+      "IMAGE"
+    ],
+    [
+      45,
+      31,
+      0,
+      50,
+      1,
+      "IMAGE"
+    ],
+    [
+      46,
+      50,
+      0,
+      51,
+      0,
+      "IMAGE"
+    ],
+    [
+      47,
+      52,
+      0,
+      8,
+      3,
+      "STRING"
+    ],
+    [
+      48,
+      53,
+      0,
+      8,
+      4,
+      "STRING"
+    ],
+    [
+      49,
+      54,
+      0,
+      8,
+      5,
+      "STRING"
+    ],
+    [
+      50,
+      55,
+      0,
+      11,
+      1,
+      "STRING"
+    ],
+    [
+      51,
+      56,
+      0,
+      31,
+      2,
+      "STRING"
+    ],
+    [
+      52,
+      4,
+      0,
+      57,
+      0,
+      "CLOUDSWAY_PRODUCT_DESIGN_REFERENCES_V08"
+    ],
+    [
+      53,
+      3,
+      0,
+      57,
+      1,
+      "CLOUDSWAY_PERSON_REPLACE_CONFIG"
+    ],
+    [
+      54,
+      4,
+      0,
+      58,
+      0,
+      "CLOUDSWAY_PRODUCT_DESIGN_REFERENCES_V08"
+    ],
+    [
+      55,
+      3,
+      0,
+      58,
+      1,
+      "CLOUDSWAY_PERSON_REPLACE_CONFIG"
+    ],
+    [
+      56,
+      57,
+      0,
+      59,
+      0,
+      "STRING"
+    ],
+    [
+      57,
+      58,
+      0,
+      59,
+      1,
+      "STRING"
+    ],
+    [
+      58,
+      4,
+      0,
+      60,
+      0,
+      "CLOUDSWAY_PRODUCT_DESIGN_REFERENCES_V08"
+    ],
+    [
+      59,
+      3,
+      0,
+      60,
+      1,
+      "CLOUDSWAY_PERSON_REPLACE_CONFIG"
+    ],
+    [
+      60,
+      59,
+      0,
+      60,
+      2,
+      "STRING"
+    ],
+    [
+      61,
+      57,
+      1,
+      61,
+      0,
+      "STRING"
+    ],
+    [
+      62,
+      58,
+      1,
+      62,
+      0,
+      "STRING"
+    ],
+    [
+      63,
+      59,
+      1,
+      63,
+      0,
+      "STRING"
+    ],
+    [
+      64,
+      60,
+      0,
+      64,
+      0,
+      "STRING"
+    ],
+    [
+      65,
+      60,
+      1,
+      65,
+      0,
+      "STRING"
+    ],
+    [
+      66,
+      60,
+      4,
+      66,
+      0,
+      "STRING"
+    ],
+    [
+      67,
+      60,
+      1,
+      67,
+      0,
+      "STRING"
+    ],
+    [
+      68,
+      67,
+      0,
+      11,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "V12 纯图片直链输入｜竞品1–8张｜商品最多20张｜无商品页解析",
+      "bounding": [
+        20,
+        10,
+        1940,
+        1090
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "V12 规划｜完全沿用 V3 原版 GPT 动态三案并择优",
+      "bounding": [
+        1980,
+        10,
+        1810,
+        1090
+      ],
+      "color": "#7a5c99",
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "V12 高清交付｜指定模型原生2K请求｜仅注入高频细节｜原构图2280×3156｜同比例缩小至1140×1578",
+      "bounding": [
+        3800,
+        -800,
+        3350,
+        1900
+      ],
+      "color": "#4f8a68",
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "V12 全过程报告｜纯直链、设计分析、切图与指定模型高清｜无自动重构",
+      "bounding": [
+        20,
+        1230,
+        6700,
+        1240
+      ],
+      "color": "#8a6d3b",
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "入参",
+      "bounding": [
+        105.43457173486065,
+        -1179.3949430505688,
+        1260.0297371619067,
+        478.14195766266323
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 6,
+      "title": "出参-原始4×2全景母版｜保留用户节点46｜非高清八图",
+      "bounding": [
+        1420.7335201525889,
+        -1180.6358469526515,
+        594.7143711829428,
+        609.1037504804781
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 7,
+      "title": "出参-8张指定模型仅高清原构图2X｜2280×3156",
+      "bounding": [
+        2081.343658988747,
+        -1182.1735039273203,
+        558.7930917284216,
+        592.6027442755882
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 8,
+      "title": "出参--文件",
+      "bounding": [
+        2806.8394645793737,
+        -1599.238349353373,
+        1005.7748114266078,
+        1206.5700567949632
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 9,
+      "title": "V12 大模型入参｜规划与母版默认沿用V10｜高清模型参数与Prompt可编辑",
+      "bounding": [
+        20,
+        -3350,
+        6500,
+        1550
+      ],
+      "color": "#7a5c99",
+      "flags": {}
+    },
+    {
+      "id": 10,
+      "title": "V13 产品功能演示｜竞品/本品分步分析 → 设计点按钮多选 → 新服装方案",
+      "bounding": [
+        20,
+        2500,
+        4280,
+        1050
+      ],
+      "color": "#75508f",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.3380916604057116,
+      "offset": [
+        1240.3664838407997,
+        -455.92123643460883
+      ]
+    },
+    "frontendVersion": "1.45.21",
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true,
+    "product_design_v9": {
+      "design_version": "V9-gp-hd-4x5-2k-crop-safe",
+      "display_version": "V9-4x5-2K",
+      "base_workflow": "V9版本-待优化.json",
+      "base_workflow_sha256": "40FD49F3B431FE04036DBC330BE637CBBE702F632FCCB466175C5877C08755FA",
+      "base_parameter_version": "V0.8",
+      "upstream_node_classes": "V0.8 exact through splitter; V9 crop-safe GP-HD at node31",
+      "upstream_parameters_preserved": true,
+      "upstream_widget_digest_sha256": "CEF3AA5DF32CDFDC4A5B8EBFA32B8F2FDEACF01D88B89AC9397ABB08039187BD",
+      "ai_effect_contract": {
+        "strategy_prompt": "V0.8_EXACT_V3_BASE",
+        "planner": "V0.8_EXACT_V3_BASE",
+        "generation_prompt": "V0.8_EXACT_V3_BASE",
+        "gp_image_mother_sheet_settings": "V0.8_EXACT",
+        "eight_view_splitter_settings": "V0.8_EXACT",
+        "gp_hd_model_widgets": "USER_V9_PENDING_EXACT",
+        "gp_hd_framing_guard": "V9_FIXED_4x5_SAFE_WINDOW",
+        "post_hd_delivery": "LAYERSTYLE_CENTER_CROP_TO_1140x1578"
+      },
+      "generation_profile": {
+        "gpt_planning_calls": 1,
+        "gp_image_mother_sheet_calls": 1,
+        "gp_image_hd_edit_calls": 8,
+        "gp_image_total_calls": 9,
+        "hd_default_concurrency": 8,
+        "hd_api_size": "1024x1536",
+        "hd_api_native_2k": false,
+        "hd_input_fidelity": "high",
+        "hd_quality": "high",
+        "hd_failure_policy": "keep_original_for_failed",
+        "pre_crop_output_count": 8,
+        "pre_crop_output_size": [
+          2048,
+          2560
+        ],
+        "pre_crop_output_aspect_ratio": "4:5",
+        "pre_crop_output_order": "strict_01_to_08",
+        "final_output_count": 8,
+        "final_output_size": [
+          1140,
+          1578
+        ],
+        "final_output_order": "strict_01_to_08",
+        "final_fit_mode": "LayerUtility_ImageMaskScaleAsV2_crop_lanczos",
+        "final_output_stage": "layer_crop_1140x1578",
+        "automatic_layer_crop": true,
+        "automatic_pending_2k_saved_image_count": 8,
+        "automatic_final_saved_image_count": 8,
+        "preserved_panorama_saved_image_count": 1,
+        "default_saved_image_count_total": 17
+      },
+      "hd_delivery": {
+        "api_native_size": [
+          1024,
+          1536
+        ],
+        "api_native_2k": false,
+        "safe_api_canvas": [
+          1024,
+          1536
+        ],
+        "safe_window": [
+          49,
+          128,
+          974,
+          1408
+        ],
+        "pre_crop_batch_size": 8,
+        "pre_crop_aspect_ratio": "4:5",
+        "pre_crop_size": [
+          2048,
+          2560
+        ],
+        "pre_crop_has_padding": false,
+        "pre_crop_stretch": false,
+        "local_delivery_method": "crop_safe_gp_hd_then_single_lanczos_2x"
+      },
+      "layer_crop": {
+        "node_id": 50,
+        "class_type": "LayerUtility: ImageMaskScaleAsV2",
+        "fit": "crop",
+        "method": "lanczos",
+        "target_reference_node_id": 48,
+        "target_size": [
+          1140,
+          1578
+        ],
+        "input_batch_size": 8,
+        "output_batch_size": 8,
+        "center_crop": true,
+        "padding": false,
+        "stretch": false,
+        "gp_hd_report_contains_padding_coordinates": false
+      },
+      "output_contract": {
+        "pending_crop_preview_node_id": 15,
+        "pending_crop_save_node_id": 47,
+        "final_preview_node_id": 51,
+        "final_save_node_id": 49,
+        "final_size": [
+          1140,
+          1578
+        ],
+        "order": "strict_01_to_08"
+      },
+      "preserved_panorama_save": {
+        "enabled": true,
+        "save_node_id": 46,
+        "source_node_id": 13,
+        "source_slot": 1,
+        "content": "original_4x2_mother_sheet_not_gp_hd_batch"
+      },
+      "estimated_float32_image_batch_memory_mib": 480,
+      "credentials_embedded": false
+    },
+    "product_design_v10": {
+      "design_version": "V10-editable-model-prompts-v9-effect",
+      "display_version": "V10-editable-model-prompts",
+      "base_workflow": "V9版本-4比5-2K优化.json",
+      "base_workflow_sha256": "CE2294BE3A9B89F9553F5AE17D37E55304C83858A019880E0B409B6F2CA5D896",
+      "ai_effect_contract": {
+        "default_behavior": "V9_REQUEST_TEXT_AND_IMAGE_PATH_EXACT",
+        "model_call_count": {
+          "planner_gpt": 1,
+          "mother_sheet_gp_image": 1,
+          "hd_gp_image_parallel": 8
+        },
+        "planner_developer_prompt_sha256": "9030A441829A50EB8E9B1183BCB5B2A3BD038220DF495C4E7198D0D06B8EC457",
+        "planner_user_intro_template_sha256": "AB33F542662743FFDB6A52109CE282F281FA808A214D174B79F74A6837149E6E",
+        "competitor_caption_sha256": "5CEDC4E34AA239D0B7BBBC9514AC3CF6C61FC4100D8D6AA50D659426CB878EE2",
+        "product_caption_sha256": "70A90E4AA02BBAE852782FA31A2BA3677CF13D79586DCD770C5F63C831B2975C",
+        "generation_template_sha256": "289756BCA360E2D7749C6CF1CD9274680DA1D605ABF8D1B0CA866467022CFFFE",
+        "hd_prompt_sha256": "74D95BD8BCCE07EA80DA8C086F3D7BB44AEBA7095068CF956108767F8519E8F6",
+        "node12_settings": "UNCHANGED_FROM_V9",
+        "v9_safe_canvas_geometry": "UNCHANGED",
+        "v9_4x5_2k_local_path": "UNCHANGED",
+        "final_layerstyle_crop_1140x1578": "UNCHANGED"
+      },
+      "editable_model_text_inputs": [
+        "planner_developer_prompt",
+        "planner_user_intro_template",
+        "competitor_image_caption",
+        "product_image_caption",
+        "generation_prompt_template",
+        "hd_prompt"
+      ],
+      "generation_token": "{automatic_prompt}",
+      "planner_metadata_token": "{reference_metadata}",
+      "notes": [
+        "默认文本逐字沿用V9，默认AI请求效果不变。",
+        "编辑任何Prompt后，对应模型阶段的效果会随之变化。",
+        "删除高清Prompt中的4:5安全区规则可能造成最终裁剪截断。",
+        "云端生成存在随机性，请求相同不等于像素逐点相同。"
+      ]
+    },
+    "product_design_v11": {
+      "design_version": "V11-gp-hd-detail-only-composition-locked",
+      "display_version": "V11-detail-only-composition-locked",
+      "base_workflow": "V10版本-大模型入参全部可编辑_AI效果沿用V9.json",
+      "base_workflow_sha256": "A9FB4C65717BF2E9CC8D3E022FA5DA9DC948C8B0F8FD09660C607D97C37F73DC",
+      "upstream_v10_unchanged": true,
+      "model_call_count_unchanged": {
+        "planner_gpt": 1,
+        "mother_sheet_gp_image": 1,
+        "hd_gp_image_parallel": 8
+      },
+      "hd_geometry_contract": {
+        "source_size": [
+          1140,
+          1578
+        ],
+        "source_aspect_ratio": "190:263",
+        "api_canvas": [
+          1024,
+          1536
+        ],
+        "api_content_box_half_open": [
+          37,
+          110,
+          987,
+          1425
+        ],
+        "api_content_size": [
+          950,
+          1315
+        ],
+        "source_to_api_scale": "5/6",
+        "output_size": [
+          2280,
+          3156
+        ],
+        "api_content_to_output_scale": "12/5",
+        "net_scale": 2,
+        "crop_source_content": false,
+        "padding_in_final_output": false,
+        "pan": false,
+        "recenter": false,
+        "stretch": false,
+        "aspect_change": false,
+        "geometry_authority": "original_pre_hd_split_image",
+        "gpt_contribution": "high_frequency_detail_only"
+      },
+      "hd_prompt_sha256": "02E356A47672E5661819DA217A116B0CB114CEB45748784696ABB8CF520C39A2",
+      "planner_developer_prompt_sha256": "9030A441829A50EB8E9B1183BCB5B2A3BD038220DF495C4E7198D0D06B8EC457",
+      "generation_template_sha256": "289756BCA360E2D7749C6CF1CD9274680DA1D605ABF8D1B0CA866467022CFFFE",
+      "downstream": {
+        "layerstyle_mode": "crop",
+        "resampling": "lanczos",
+        "target_size": [
+          1140,
+          1578
+        ],
+        "effective_operation": "same_aspect_full_frame_downscale_without_edge_loss"
+      },
+      "notes": [
+        "V11不再输出4:5 2048x2560，因为改变宽高比必然裁切或补边。",
+        "GPT候选仅提供受限高频细节，原图始终控制低频、轮廓和构图。",
+        "构图检测失败或API失败时，逐槽回退为原图LANCZOS 2X。"
+      ]
+    },
+    "product_design_v12": {
+      "design_version": "V12-gemini-native-hd-detail-only-composition-locked",
+      "display_version": "V12-specified-model-composition-locked",
+      "base_workflow": "自动化选品_V11_高清只增强不改构图_原比例2X_最终1140x1578.json",
+      "base_workflow_sha256": "723CD1DB34417D26B4F8CAE6498FC84C1AB7D382B646FA4064077BF4D8B981F5",
+      "upstream_v11_unchanged": true,
+      "hd_engine_change_only": true,
+      "model_call_count": {
+        "planner_gpt": 1,
+        "mother_sheet_gp_image_2": 1,
+        "hd_gemini_native_parallel": 8
+      },
+      "hd_transport": {
+        "protocol": "gemini_native_generateContent",
+        "base_url": "",
+        "model_id": "MaaS_Ge_3_pro_image_20260528",
+        "model_id_sent_in_native_payload": false,
+        "request_image_size": "2K",
+        "request_aspect_ratio": "3:4",
+        "input_mime_type": "image/png",
+        "automatic_retry": false,
+        "remote_aspect_ratio_relative_error_max": 0.002,
+        "api_key_source": "node3_runtime_resolved_only",
+        "api_key_serialized": false
+      },
+      "hd_geometry_contract": {
+        "source_size": [
+          1140,
+          1578
+        ],
+        "source_aspect_ratio": "190:263",
+        "api_canvas": [
+          1152,
+          1536
+        ],
+        "api_canvas_policy": "dynamic_exact_ratio_max_side_1536",
+        "api_content_box_half_open": [
+          101,
+          110,
+          1051,
+          1425
+        ],
+        "api_content_size": [
+          950,
+          1315
+        ],
+        "output_size": [
+          2280,
+          3156
+        ],
+        "net_scale": 2,
+        "crop_source_content": false,
+        "padding_in_final_output": false,
+        "pan": false,
+        "recenter": false,
+        "stretch": false,
+        "aspect_change": false,
+        "geometry_authority": "original_pre_hd_split_image",
+        "remote_model_contribution": "high_frequency_detail_only"
+      },
+      "hd_prompt_sha256": "02E356A47672E5661819DA217A116B0CB114CEB45748784696ABB8CF520C39A2",
+      "downstream": {
+        "layerstyle_mode": "crop",
+        "resampling": "lanczos",
+        "target_size": [
+          1140,
+          1578
+        ],
+        "effective_operation": "same_aspect_full_frame_downscale_without_edge_loss"
+      },
+      "protected_nodes": {
+        "node3_config_unchanged": true,
+        "node12_mother_sheet_unchanged": true,
+        "node13_splitter_unchanged": true
+      },
+      "credentials_embedded": false,
+      "notes": [
+        "V12只替换逐图高清引擎，规划与GP Image 2母版生成保持V11不变。",
+        "指定高清模型使用Gemini原生generateContent，不调用images/edits。",
+        "远端结果仅提供受限高频细节，原图始终控制构图和低频。",
+        "API或构图检测失败时，逐槽回退为原图LANCZOS原比例2X。"
+      ]
+    },
+    "product_design_v13_demo": {
+      "design_version": "V13-split-analysis-visual-point-selection",
+      "base_workflow": "V12 image pipeline preserved; prompt input routed through V13",
+      "main_prompt_rerouted": {
+        "legacy_prompt_link": 10,
+        "selected_prompt_link": 67,
+        "router_to_generation_template_link": 68,
+        "skip_falls_back_to_legacy": true
+      },
+      "interaction": [
+        "第一次运行：分别分析竞品与本品并刷新设计点按钮。",
+        "竞品与本品关键词至少各选1个，数量不限，再点击确认选择并继续。",
+        "不选择时必须点击跳过，流程才会继续。"
+      ],
+      "model_calls": {
+        "first_analysis_run": "competitor 1 + product 0 or 1",
+        "selected_design_run": 1
+      },
+      "credentials_embedded": false
+    }
+  },
+  "version": 0.4
+}

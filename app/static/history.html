@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZ Bloom · 历史生成</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="h-screen flex overflow-hidden">
+
+    <aside id="bloom-sidebar" class="sidebar"></aside>
+<main class="main-shell">
+    <header class="page-header">
+      <div>
+        <h1>历史生成</h1>
+        <p class="page-header__sub">本地持久化（SQLite + 图片/报告落盘）；服务重启或改代码后仍可回看。已标记「相似款」红标且不进企划池</p>
+      </div>
+      <button id="btn-refresh" type="button" class="btn-refresh">刷新</button>
+    </header>
+
+    <section class="page-body">
+      <div id="loading-state" class="empty-state">加载历史记录中...</div>
+      <div id="error-state" class="hidden empty-state" style="color: var(--accent-deep)"></div>
+      <div id="empty-state" class="hidden empty-state">暂无历史生成记录，去「爆款合成」或「季节灵感」发起第一次任务吧</div>
+      <div id="history-list" class="history-list"></div>
+    </section>
+  </main>
+
+  <script src="/static/history.js"></script>
+  <script src="/static/sidebar.js"></script>
+  <script>mountBloomSidebar('history', '历史生成 · 本地持久可回看');</script>
+</body>
+</html>

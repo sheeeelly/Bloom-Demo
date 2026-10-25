@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloom · 趋势改造</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="h-screen flex overflow-hidden">
+
+  <aside id="bloom-sidebar" class="sidebar"></aside>
+  <main class="main-shell">
+    <header class="page-header design-hero">
+      <div class="design-hero__copy">
+        <p class="design-hero__eyebrow">Studio 02 · Trend Redesign</p>
+        <h1>趋势改造</h1>
+        <p class="page-header__sub">用最新流行趋势改一件衣服，生成新款。先勾趋势，再放入要改的衣服。</p>
+      </div>
+      <div class="design-hero__aside">
+        <div class="design-sources" id="design-sources">
+          <button type="button" class="design-sources__btn" id="btn-sources" aria-expanded="false" aria-controls="sources-popover" disabled>
+            灵感来源
+          </button>
+          <div class="design-sources__pop hidden" id="sources-popover" role="dialog" aria-label="时尚灵感来源网站">
+            <p class="design-sources__pop-title">时尚灵感来源网站</p>
+            <ul class="design-sources__list" id="sources-list">
+              <li class="design-sources__empty">加载中…</li>
+            </ul>
+          </div>
+        </div>
+        <div id="nybfw-meta" aria-live="polite">
+          <span class="design-meta-pill">加载灵感包…</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-body design-page">
+      <div class="design-flow design-flow--half" aria-label="季节灵感工作流程">
+        <div class="design-flow__head">
+          <span class="design-flow__eyebrow">流水线</span>
+          <span class="design-flow__title">当季趋势 → 参考衣服 → 新款</span>
+        </div>
+        <ol class="design-flow__track">
+          <li class="design-flow__step">
+            <span class="design-flow__index">01</span>
+            <span class="design-flow__name">定季 + 品类</span>
+            <span class="design-flow__desc">Vogue 人工包</span>
+          </li>
+          <li class="design-flow__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </li>
+          <li class="design-flow__step">
+            <span class="design-flow__index">02</span>
+            <span class="design-flow__name">趋势芯片</span>
+            <span class="design-flow__desc">勾选驱动 Prompt</span>
+          </li>
+          <li class="design-flow__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </li>
+          <li class="design-flow__step design-flow__step--accent">
+            <span class="design-flow__index">03</span>
+            <span class="design-flow__name">提示词干预</span>
+            <span class="design-flow__desc">可编辑后开款</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="design-stage design-stage--enter" style="--enter-delay: 40ms">
+        <div class="design-stage__head">
+          <span class="design-stage__index">01</span>
+          <div>
+            <h2 class="design-stage__title">定季 · 品类 · 色向</h2>
+            <p class="design-stage__hint">切换品类会自动换灵感包（Wedding 走婚纱独立包）。</p>
+          </div>
+        </div>
+        <div class="nybfw-controls">
+          <div class="design-control design-control--inline">
+            <label class="panel__label">季节</label>
+            <div class="seg" id="season-seg">
+              <button type="button" class="seg__btn is-active" data-season="Spring 26">Spring 26</button>
+              <button type="button" class="seg__btn" data-season="Fall 26" disabled title="本期主源为 SS26">Fall 26</button>
+            </div>
+          </div>
+          <div class="design-control design-control--inline">
+            <label class="panel__label">品类</label>
+            <div class="seg" id="category-seg"></div>
+          </div>
+          <div class="design-control design-control--inline">
+            <label class="panel__label">色向</label>
+            <div class="seg" id="pantone-seg">
+              <button type="button" class="seg__btn is-active" data-pantone="0">无潘通</button>
+              <button type="button" class="seg__btn" data-pantone="1">叠加（二期）</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="design-stage design-stage--enter" style="--enter-delay: 90ms">
+        <div class="design-stage__head">
+          <span class="design-stage__index">02</span>
+          <div>
+            <h2 class="design-stage__title">趋势芯片</h2>
+            <p class="design-stage__hint">从时尚报告抽取 structure / fabric / motif；建议勾选 1–3 个。</p>
+          </div>
+          <span class="design-stage__badge">勾选驱动 Prompt</span>
+        </div>
+        <div id="cluster-chips" class="chip-row chip-row--design"></div>
+        <p class="panel__hint design-stage__foot">改芯片会自动重算下方提示词；也可直接手改后再开款。</p>
+      </div>
+
+      <div class="design-stage design-stage--enter" style="--enter-delay: 120ms">
+        <div class="design-stage__head">
+          <span class="design-stage__index">03</span>
+          <div>
+            <h2 class="design-stage__title">灵感图片</h2>
+            <p class="design-stage__hint">优先时尚内容图；没有则可贴链接或上传文件。上传后在下方预览，并作为 AI 开款参考图。</p>
+          </div>
+          <span class="design-stage__badge">参考图</span>
+        </div>
+        <div class="insp-upload">
+          <label class="hot-filter-field">
+            <span>图片链接</span>
+            <div class="insp-upload__row">
+              <input id="insp-url" class="field-input" type="url" placeholder="https://… 时尚专题 / 杂志图链接" />
+              <button type="button" id="btn-insp-url" class="seg__btn seg__btn--ghost">添加链接</button>
+            </div>
+          </label>
+          <label class="hot-filter-field mt-3">
+            <span>或上传图片文件</span>
+            <input id="insp-file" class="field-input" type="file" accept="image/*" />
+          </label>
+          <p class="panel__hint" id="insp-source-hint">未选择灵感图时，开款将使用技术占位图（文本 Prompt 主导）。</p>
+          <div id="insp-preview" class="insp-preview" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <div class="design-stage design-stage--accent design-stage--enter" style="--enter-delay: 160ms">
+        <div class="design-stage__head">
+          <span class="design-stage__index">04</span>
+          <div>
+            <h2 class="design-stage__title">注入提示词</h2>
+            <p class="design-stage__hint">主干预面：芯片驱动生成，也可手改后直接开款。</p>
+          </div>
+        </div>
+
+        <div class="prompt-split">
+          <article class="prompt-pane prompt-pane--design">
+            <header class="prompt-pane__head">
+              <div>
+                <h3 class="prompt-pane__title">设计侧 Brief</h3>
+                <p class="prompt-pane__sub">写入 Designer 节点 · 决定款式长什么样</p>
+              </div>
+              <code class="prompt-pane__code">design_prompt_append</code>
+            </header>
+            <textarea id="prompt-design" class="intervention-textarea code-textarea prompt-pane__textarea" rows="16" placeholder="勾选趋势芯片后自动生成…"></textarea>
+          </article>
+
+          <article class="prompt-pane prompt-pane--analysis">
+            <header class="prompt-pane__head">
+              <div>
+                <h3 class="prompt-pane__title">分析侧 Context</h3>
+                <p class="prompt-pane__sub">写入 Analyzer 节点 · 给读图/标签上下文</p>
+              </div>
+              <code class="prompt-pane__code">analysis_prompt_append</code>
+            </header>
+            <textarea id="prompt-analysis" class="intervention-textarea code-textarea prompt-pane__textarea" rows="16" placeholder="分析侧追加块…"></textarea>
+          </article>
+        </div>
+        <p id="design-error" class="synth-error hidden"></p>
+      </div>
+    </section>
+  </main>
+
+  <button id="btn-design-start" type="button" class="btn-synthesize btn-synthesize--float" disabled>
+    生成新款
+  </button>
+
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+  <script src="/static/design.js"></script>
+  <script src="/static/sidebar.js"></script>
+  <script>mountBloomSidebar('design', '趋势改造 · 用当季趋势改一件衣服');</script>
+</body>
+</html>

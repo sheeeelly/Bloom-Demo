@@ -1,0 +1,210 @@
+{
+  "updated_at": "2026-08-06T19:30:15.836080+08:00",
+  "disclaimer": "预渲染结果如实展示（含好坏），供老板判断该裙装品类是否值得接入。非精选好看墙。",
+  "categories": [
+    {
+      "id": "BD",
+      "label": "Bridesmaid / BD",
+      "items": [
+        {
+          "id": "bd-001",
+          "az_product_url": "https://www.azazie.com/gb/products/azazie-agustina-olive-mermaid-corset-stretch-satin-floor-length-bridesmaid-dress/103903222",
+          "az_input_images": [
+            "https://cdn-1.azazie.com/upimg/h/a8/3d/3678694be5fa71ceb2937d662c22a83d.jpg",
+            "https://cdn-1.azazie.com/upimg/h/6d/91/b799f94ad9b594f2a040f5035a916d91.jpg",
+            "https://cdn-1.azazie.com/upimg/h/5b/60/e90328f85a3862936e5757cbf0ea5b60.jpg",
+            "https://cdn-1.azazie.com/upimg/h/86/88/d230ddc63768f77908fbd8a363398688.jpg"
+          ],
+          "competitor_product_id": "birdygrey-mia-espresso",
+          "competitor_product_title": "Mia Matte Satin Dress Espresso",
+          "competitor_product_image_url": "https://cdn.shopify.com/s/files/1/2053/3799/files/wr-espresso-matte-satin-mia-reg-bridesmaid-apparel-dresses-100.jpg",
+          "competitor_detail_images": [
+            "https://cdn.shopify.com/s/files/1/2053/3799/files/wr-espresso-matte-satin-mia-reg-bridesmaid-apparel-dresses-100.jpg",
+            "https://cdn.shopify.com/s/files/1/2053/3799/files/wr-espresso-matte-satin-mia-reg-bridesmaid-apparel-dresses-300.jpg",
+            "https://cdn.shopify.com/s/files/1/2053/3799/files/wr-espresso-matte-satin-mia-reg-bridesmaid-apparel-dresses-400.jpg",
+            "https://cdn.shopify.com/s/files/1/2053/3799/files/wr-espresso-matte-satin-mia-reg-bridesmaid-apparel-dresses-500.jpg"
+          ],
+          "competitor_source_url": "https://www.birdygrey.com/products/mia-matte-satin-dress-espresso",
+          "competitor_source_site": "Birdy Grey",
+          "result_images": [
+            "/static/gallery/BD/bd-001_01.jpg",
+            "/static/gallery/BD/bd-001_02.jpg",
+            "/static/gallery/BD/bd-001_03.jpg",
+            "/static/gallery/BD/bd-001_04.jpg"
+          ],
+          "synthesis_task_id": "6a1caf98d61a",
+          "status": "ready",
+          "error_message": "",
+          "mode": "gpu"
+        }
+      ]
+    },
+    {
+      "id": "AT",
+      "label": "Atelier / Formal",
+      "items": [
+        {
+          "id": "smoke-001",
+          "az_product_url": "",
+          "az_input_images": [
+            "https://cdn-1.azazie.com/upimg/h/53/05/870460c45b93d55ec90cc769cad65305.jpg"
+          ],
+          "competitor_product_id": "",
+          "competitor_product_title": "Smoke AT",
+          "competitor_product_image_url": "https://cdn-1.azazie.com/upimg/h/53/05/870460c45b93d55ec90cc769cad65305.jpg",
+          "competitor_detail_images": [],
+          "competitor_source_url": "",
+          "competitor_source_site": "",
+          "result_images": [
+            "/static/gallery/AT/smoke-001_01.jpg"
+          ],
+          "synthesis_task_id": "",
+          "status": "ready",
+          "error_message": "",
+          "mode": "smoke"
+        },
+        {
+          "id": "at-001",
+          "az_product_url": "https://www.azazie.com/gb/products/liorah-abstract-bouquet-floral-maxi-dress-atelier-dress/112536686?sourceTag=atelier_formal_dresses",
+          "az_input_images": [
+            "https://cdn-1.azazie.com/upimg/h/25/b9/66e8f0115f4e95187d716695980a25b9.jpg",
+            "https://cdn-1.azazie.com/upimg/h/48/52/f2d788849150abddc9f0b3705bba4852.jpg",
+            "https://cdn-1.azazie.com/upimg/h/9d/6f/663d2801c3ea88adaaa0c2d8acad9d6f.jpg",
+            "https://cdn-1.azazie.com/upimg/h/5d/71/c42f59e8ab28eeb917012355f8815d71.jpg"
+          ],
+          "competitor_product_id": "babyboo-cyra-lemon",
+          "competitor_product_title": "Cyra Maxi Dress Lemon",
+          "competitor_product_image_url": "https://cdn.shopify.com/s/files/1/2060/7491/files/cyra-maxi-dress-lemon-dress-xs-babyboo-fashion-1222102180_900x.jpg?v=1772501109",
+          "competitor_detail_images": [
+            "https://cdn.shopify.com/s/files/1/2060/7491/files/cyra-maxi-dress-lemon-dress-xs-babyboo-fashion-1222102180_900x.jpg?v=1772501109",
+            "https://cdn.shopify.com/s/files/1/2060/7491/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1222102183_900x.jpg?v=1772501258",
+            "https://cdn.shopify.com/s/files/1/2060/7491/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1222102181_900x.jpg?v=1772501170",
+            "https://cdn.shopify.com/s/files/1/2060/7491/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1222102179_900x.jpg?v=1772535504"
+          ],
+          "competitor_source_url": "https://www.babyboofashion.com/en-us/collections/dresses/products/cyra-maxi-dress-lemon",
+          "competitor_source_site": "Babyboo",
+          "result_images": [
+            "/static/gallery/AT/at-001_01.jpg",
+            "/static/gallery/AT/at-001_02.jpg",
+            "/static/gallery/AT/at-001_03.jpg",
+            "/static/gallery/AT/at-001_04.jpg"
+          ],
+          "synthesis_task_id": "6a88bb8f0462",
+          "status": "ready",
+          "error_message": "",
+          "mode": "gpu"
+        }
+      ]
+    },
+    {
+      "id": "Prom",
+      "label": "Prom",
+      "items": [
+        {
+          "id": "prom-001",
+          "az_product_url": "https://www.azazie.com/gb/products/ottavia-white-jacquard-midi-a-line-graduation-dress-prom-and-homecoming-dresses/110154078?sourceTag=atelier_prom_dresses",
+          "az_input_images": [
+            "https://cdn-1.azazie.com/upimg/h/15/21/05efdc50824b3044a5208db372371521.jpg",
+            "https://cdn-1.azazie.com/upimg/h/81/e8/be583f4a5e05c048af65d8e9a99281e8.jpg",
+            "https://cdn-1.azazie.com/upimg/h/73/1c/7e7b790b7d9032e71b1738c993e2731c.jpg",
+            "https://cdn-1.azazie.com/upimg/h/f1/5c/f9d5fac2276a34f011fc661de59ff15c.jpg"
+          ],
+          "competitor_product_id": "sheisme-strapless-pleated-dusty-blue",
+          "competitor_product_title": "Strapless Pleated Maxi Dress Dusty Blue",
+          "competitor_product_image_url": "https://cdn.shopify.com/s/files/1/0788/7454/2295/files/strapless-pleated-maxi-dress-in-dusty-blue-6942849.jpg",
+          "competitor_detail_images": [
+            "https://cdn.shopify.com/s/files/1/0788/7454/2295/files/strapless-pleated-maxi-dress-in-dusty-blue-6942849.jpg",
+            "https://cdn.shopify.com/s/files/1/0788/7454/2295/files/strapless-pleated-maxi-dress-in-dusty-blue-7379725.jpg",
+            "https://cdn.shopify.com/s/files/1/0788/7454/2295/files/strapless-pleated-maxi-dress-in-dusty-blue-5688641.jpg",
+            "https://cdn.shopify.com/s/files/1/0788/7454/2295/files/strapless-pleated-maxi-dress-in-dusty-blue-4768667.jpg"
+          ],
+          "competitor_source_url": "https://www.sheisme.com/collections/prom-dresses/products/strapless-pleated-maxi-dress-in-dusty-blue",
+          "competitor_source_site": "She Is Me",
+          "result_images": [
+            "/static/gallery/Prom/prom-001_01.jpg",
+            "/static/gallery/Prom/prom-001_02.jpg",
+            "/static/gallery/Prom/prom-001_03.jpg",
+            "/static/gallery/Prom/prom-001_04.jpg"
+          ],
+          "synthesis_task_id": "bc8a3abf51b9",
+          "status": "ready",
+          "error_message": "",
+          "mode": "gpu"
+        }
+      ]
+    },
+    {
+      "id": "MOB",
+      "label": "Mother of the Bride",
+      "items": [
+        {
+          "id": "mob-001",
+          "az_product_url": "https://www.azazie.com/gb/products/azazie-baltimore-dusty-rose-a-line-pleated-stretch-satin-floor-length-mother-of-the-bride-dress/83136907",
+          "az_input_images": [
+            "https://cdn-1.azazie.com/upimg/h/70/1e/150deae965ff3e56e3f7f126336a701e.jpg",
+            "https://cdn-1.azazie.com/upimg/h/da/ff/19e4f9901c7a0c1c187a4e38513ddaff.jpg",
+            "https://cdn-1.azazie.com/upimg/h/8a/eb/ba32fcd63941859ab5cd453489ba8aeb.jpg",
+            "https://cdn-1.azazie.com/upimg/h/db/5d/bd728d83fe1ee2644d472e7a202ddb5d.jpg"
+          ],
+          "competitor_product_id": "davidsbridal-mob-wbm3307v2-wine",
+          "competitor_product_title": "Velvet Off the Shoulder Sheath with Ruffle WBM3307V2 Wine",
+          "competitor_product_image_url": "https://cdn.sanity.io/media-libraries/mlskMLq2FOoI/images/containers/3FTmlQy0zSfW9RbrJrVOrWk8T5h/WBM3307V2_WINE_MOB_PROD7_039.jpg",
+          "competitor_detail_images": [
+            "https://cdn.sanity.io/media-libraries/mlskMLq2FOoI/images/containers/3FTmlQy0zSfW9RbrJrVOrWk8T5h/WBM3307V2_WINE_MOB_PROD7_039.jpg",
+            "https://cdn.sanity.io/media-libraries/mlskMLq2FOoI/images/containers/3FTmmn80oAJWRakWmfLMMkvKyZu/WBM3307V2_WINE_MOB_PROD7_104.jpg",
+            "https://cdn.sanity.io/media-libraries/mlskMLq2FOoI/images/containers/3FTmmyZ6PlNMCxqxcB9b4ausHgL/WBM3307V2_WINE_MOB_PROD7_063.jpg"
+          ],
+          "competitor_source_url": "https://www.davidsbridal.com/product/velvet-off-the-shoulder-sheath-with-ruffle-wbm3307v2?Color=Wine",
+          "competitor_source_site": "David's Bridal",
+          "result_images": [
+            "/static/gallery/MOB/mob-001_01.jpg",
+            "/static/gallery/MOB/mob-001_02.jpg",
+            "/static/gallery/MOB/mob-001_03.jpg",
+            "/static/gallery/MOB/mob-001_04.jpg"
+          ],
+          "synthesis_task_id": "62b34a4d25c0",
+          "status": "ready",
+          "error_message": "",
+          "mode": "gpu"
+        }
+      ]
+    },
+    {
+      "id": "Wedding",
+      "label": "Wedding",
+      "items": [
+        {
+          "id": "wd-001",
+          "az_product_url": "https://www.azazie.com/gb/products/azazie-onyx-diamond-white-mermaid-sequins-crepe-back-satin-chapel-train-wedding-dress/210503",
+          "az_input_images": [
+            "https://cdn-1.azazie.com/upimg/h/83/af/d5b1a0259456d96732794f80ef5783af.jpg",
+            "https://cdn-1.azazie.com/upimg/h/f2/2c/2e7344974aeb60ea5fd2cdda9eaaf22c.jpg",
+            "https://cdn-1.azazie.com/upimg/h/6b/7d/065b9da9bc25d277dd4ef3af81f96b7d.jpg",
+            "https://cdn-1.azazie.com/upimg/h/77/34/dce145565e2d8cee9e9faa6946677734.jpg"
+          ],
+          "competitor_product_id": "davidsbridal-cwg908-softwhite",
+          "competitor_product_title": "Long Sleeve Satin Wedding Dress with Appliques CWG908 Soft White",
+          "competitor_product_image_url": "https://cdn.sanity.io/media-libraries/mlskMLq2FOoI/images/containers/3FQEoR23YLG6kdt1Tec5Ig5I0sb/CWG908_SOFTWHITE_OLEG_PROD3_057.jpg",
+          "competitor_detail_images": [
+            "https://cdn.sanity.io/media-libraries/mlskMLq2FOoI/images/containers/3FQEoR23YLG6kdt1Tec5Ig5I0sb/CWG908_SOFTWHITE_OLEG_PROD3_057.jpg",
+            "https://cdn.sanity.io/media-libraries/mlskMLq2FOoI/images/containers/3FQEn3W7SWQSb4sCQU82Asq9yhw/CWG908_SOFTWHITE_OLEG_PROD3_175.jpg",
+            "https://cdn.sanity.io/media-libraries/mlskMLq2FOoI/images/containers/3FQEoNADWTxsu6kGpjuxf5175Q4/CWG908_SOFTWHITE_OLEG_PROD3_111.jpg",
+            "https://cdn.sanity.io/media-libraries/mlskMLq2FOoI/images/containers/3FQEosKsZmpQHve0TYpYpHvMmoH/CWG908_SOFTWHITE_OLEG_PROD3_091.jpg"
+          ],
+          "competitor_source_url": "https://www.davidsbridal.com/product/long-sleeve-satin-wedding-dress-with-appliques-cwg908?Color=Soft+White",
+          "competitor_source_site": "David's Bridal",
+          "result_images": [
+            "/static/gallery/Wedding/wd-001_01.jpg",
+            "/static/gallery/Wedding/wd-001_02.jpg",
+            "/static/gallery/Wedding/wd-001_03.jpg",
+            "/static/gallery/Wedding/wd-001_04.jpg"
+          ],
+          "synthesis_task_id": "ba1b90868c6d",
+          "status": "ready",
+          "error_message": "",
+          "mode": "gpu"
+        }
+      ]
+    }
+  ]
+}

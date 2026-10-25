@@ -1,0 +1,484 @@
+{
+  "3": {
+    "inputs": {
+      "gpt_model_id": "MaaS_GP_5.5_20260424",
+      "gpt_base_url": "",
+      "image_model_id": "MaaS_GP_image_2",
+      "image_base_url": "",
+      "api_key": ""
+    },
+    "class_type": "CloudswayPersonReplaceConfig",
+    "_meta": {
+      "title": "3. GPT + GP Image 2 配置（API Key 保持留空）"
+    }
+  },
+  "4": {
+    "inputs": {
+      "competitor_image_urls": [
+        "35",
+        0
+      ],
+      "product_image_urls": [
+        "36",
+        0
+      ]
+    },
+    "class_type": "ProductDesignV08DirectURLReferenceCollector",
+    "_meta": {
+      "title": "4. V9 竞品 + 商品纯图片直链采集｜沿用用户文件参数｜不解析商品页 / 不自动扩展图库"
+    }
+  },
+  "5": {
+    "inputs": {
+      "creative_strength": "大胆原创",
+      "creative_direction": ""
+    },
+    "class_type": "CloudswayProductDesignV08StrategyPrompt",
+    "_meta": {
+      "title": "5. 创意强度 + 创意方向（可编辑；留空自动判断）"
+    }
+  },
+  "6": {
+    "inputs": {
+      "images": [
+        "4",
+        1
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "竞品多图编号总览（严格按输入行顺序）"
+    }
+  },
+  "7": {
+    "inputs": {
+      "images": [
+        "4",
+        2
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "商品图编号总览（链接留空或失败时显示占位）"
+    }
+  },
+  "8": {
+    "inputs": {
+      "references": [
+        "4",
+        0
+      ],
+      "api_config": [
+        "3",
+        0
+      ],
+      "strategy_prompt": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "CloudswayProductDesignV08Planner",
+    "_meta": {
+      "title": "6. V9 规划｜完全沿用用户文件的 V3 原版 GPT A/B/C 三案并择优"
+    }
+  },
+  "9": {
+    "inputs": {
+      "images": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "规划选中的商品 / 类目锚点图"
+    }
+  },
+  "10": {
+    "inputs": {
+      "images": [
+        "8",
+        1
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "规划选中的设计参考图组"
+    }
+  },
+  "11": {
+    "inputs": {
+      "automatic_prompt": [
+        "8",
+        2
+      ]
+    },
+    "class_type": "CloudswayProductDesignV08GenerationPrompt",
+    "_meta": {
+      "title": "7. V9 生图 Prompt｜完全沿用用户文件的 V3 原版八视图规则"
+    }
+  },
+  "12": {
+    "inputs": {
+      "base_url": "",
+      "api_key": "",
+      "model": "MaaS_GP_image_2",
+      "api_model": "gpt-image-1",
+      "prompt": [
+        "11",
+        0
+      ],
+      "input_fidelity": "high",
+      "size": "1536x1024",
+      "quality": "medium",
+      "background": "opaque",
+      "output_format": "png",
+      "n": 1,
+      "advanced_json": "{}",
+      "timeout": 600,
+      "original_image": [
+        "8",
+        0
+      ],
+      "reference_image": [
+        "8",
+        1
+      ]
+    },
+    "class_type": "CloudswayGPImageEdit",
+    "_meta": {
+      "title": "8. GP Image 2 单次生成 V3 效果 4×2 八视图母版"
+    }
+  },
+  "13": {
+    "inputs": {
+      "image": [
+        "12",
+        0
+      ]
+    },
+    "class_type": "ProductDesignV08EightViewHDSplitter",
+    "_meta": {
+      "title": "9. V9 4×2 母版本地切成8张并定尺1140×1578｜完全沿用用户文件参数"
+    }
+  },
+  "15": {
+    "inputs": {
+      "images": [
+        "31",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览1｜8张GPT高清4:5待裁剪图｜2048×2560｜严格01–08"
+    }
+  },
+  "17": {
+    "inputs": {
+      "rgthree_comparer": {
+        "images": [
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_mrsit_00003_.png&type=temp&subfolder=&rand=0.6634415964862855"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_mrsit_00004_.png&type=temp&subfolder=&rand=0.5467537766863905"
+          }
+        ]
+      },
+      "image_a": [
+        "8",
+        0
+      ],
+      "image_b": [
+        "13",
+        1
+      ]
+    },
+    "class_type": "Image Comparer (rgthree)",
+    "_meta": {
+      "title": "商品 / 类目锚点 vs V9 原创八视图母版"
+    }
+  },
+  "18": {
+    "inputs": {
+      "source": [
+        "4",
+        3
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告1｜竞品与商品图片直链、逐行顺序、下载状态与尺寸｜无商品页解析"
+    }
+  },
+  "19": {
+    "inputs": {
+      "source": [
+        "8",
+        3
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告2｜最终选中创意方案中文设计简报"
+    }
+  },
+  "20": {
+    "inputs": {
+      "source": [
+        "8",
+        4
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告3｜V9 规划、选图、三案择优与用户文件原版效果参数"
+    }
+  },
+  "21": {
+    "inputs": {
+      "source": [
+        "8",
+        5
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "过程｜完整 GPT 分析 Prompt（无 Key / 无 Base64）"
+    }
+  },
+  "22": {
+    "inputs": {
+      "source": [
+        "8",
+        6
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告4｜竞品设计理念、结构、卖点与可抽象趋势"
+    }
+  },
+  "23": {
+    "inputs": {
+      "source": [
+        "8",
+        7
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告5｜商品设计理念、卖点与锚点分析（可为空）"
+    }
+  },
+  "24": {
+    "inputs": {
+      "source": [
+        "8",
+        8
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告6｜A / B / C 三个结构不同的创意候选"
+    }
+  },
+  "25": {
+    "inputs": {
+      "source": [
+        "8",
+        9
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告7｜选中款卖点、品牌特色、爆款假设与参考转化"
+    }
+  },
+  "26": {
+    "inputs": {
+      "source": [
+        "8",
+        10
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告8｜八视图固定顺序、镜头目标与必显细节"
+    }
+  },
+  "27": {
+    "inputs": {
+      "source": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "过程｜最终 GP Image 2 生图 Prompt"
+    }
+  },
+  "28": {
+    "inputs": {
+      "source": [
+        "12",
+        1
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "过程｜GP Image 2 响应 JSON"
+    }
+  },
+  "29": {
+    "inputs": {
+      "source": [
+        "13",
+        2
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告9｜V9 八视图切图顺序、1140×1578 定尺与坐标"
+    }
+  },
+  "31": {
+    "inputs": {
+      "extra_prompt": "",
+      "api_model": "gpt-image-1",
+      "max_concurrency": 8,
+      "timeout": 900,
+      "failure_policy": "keep_original_for_failed",
+      "images": [
+        "13",
+        0
+      ],
+      "api_config": [
+        "3",
+        0
+      ]
+    },
+    "class_type": "ProductDesignV9EightViewGPHDEnhancer4x5_2K",
+    "_meta": {
+      "title": "10. V9 GPT 高清精修｜8并发｜4:5安全区｜输出8张2048×2560待裁剪图"
+    }
+  },
+  "32": {
+    "inputs": {
+      "source": [
+        "31",
+        1
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "报告10｜V9 8路GPT高清、4:5安全区、API原始尺寸与2K输出"
+    }
+  },
+  "35": {
+    "inputs": {
+      "text": "https://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-xs-babyboo-fashion-1222102180_1174x1800.jpg?v=1772501109\nhttps://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1222102183_1200x.jpg?v=1772501258\nhttps://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1222102181_1200x.jpg?v=1772501170\nhttps://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1222102179_1200x.jpg?v=1772535504\nhttps://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1222102182_1200x.jpg?v=1772535504\nhttps://www.babyboofashion.com/cdn/shop/files/cyra-maxi-dress-lemon-dress-babyboo-fashion-1226922064_1200x.jpg?v=1773241236\nhttps://www.babyboofashion.com/cdn/shop/files/CYRA_LEMON_1600x.png?v=1785154253"
+    },
+    "class_type": "CR Text",
+    "_meta": {
+      "title": "1. 竞品图片 URL（必填｜每行 1 张图片直链｜1–8 张｜严格保序）"
+    }
+  },
+  "36": {
+    "inputs": {
+      "text": "https://cdn-1.azazie.com/upimg/h/25/b9/66e8f0115f4e95187d716695980a25b9.jpg\nhttps://cdn-1.azazie.com/upimg/h/48/52/f2d788849150abddc9f0b3705bba4852.jpg\nhttps://cdn-1.azazie.com/upimg/h/9d/6f/663d2801c3ea88adaaa0c2d8acad9d6f.jpg\nhttps://cdn-1.azazie.com/upimg/h/5d/71/c42f59e8ab28eeb917012355f8815d71.jpg\nhttps://cdn-1.azazie.com/upimg/h/29/4f/21ec146fabb612ffb88506e58c94294f.jpg\nhttps://cdn-1.azazie.com/upimg/h/be/fe/b0c86f88557e0cf232817a6588eebefe.jpg"
+    },
+    "class_type": "CR Text",
+    "_meta": {
+      "title": "2. 商品图片 URL（选填｜每行 1 张图片直链｜1-8张）"
+    }
+  },
+  "46": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "13",
+        1
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保留用户输出：原始4×2全景母版保存｜非8张GPT高清图"
+    }
+  },
+  "47": {
+    "inputs": {
+      "filename_prefix": "AI自动化选品/V9_4比5_2K待裁剪_2048x2560_01-08",
+      "images": [
+        "31",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存1｜8张GPT高清4:5待裁剪图｜2048×2560"
+    }
+  },
+  "48": {
+    "inputs": {
+      "size": "custom",
+      "custom_width": 1140,
+      "custom_height": 1578,
+      "color": "#000000"
+    },
+    "class_type": "LayerUtility: ColorImage V2",
+    "_meta": {
+      "title": "最终裁剪尺寸参考｜1140×1578"
+    }
+  },
+  "49": {
+    "inputs": {
+      "filename_prefix": "AI自动化选品/V9_最终裁剪_1140x1578_01-08",
+      "images": [
+        "50",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存2｜最终8张网站标准图｜1140×1578｜严格01–08"
+    }
+  },
+  "50": {
+    "inputs": {
+      "fit": "crop",
+      "method": "lanczos",
+      "background_color": "#FFFFFF",
+      "scale_as": [
+        "48",
+        0
+      ],
+      "image": [
+        "31",
+        0
+      ]
+    },
+    "class_type": "LayerUtility: ImageMaskScaleAsV2",
+    "_meta": {
+      "title": "图层工具：8张4:5 2K居中裁剪｜crop + lanczos｜输出1140×1578"
+    }
+  },
+  "51": {
+    "inputs": {
+      "images": [
+        "50",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览2｜图层工具最终居中裁剪结果｜8张1140×1578"
+    }
+  }
+}

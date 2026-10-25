@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZ Bloom · 总览</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="h-screen flex overflow-hidden">
+  <aside id="bloom-sidebar" class="sidebar"></aside>
+  <main class="main-shell">
+    <header class="page-header design-hero">
+      <div class="design-hero__copy">
+        <p class="design-hero__eyebrow" id="dash-eyebrow">Executive · 本周机会</p>
+        <h1>总览</h1>
+        <p class="page-header__sub" id="dash-sub">先看外部该跟什么，再看平台已经做出什么</p>
+      </div>
+      <div class="header-actions">
+        <select id="dash-cat" class="select-compact" aria-label="品类">
+          <option value="AT">AT · Atelier</option>
+          <option value="BD">BD · 伴娘</option>
+        </select>
+        <button id="btn-refresh" type="button" class="btn-refresh">刷新</button>
+      </div>
+    </header>
+    <section class="page-body dash-page">
+      <div id="dash-warn" class="dash-callout hidden" role="status"></div>
+
+      <section class="dash-block">
+        <div class="dash-block__head">
+          <h2>外部机会</h2>
+          <span class="dash-block__hint" id="dash-ext-hint">爬虫周报 · 竞品不称热销</span>
+        </div>
+        <div id="dash-stats" class="dash-kpi-row"></div>
+        <div id="dash-sites" class="dash-sites" hidden></div>
+      </section>
+
+      <div class="dash-split">
+        <article class="dash-panel">
+          <div class="dash-panel__head">
+            <h3>本周该跟什么</h3>
+            <span class="dash-panel__meta" id="dash-brief-meta">周报执行摘要</span>
+          </div>
+          <ol id="dash-bullets" class="dash-briefs"></ol>
+          <div class="dash-panel__actions">
+            <a class="dash-cta" href="/monitor.html">去货盘看上新</a>
+            <a class="dash-cta dash-cta--ghost" href="/gap-fusion.html">用 Gap 开爆款合成</a>
+          </div>
+        </article>
+        <article class="dash-panel">
+          <div class="dash-panel__head">
+            <h3>设计 Gap Top</h3>
+            <span class="dash-panel__meta">竞品变化出现 · AZ 覆盖偏低</span>
+          </div>
+          <div id="dash-gaps" class="dash-gaps"></div>
+        </article>
+      </div>
+
+      <section class="dash-block" id="dash-own-block" hidden>
+        <div class="dash-block__head">
+          <h2>自有热销 Top</h2>
+          <span class="dash-block__hint">source=salesVolume · 增速不足两周为 unknown</span>
+        </div>
+        <div id="dash-own" class="dash-own-row"></div>
+      </section>
+
+      <section class="dash-block">
+        <div class="dash-block__head">
+          <h2>平台生成</h2>
+          <a class="dash-inline-link" href="/library.html">去成品库</a>
+        </div>
+        <div id="dash-funnel" class="dash-funnel"></div>
+        <p class="dash-foot-note">Bloom 不展示 AI / 人工审核通过率（那是 Forge 投放审核指标）。</p>
+      </section>
+    </section>
+  </main>
+  <script src="/static/dashboard.js"></script>
+  <script src="/static/sidebar.js"></script>
+  <script>mountBloomSidebar('dash', '总览 · 外部机会 + 生成漏斗');</script>
+</body>
+</html>

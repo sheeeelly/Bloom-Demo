@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZ Bloom · AI造款</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="h-screen flex overflow-hidden">
+
+    <aside id="bloom-sidebar" class="sidebar"></aside>
+<main class="main-shell">
+    <header class="page-header">
+      <div>
+        <h1>AI造款</h1>
+        <p class="page-header__sub">列表选竞品 + AZ URL 人工干预合成（旧入口）；周报驱动请用「爆款合成」</p>
+      </div>
+      <span id="updated-at" class="page-header__meta"></span>
+    </header>
+
+    <section class="page-body">
+      <div class="panel panel--compact">
+        <div class="input-stack">
+          <div class="input-stack__row">
+            <label for="category-select" class="panel__label">裙装品类</label>
+            <select id="category-select" class="field-input"></select>
+            <p class="panel__hint">AT 沿用上一版爬取的五商品完整数据（<code>seed_products.json</code>）；其它品类读 <code>inputs.json</code>，后续可继续追加</p>
+          </div>
+          <div class="input-stack__row">
+            <label for="target-url" class="panel__label">目标竞品列表页</label>
+            <input
+              id="target-url"
+              type="url"
+              class="field-input"
+              placeholder="请输入目标竞品列表页 URL"
+            />
+            <p class="panel__hint">随品类自动填充，可手动改</p>
+          </div>
+          <div class="input-stack__row">
+            <label for="az-url" class="panel__label">
+              AZ 爆款商品 URL<span class="required-mark">*必填</span>
+            </label>
+            <div class="field-row">
+              <input
+                id="az-url"
+                type="url"
+                required
+                class="field-input"
+                placeholder="请输入 AZ 爆款商品详情页 URL"
+              />
+              <button id="btn-az-confirm" type="button" class="btn-az-confirm">确认</button>
+            </div>
+            <p class="panel__hint">随所选竞品预填；若已有图链会直接展示，也可再点「确认」从商城拉取</p>
+            <p id="az-gallery-error" class="az-gallery-error hidden"></p>
+          </div>
+        </div>
+
+        <div id="az-gallery-panel" class="az-gallery-panel az-gallery-panel--inline hidden">
+          <div class="az-gallery-panel__head">
+            <div class="panel__label" style="margin-bottom: 0">AZ 商品图片列表</div>
+            <span id="az-gallery-meta" class="az-gallery-meta"></span>
+          </div>
+          <div id="az-gallery-loading" class="az-gallery-loading hidden">
+            <div class="result-spinner"></div>
+            <span>正在获取商品图片...</span>
+          </div>
+          <div id="az-gallery-groups" class="az-gallery-groups"></div>
+        </div>
+      </div>
+
+      <!-- 人为干预：可选；属性/简述 → 生成 Prompt；也可跳过直接一键合成 -->
+      <div class="panel panel--compact intervention-panel">
+        <div class="section-bar intervention-panel__head" style="margin: 0 0 8px; padding: 0; border: 0">
+          <div class="section-bar__left">
+            <div class="section-bar__title">人为干预</div>
+            <span class="chip">可选 · 软约束</span>
+          </div>
+          <div class="intervention-actions intervention-actions--header">
+            <button id="btn-build-prompt" type="button" class="btn-build-prompt" disabled>
+              一键生成完整 Prompt
+            </button>
+            <p id="prompt-status" class="prompt-status">未使用 · 可直接一键合成</p>
+          </div>
+        </div>
+
+        <ol class="intervention-steps" aria-label="人为干预步骤">
+          <li class="intervention-step is-active" data-step="1">① 属性/简述<span class="intervention-step__req">可选</span></li>
+          <li class="intervention-step" data-step="2" id="step-build">② 生成 Prompt<span class="intervention-step__req">可选</span></li>
+          <li class="intervention-step" data-step="3" id="step-ready">③ 一键合成</li>
+        </ol>
+
+        <div class="intervention-toolbar">
+          <button id="btn-fill-from-competitor" type="button" class="btn-secondary btn-secondary--small" disabled>
+            用已选竞品属性预填
+          </button>
+          <span id="intervention-hint" class="intervention-live-hint">可不填，直接选竞品后一键合成；填写后可生成 Prompt 指导生成</span>
+        </div>
+
+        <div id="intervention-elements" class="intervention-select-grid"></div>
+
+        <div class="intervention-inline-row">
+          <div class="intervention-note-wrap">
+            <label for="intervention-note" class="panel__label">自然语言简述</label>
+            <textarea
+              id="intervention-note"
+              class="field-input field-textarea field-textarea--compact"
+              rows="1"
+              placeholder="例：裙摆再层叠，腰线更清晰"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="input-stack__row" style="margin-top: 8px">
+          <label for="intervention-prompt" class="panel__label">
+            完整 Prompt
+            <span class="optional-mark">选填 · 有则作为合成入参</span>
+          </label>
+          <textarea
+            id="intervention-prompt"
+            class="field-input field-textarea field-textarea--tall"
+            rows="4"
+            readonly
+            placeholder="可不填。若需人为指导，先选属性/简述，再点「一键生成完整 Prompt」"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="section-bar">
+        <div class="section-bar__left">
+          <div class="section-bar__title">竞品网站爆款商品</div>
+          <span class="chip">必选 · 单选</span>
+        </div>
+        <div id="selected-hint" class="section-bar__hint">请选择 1 个竞品爆款</div>
+      </div>
+
+      <div id="product-grid" class="product-grid"></div>
+      <div id="empty-state" class="empty-state hidden">暂无选品数据</div>
+      <p id="synth-error" class="synth-error hidden"></p>
+    </section>
+  </main>
+
+  <button id="btn-synthesize" type="button" class="btn-synthesize btn-synthesize--float" disabled>
+    一键合成
+  </button>
+
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <script src="/static/app.js"></script>
+  <script src="/static/sidebar.js"></script>
+  <script>mountBloomSidebar('aicreate', 'AI造款 · 列表选款 + 人工干预');</script>
+</body>
+</html>

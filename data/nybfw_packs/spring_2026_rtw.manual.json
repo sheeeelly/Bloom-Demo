@@ -1,0 +1,144 @@
+{
+  "season_id": "Vogue_SS2026_RTW",
+  "season_label": "Spring / Summer 2026",
+  "pack_kind": "rtw",
+  "categories": ["AT", "BD", "MOB", "Prom"],
+  "sources": [
+    {
+      "name": "Vogue",
+      "url": "https://www.vogue.com/article/spring-2026-fashion-trends",
+      "title": "The Key Summer 2026 Trends to Add to Your Wardrobe Now",
+      "note": "人工摘录 SS26 成衣/裙装可翻译趋势；非自动爬取"
+    }
+  ],
+  "trend_clusters": [
+    {
+      "cluster_id": "scarf_styling",
+      "label": "scarf styling",
+      "label_zh": "丝巾造型 / 裹身打结",
+      "structure_tags": ["waist_tie", "soft_drape"],
+      "fabric_tags": ["silk", "printed_silk"],
+      "motif_tags": ["scarf_print", "knot_detail", "print"],
+      "designer_examples": ["Dries Van Noten", "Celine", "Loewe"],
+      "az_fit": {
+        "AT": "go",
+        "BD": "go",
+        "MOB": "cautious",
+        "Prom": "go",
+        "Wedding": "no"
+      }
+    },
+    {
+      "cluster_id": "peplum_revival",
+      "label": "peplum revival",
+      "label_zh": "荷叶摆复兴 / 雕塑腰线",
+      "structure_tags": ["peplum", "defined_waist", "sculpted_hip"],
+      "fabric_tags": ["crepe", "faille", "cotton"],
+      "motif_tags": ["peplum", "gather"],
+      "designer_examples": ["Khaite", "Dries Van Noten", "Stella McCartney"],
+      "az_fit": {
+        "AT": "go",
+        "BD": "go",
+        "MOB": "go",
+        "Prom": "go",
+        "Wedding": "no"
+      }
+    },
+    {
+      "cluster_id": "jazz_age_drop_waist",
+      "label": "jazz age / drop-waist",
+      "label_zh": "爵士年代 / 低腰直筒 midi",
+      "structure_tags": ["drop_waist", "shift", "midi"],
+      "fabric_tags": ["silk", "crepe", "satin"],
+      "motif_tags": ["relaxed_column", "1920s"],
+      "designer_examples": ["Prada", "Cos", "Kallmeyer"],
+      "az_fit": {
+        "AT": "go",
+        "BD": "go",
+        "MOB": "go",
+        "Prom": "cautious",
+        "Wedding": "no"
+      }
+    },
+    {
+      "cluster_id": "fringe_statement",
+      "label": "fringe / texture statement",
+      "label_zh": "流苏 / 质感记忆点裙装",
+      "structure_tags": ["maxi", "handkerchief_hem"],
+      "fabric_tags": ["fringe", "silk", "cotton"],
+      "motif_tags": ["fringe", "texture", "tier"],
+      "designer_examples": ["Loulou de Saison", "Chloé", "Diotima"],
+      "az_fit": {
+        "AT": "go",
+        "BD": "cautious_simplify",
+        "MOB": "cautious",
+        "Prom": "go",
+        "Wedding": "no"
+      }
+    },
+    {
+      "cluster_id": "lady_of_leisure",
+      "label": "lady of leisure drape",
+      "label_zh": "闲适优雅 / 丝缎垂坠",
+      "structure_tags": ["soft_drape", "robe_like", "bias"],
+      "fabric_tags": ["silk", "satin"],
+      "motif_tags": ["scarf_tie", "fluid"],
+      "designer_examples": ["Khaite", "Fforme", "Ferragamo"],
+      "az_fit": {
+        "AT": "go",
+        "BD": "go",
+        "MOB": "go",
+        "Prom": "cautious",
+        "Wedding": "no"
+      }
+    },
+    {
+      "cluster_id": "retro_print",
+      "label": "retro summer print",
+      "label_zh": "复古印花 / 圆点花卉",
+      "structure_tags": ["ruched", "kaftan_soft"],
+      "fabric_tags": ["printed_silk", "jersey"],
+      "motif_tags": ["polka_dot", "floral_80s", "stripe"],
+      "designer_examples": ["Chloé", "Khaite", "Dries Van Noten"],
+      "az_fit": {
+        "AT": "go",
+        "BD": "go",
+        "MOB": "cautious",
+        "Prom": "go",
+        "Wedding": "no"
+      }
+    }
+  ],
+  "image_hints": [
+    "优先用 Vogue SS26 专题配图 / runway 截图（内部开款参考）",
+    "按 motif 搜：scarf wrap dress、peplum top dress、drop waist midi、fringe maxi、silk bias dress",
+    "一期不使用潘通色向驱动"
+  ],
+  "inspiration_images": [
+    {
+      "id": "insp_rtw_01",
+      "label": "灵感 01 · 丝巾 / 裹身",
+      "url": "/static/gallery/AT/at-001_01.jpg",
+      "motif_hint": "scarf styling",
+      "note": "Demo 占位；正式用 Vogue SS26 配图"
+    },
+    {
+      "id": "insp_rtw_02",
+      "label": "灵感 02 · 荷叶摆 / 腰线",
+      "url": "/static/gallery/AT/at-001_02.jpg",
+      "motif_hint": "peplum revival",
+      "note": "Demo 占位"
+    },
+    {
+      "id": "insp_rtw_03",
+      "label": "灵感 03 · 低腰 midi / 垂坠",
+      "url": "/static/gallery/BD/bd-001_01.jpg",
+      "motif_hint": "jazz age drop-waist",
+      "note": "Demo 占位"
+    }
+  ],
+  "crawl_policy": {
+    "phase1": "manual_feed_json_or_paste",
+    "phase2": "seasonal_or_monthly_auto_fetch_not_in_demo"
+  }
+}

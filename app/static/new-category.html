@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZ Bloom · 开类目（壳）</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="h-screen flex overflow-hidden">
+  <aside id="bloom-sidebar" class="sidebar"></aside>
+
+  <main class="main-shell">
+    <header class="page-header">
+      <div>
+        <h1>新品类开类目 <span class="chip">壳 · 不接真爬/生成</span></h1>
+        <p class="page-header__sub">冷启动锚点：大体量竞品站 → Most Popular；提交只落本地记录</p>
+      </div>
+    </header>
+
+    <section class="page-body">
+      <div class="panel panel--compact">
+        <label class="panel__label" for="nc-name">新品类名称</label>
+        <input id="nc-name" class="field-input" placeholder="例：Shapewear Shorts / Acc 新子类" />
+        <label class="panel__label" for="nc-url" style="margin-top:12px">主竞品站 URL</label>
+        <input id="nc-url" type="url" class="field-input" placeholder="https://..." />
+        <label class="panel__label" for="nc-anchor" style="margin-top:12px">冷启动锚点</label>
+        <input id="nc-anchor" class="field-input" value="Most Popular / Best Sellers" />
+        <label class="panel__label" for="nc-notes" style="margin-top:12px">备注</label>
+        <textarea id="nc-notes" class="field-input field-textarea" rows="3" placeholder="为何开类、对标谁、先看哪一页"></textarea>
+        <div class="blank-actions" style="margin-top:14px">
+          <button id="btn-nc-submit" type="button" class="btn-az-confirm">记录开类目假设</button>
+        </div>
+        <p id="nc-status" class="panel__hint" style="margin-top:10px"></p>
+      </div>
+
+      <div class="panel panel--compact">
+        <div class="panel__label">已记录（本地）</div>
+        <div id="nc-list" class="nc-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/sidebar.js"></script>
+  <script>
+    mountBloomSidebar('newcat', '开类目壳 · Most Popular 冷启动');
+  </script>
+  <script src="/static/new-category.js"></script>
+</body>
+</html>

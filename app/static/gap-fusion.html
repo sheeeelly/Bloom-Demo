@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloom · 双爆款合成</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="h-screen flex overflow-hidden">
+
+  <aside id="bloom-sidebar" class="sidebar"></aside>
+  <main class="main-shell">
+    <header class="page-header design-hero">
+      <div class="design-hero__copy">
+        <p class="design-hero__eyebrow">Studio 01 · Dual Fusion</p>
+        <h1>双爆款合成</h1>
+        <p class="page-header__sub">选两件爆款，留下各自的设计点，生成一件新的衣服样式。</p>
+      </div>
+    </header>
+
+    <section class="page-body design-page hot-page">
+      <div class="design-flow design-flow--half" aria-label="爆款合成工作流程">
+        <div class="design-flow__head">
+          <span class="design-flow__eyebrow">流水线</span>
+          <span class="design-flow__title">两件爆款 → 设计点 → 新款</span>
+        </div>
+        <ol class="design-flow__track">
+          <li class="design-flow__step">
+            <span class="design-flow__index">01</span>
+            <span class="design-flow__name">双爆点板</span>
+            <span class="design-flow__desc">同维单选 · 行对齐</span>
+          </li>
+          <li class="design-flow__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </li>
+          <li class="design-flow__step">
+            <span class="design-flow__index">02</span>
+            <span class="design-flow__name">竞品 + AZ</span>
+            <span class="design-flow__desc">弹窗选库 · 各选一款</span>
+          </li>
+          <li class="design-flow__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </li>
+          <li class="design-flow__step design-flow__step--accent">
+            <span class="design-flow__index">03</span>
+            <span class="design-flow__name">一键合成</span>
+            <span class="design-flow__desc">后台分析设计点</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="design-stage design-stage--enter" style="--enter-delay: 30ms">
+        <div class="design-stage__head">
+          <span class="design-stage__index">01</span>
+          <div class="design-stage__copy">
+            <h2 class="design-stage__title">双爆点板</h2>
+            <p class="design-stage__hint">同一维度只选一个属性；板 A / 板 B 按维度横向对齐；跨板同维互斥。</p>
+          </div>
+          <div class="hot-filters hot-filters--compact">
+            <label class="hot-filter-field">
+              <span>周次</span>
+              <select id="week-select" class="field-input field-input--sm"></select>
+            </label>
+            <label class="hot-filter-field">
+              <span>品类</span>
+              <select id="cat-select" class="field-input field-input--sm">
+                <option value="全部">全部</option>
+                <option value="AT" selected>AT</option>
+                <option value="BD">BD</option>
+                <option value="MOB">MOB</option>
+                <option value="Prom">Prom</option>
+                <option value="Wedding">Wedding</option>
+              </select>
+            </label>
+            <span class="design-stage__badge" id="mutex-hint">同维单选 · 双边互斥</span>
+          </div>
+        </div>
+        <div class="dual-trend-aligned" id="dual-trend-aligned">
+          <div class="dual-trend-aligned__head">
+            <div class="dual-trend-aligned__dim-h">维度</div>
+            <div class="dual-trend-aligned__comp-h">
+              <strong>板 A · 竞品周报爆点</strong>
+              <span>数字=周报频次 · 同维单选 · 只驱动竞品卡</span>
+            </div>
+            <div class="dual-trend-aligned__az-h">
+              <strong>板 B · AZ 周热销爆点</strong>
+              <span>数字=累加分 · 同维单选 · 只驱动 AZ 卡</span>
+            </div>
+          </div>
+          <div id="aligned-gap-rows" class="dual-trend-aligned__rows"></div>
+        </div>
+        <!-- legacy hosts kept for JS selectors -->
+        <div id="common-gaps" class="hidden" aria-hidden="true"></div>
+        <div id="az-gaps" class="hidden" aria-hidden="true"></div>
+        <div id="site-filters" class="hidden" aria-hidden="true"></div>
+        <p id="mutex-toast" class="mutex-toast hidden" role="status"></p>
+      </div>
+
+      <div class="fusion-pick-row">
+        <div class="design-stage design-stage--enter" style="--enter-delay: 90ms">
+          <div class="design-stage__head">
+            <span class="design-stage__index">02</span>
+            <div>
+              <h2 class="design-stage__title">外部竞品爆款</h2>
+              <p class="design-stage__hint" id="comp-count">从竞品商品库选 1 款</p>
+            </div>
+            <span class="design-stage__badge" id="selected-hint">未选竞品</span>
+          </div>
+          <p class="panel__hint hot-card-hint">选好后请在卡片上勾选要保留的属性。同维仅可保留一个；与 AZ 侧跨板互斥。</p>
+          <div id="competitor-grid" class="fusion-slot"></div>
+          <button type="button" class="pick-lib-btn" id="btn-pick-comp">从竞品商品库选择</button>
+        </div>
+
+        <div class="design-stage design-stage--accent design-stage--enter" style="--enter-delay: 120ms">
+          <div class="design-stage__head">
+            <span class="design-stage__index">03</span>
+            <div>
+              <h2 class="design-stage__title">AZ热卖款</h2>
+              <p class="design-stage__hint" id="az-count">从内部商品库选 1 款</p>
+            </div>
+            <span class="design-stage__badge" id="az-selected-hint">未选 AZ</span>
+          </div>
+          <p class="panel__hint hot-card-hint">选好后请在卡片上勾选要保留的属性。同维仅可保留一个；与竞品侧跨板互斥。</p>
+          <div id="az-grid" class="fusion-slot"></div>
+          <button type="button" class="pick-lib-btn" id="btn-pick-az">从内部商品库选择</button>
+        </div>
+      </div>
+
+      <!-- 05 AI 分析设计点：对用户隐藏；一键合成时后台自动完成 -->
+      <div class="hidden" aria-hidden="true">
+        <span id="v13-count"></span>
+        <button type="button" id="btn-v13-analyze"></button>
+        <div id="v13-selector">
+          <p id="v13-notice"></p>
+          <p id="v13-comp-summary"></p>
+          <p id="v13-az-summary"></p>
+          <div id="v13-comp-keywords"></div>
+          <div id="v13-az-keywords"></div>
+          <button type="button" id="btn-v13-confirm"></button>
+          <button type="button" id="btn-v13-skip"></button>
+        </div>
+        <pre id="fusion-prompt"></pre>
+        <p id="workflow-note"></p>
+      </div>
+
+      <div class="design-stage design-stage--enter" style="--enter-delay: 150ms">
+        <div class="design-stage__head">
+          <span class="design-stage__index">04</span>
+          <div class="design-stage__copy">
+            <h2 class="design-stage__title">准备合成</h2>
+            <p class="design-stage__hint">两件衣服和设计点都选完后，点右下角「生成新款」。提交后留在本页，可继续做下一件；去成品库看进度。</p>
+          </div>
+          <span class="design-stage__badge" id="prep-status">待选齐</span>
+        </div>
+        <p id="gap-error" class="synth-error hidden"></p>
+      </div>
+    </section>
+  </main>
+
+  <button id="btn-gap-start" type="button" class="btn-synthesize btn-synthesize--float" disabled>
+    生成新款
+  </button>
+
+  <div id="pick-modal" class="pick-modal hidden" role="dialog" aria-modal="true" aria-labelledby="pick-title">
+    <div class="pick-modal__backdrop" data-pick-close="1"></div>
+    <div class="pick-modal__panel">
+      <header class="pick-modal__head">
+        <div>
+          <p class="pick-modal__eyebrow">商品库</p>
+          <h3 id="pick-title">从竞品商品库选择</h3>
+        </div>
+        <button type="button" class="pick-modal__x" data-pick-close="1" aria-label="关闭">×</button>
+      </header>
+      <div id="pick-filters" class="mon-filter-card pick-modal__filters"></div>
+      <p id="pick-meta" class="pick-modal__meta">—</p>
+      <div class="pick-modal__body">
+        <div id="pick-grid" class="sku-grid"></div>
+      </div>
+      <footer class="pick-modal__foot">
+        <button type="button" class="pick-modal__ghost" data-pick-close="1">取消</button>
+        <button type="button" class="btn-synthesize" id="pick-confirm" disabled>确认选择</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+  <!-- legacy ids kept for compatibility -->
+  <img id="comp-img" class="hidden" alt="" />
+  <p id="comp-title" class="hidden"></p>
+  <div id="az-refs" class="hidden"></div>
+
+  <script src="/static/gap-fusion.js"></script>
+  <script src="/static/sidebar.js"></script>
+  <script>mountBloomSidebar('hot', '双爆款合成 · 两件衣服收成一件新款');</script>
+</body>
+</html>

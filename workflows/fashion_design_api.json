@@ -1,0 +1,251 @@
+{
+  "11": {
+    "inputs": {
+      "image_1": [
+        "1",
+        0
+      ],
+      "image_2": [
+        "1",
+        0
+      ],
+      "inputcount": 2,
+      "Update inputs": null
+    },
+    "class_type": "ImageBatchMulti",
+    "_meta": {
+      "title": "10口图像聚合器｜inputcount=10｜默认01复用全部口；选02-10后替换同编号口连线"
+    }
+  },
+  "21": {
+    "inputs": {
+      "source": [
+        "19",
+        2
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "八视图一致性锁定Prompt｜款式/面料/工艺/配色不漂移"
+    }
+  },
+  "25": {
+    "inputs": {
+      "images": [
+        "23",
+        0
+      ],
+      "filename_prefix": "AI开款/GPImage2_3x4_2K_01-08"
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存｜8张2K 3:4多视图｜01-08自动编号"
+    }
+  },
+  "13": {
+    "inputs": {
+      "images": [
+        "11",
+        0
+      ],
+      "max_images": 10
+    },
+    "class_type": "CloudswayFashionReferenceSet",
+    "_meta": {
+      "title": "参考集｜1-10张精确去重｜面料图或模特成衣图"
+    }
+  },
+  "27": {
+    "inputs": {
+      "source": [
+        "19",
+        0
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "八视图一致性锁定Prompt｜款式/面料/工艺/配色不漂移"
+    }
+  },
+  "12": {
+    "inputs": {
+      "gpt_model_id": "MaaS_GP_5.5_20260424",
+      "gpt_base_url": "",
+      "image_model_id": "MaaS_GP_image_2",
+      "image_base_url": "",
+      "image_api_model": "gpt-image-1",
+      "api_key": ""
+    },
+    "class_type": "CloudswayFashionDesignConfig",
+    "_meta": {
+      "title": "API配置｜GPT-5.5 + GPT Image 2｜Key必须保持空白"
+    }
+  },
+  "18": {
+    "inputs": {
+      "source": [
+        "16",
+        2
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "分析安全报告｜模型、尺寸、耗时｜无Key/Base64"
+    }
+  },
+  "17": {
+    "inputs": {
+      "source": [
+        "16",
+        1
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "面料与工艺分析｜结构化JSON"
+    }
+  },
+  "20": {
+    "inputs": {
+      "source": [
+        "19",
+        1
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "原创爆款设计规格｜结构化JSON"
+    }
+  },
+  "22": {
+    "inputs": {
+      "source": [
+        "19",
+        3
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "重设计安全报告｜模型、参考哈希、耗时｜无Key/Base64"
+    }
+  },
+  "16": {
+    "inputs": {
+      "references": [
+        "13",
+        0
+      ],
+      "api_config": [
+        "12",
+        0
+      ],
+      "analysis_prompt": "请把输入的每张图当作独立编号证据，分析服装或面料的：\n1. 可见面料类型、克重/厚薄、光泽、纹理、弹性与垂坠感；\n2. 廓形、领口、肩袖、腰臀、裙摆或裤腿结构；\n3. 省道、分割、褶裥、抽褶、扭结、拼接、包边、压线、装饰等工艺；\n4. 适穿场景、人体包容性、量产难点与成本敏感点；\n5. 可用于新款的机会点。\n\n只把图片直接支持的内容写成“可见事实”。材质成分、流行趋势和工艺做法如无法确认，必须标成“AI推断”并给出置信度，不得把模特身份或品牌当作设计依据。",
+      "max_tokens": 4096,
+      "timeout": 300,
+      "reference_max_side": 1536
+    },
+    "class_type": "CloudswayFashionMaterialCraftAnalyzerGPT55",
+    "_meta": {
+      "title": "GPT-5.5｜面料、组织、质感、工艺与服装结构分析"
+    }
+  },
+  "26": {
+    "inputs": {
+      "source": [
+        "23",
+        2
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "最终报告｜8路状态、尺寸、视角、哈希与失败原因"
+    }
+  },
+  "1": {
+    "inputs": {
+      "image": "image (275).png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "参考图01｜必选｜默认复用到聚合器10口，精确去重后仍为1张"
+    }
+  },
+  "19": {
+    "inputs": {
+      "references": [
+        "13",
+        0
+      ],
+      "api_config": [
+        "12",
+        0
+      ],
+      "analysis": [
+        "16",
+        0
+      ],
+      "design_prompt": "基于面料与工艺分析，重新设计一个具有清晰视觉记忆点、适合电商销售并可量产的原创爆款服装。保留素材中有商业价值的材质能力，但必须重新组织领口/肩袖、腰臀焦点、表面工艺路径和下装/裙摆几何，不能复刻任一输入款式的完整组合。设计要兼顾尺码包容、穿着稳定、成本和工厂实现。\n\n为后续多视图生图输出一份足够精确的“款式身份锁定”描述：同一颜色、面料、廓形、结构线、工艺位置、五金和长度在八张图中必须一致。",
+      "max_tokens": 6144,
+      "timeout": 300,
+      "reference_max_side": 1536
+    },
+    "class_type": "CloudswayFashionBestsellerDesignerGPT55",
+    "_meta": {
+      "title": "GPT-5.5｜原创创意爆款重设计｜身份与服装一致性锁定"
+    }
+  },
+  "23": {
+    "inputs": {
+      "references": [
+        "13",
+        0
+      ],
+      "api_config": [
+        "12",
+        0
+      ],
+      "design": [
+        "19",
+        0
+      ],
+      "native_size": "1024x1536",
+      "delivery_width": 1536,
+      "delivery_height": 2048,
+      "quality": "medium",
+      "input_fidelity": "omit",
+      "max_concurrency": 8,
+      "timeout": 900,
+      "failure_policy": "strict_all_8",
+      "view_direction": "统一白色或极浅灰无缝电商影棚；同一位虚构成年模特、同一发妆、同一服装、同一颜色与材质，柔和高显色棚拍光。全身图保持头顶与脚底完整，半身图保持头顶至大腿中部完整。画面只有一个人，不要拼图、文字、数字、边框、Logo、水印、镜像或额外服装。",
+      "advanced_json": "{}"
+    },
+    "class_type": "CloudswayFashionEightViewGPTImage2",
+    "_meta": {
+      "title": "GPT Image 2｜8并发｜8张独立2K 3:4｜正/侧/背·全身/半身"
+    }
+  },
+  "14": {
+    "inputs": {
+      "images": [
+        "13",
+        1
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "去重预览｜实际送入GPT的1-10张参考图"
+    }
+  },
+  "24": {
+    "inputs": {
+      "images": [
+        "23",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "最终预览｜8张1536×2048（2K、3:4）多视图"
+    }
+  }
+}
